@@ -2818,6 +2818,58 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
 
+
+/* Btn-gradient-tertiary  start*/
+
+.btn-gradient-tertiary {
+    color: #fff !important;
+    background: linear-gradient(90deg, #F01071 0%, #FF6506 100%);
+    border-radius: 20px;
+    font-size: 12px;
+    width: 25%;
+}
+
+.btn-gradient-tertiary:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #FF6506 0%, #FF6506 100%);
+}
+
+.btn-gradient-tertiary:focus,
+.btn-gradient-tertiary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+.btn-gradient-tertiary.disabled,
+.btn-gradient-tertiary:disabled {
+    color: #fff;
+    background-color: #f53c5b;
+    border-color: linear-gradient(90.13deg, #EF0E73 0.11%, #FF6704 99.9%);
+}
+
+.btn-gradient-tertiary:not(:disabled):not(.disabled):active,
+.btn-gradient-tertiary:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #bd2130;
+    border-color: linear-gradient(90.13deg, #EF0E73 0.11%, #FF6704 99.9%);
+}
+
+.show>.btn-gradient-tertiary.dropdown-toggle {
+    color: #fff;
+    background-color: linear-gradient(90.13deg, #EF0E73 0.11%, #FF6704 99.9%);
+}
+
+.btn-gradient-tertiary:not(:disabled):not(.disabled):active:focus,
+.btn-gradient-tertiary:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+.show>.btn-gradient-tertiary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+
+/* btn-gradient-tertiary end*/
+
 .btn-teal {
     color: #fff;
     background-color: #00cccc;
@@ -5120,6 +5172,15 @@ input[type="button"].btn-block {
     color: #fff;
 }
 
+
+/* Dashboard Icon */
+
+.dashboard-icon {
+    width: 90px;
+    height: 50px;
+    margin-left: -13px;
+}
+
 .card {
     position: relative;
     display: flex;
@@ -5152,7 +5213,12 @@ input[type="button"].btn-block {
 
 .card-body {
     flex: 1 1 auto;
-    padding: 1.25rem;
+    padding: 1.00rem;
+}
+
+.card-notice {
+    flex: 1 1 auto;
+    padding: 12px 12px 10px 20px;
 }
 
 .card-title {
@@ -8661,6 +8727,14 @@ a.close.disabled {
     margin-left: 3rem !important;
 }
 
+.ml-6 {
+    margin-left: -20px;
+}
+
+.mb-6 {
+    margin-bottom: -10px;
+}
+
 .p-0 {
     padding: 0 !important;
 }
@@ -11796,6 +11870,13 @@ a.text-dark:focus {
     font-weight: 700;
     color: #262833;
     font-size: 14px;
+    text-transform: uppercase;
+}
+
+.welcome-title {
+    font-weight: 700;
+    color: #262833;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
@@ -17324,6 +17405,11 @@ body {
     height: 35px;
 }
 
+.media img.recommended-img {
+    width: 50px;
+    height: 50px;
+}
+
 .dashboard-carousel .btn-icons {
     display: inline-block;
     background: #eff2f6 !important;
@@ -17520,6 +17606,13 @@ body {
 
 .font-weight-semibold {
     font-weight: 500 !important;
+}
+
+.recommended-title {
+    font-size: 16px;
+    background: -webkit-linear-gradient(45deg, #A23CB2, #F83974);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .bounceIn {
@@ -18182,6 +18275,8 @@ body {
 
 .project-card .project-content ul li {
     line-height: 20px;
+    padding: 12px;
+    margin-left: -25px;
 }
 
 .project-card .project-content ul span {
@@ -19499,9 +19594,14 @@ pre {
 }
 
 .user-pic img {
-    width: 60px;
-    height: 60px;
+    width: auto;
+    height: 50%;
     font-size: 36px;
+}
+
+.profile-pic img {
+    width: 80%;
+    height: auto;
 }
 
 .profile-name {
@@ -19532,7 +19632,7 @@ pre {
 .user-info .text-dark {
     color: #031b4e !important;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 13px;
 }
 
@@ -23495,7 +23595,7 @@ a.tag-addon:hover {
 /* ###### 6.2 Footer  ###### */
 
 .main-footer {
-    background-color: #fff;
+    background-color: white;
     border-top: 1px solid #dedcfb;
     margin-top: auto;
 }
@@ -69500,6 +69600,15 @@ button.bg-purple-gradient:focus {
 .wd-100v {
     width: 100vw;
 }
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */
