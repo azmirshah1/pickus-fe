@@ -8728,10 +8728,18 @@ a.close.disabled {
 }
 
 .ml-6 {
-    margin-left: -20px;
+    margin-left: -15px;
 }
 
 .mb-6 {
+    margin-bottom: 10px;
+}
+
+.ml-7 {
+    margin-left: -20px;
+}
+
+.mb-7 {
     margin-bottom: -10px;
 }
 
@@ -19600,7 +19608,7 @@ pre {
 }
 
 .profile-pic img {
-    width: 80%;
+    width: 100px;
     height: auto;
 }
 
