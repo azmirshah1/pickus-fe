@@ -318,7 +318,42 @@
             <!-- /breadcrumb -->
             <!-- row -->
             <div class="row row-sm ">
-                <div class="col-md-12 col-xl-12">
+                <div class="col-sm-12 col-lg-12 col-xl-12">
+                    <div>
+                        <a class="main-header-arrow" href="" id="ChatBodyHide"><i class="icon ion-md-arrow-back"></i></a>
+                        <!-- card overflow-hidden review-project hide the table -->
+                        <div class="main-content-body  card custom-card">
+                            <div class="main-contact-info-header pt-3">
+                                <div class="media">
+                                    <div class="main-img-user">
+                                        <img alt="avatar" src="../assets/img/faces/tonystark.png">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="welcome-title">Welcome <strong class="">Tony</strong> to Pickus.</h5>
+                                        <p class="tx-12 text-muted mb-3">To get start, please complete your profile so we can help you to find the best jobs that suit you</p>
+                                        <!-- <button class="btn btn-gradient-tertiary">Complete your profile</button> -->
+                                        <div class="col-sm-4 col-md-2 ml-6">
+                                            <button class="btn btn-gradient-tertiary btn-rounded btn-block">Complete your profile</button>
+                                        </div>
+                                        <!-- <nav class="contact-info">
+                                            <a href="#" class="contact-icon border tx-inverse" data-toggle="tooltip" title="Call"><i class="fe fe-phone"></i></a>
+                                            <a href="#" class="contact-icon border tx-inverse" data-toggle="tooltip" title="Video"><i class="fe fe-video"></i></a>
+                                            <a href="#" class="contact-icon border tx-inverse" data-toggle="tooltip" title="message"><i class="fe fe-message-square"></i></a>
+                                            <a href="#" class="contact-icon border tx-inverse" data-toggle="tooltip" title="Add to Group"><i class="fe fe-user-plus"></i></a>
+                                            <a href="#" class="contact-icon border tx-inverse" data-toggle="tooltip" title="Block"><i class="fe fe-slash"></i></a>
+                                        </nav> -->
+                                    </div>
+                                </div>
+                                <div class="main-contact-action btn-list pt-3 pr-3">
+                                    <a href="#" class="btn ripple btn-primary text-white btn-icon" data-placement="top" data-toggle="tooltip" title="Edit Profile"><i class="fe fe-edit"></i></a>
+                                    <a href="#" class="btn ripple btn-secondary text-white btn-icon" data-placement="top" data-toggle="tooltip" title="Delete Profile"><i class="fe fe-trash-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Original  -->
+                <!-- <div class="col-md-12 col-xl-12">
                     <div class="card overflow-hidden review-project">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
@@ -336,7 +371,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- /row -->
 
@@ -434,29 +469,48 @@
                             <p class="tx-12 text-muted mb-3">Recommendations are based on your profile, job preferences, and location.</p>
                         </div>
                         <!-- First Company -->
-                        <div class="card mb-6 overflow-hidden">
+                        <div class="card overflow-hidden mb-6">
                             <div class="card-body pd-y-7 ml-6">
                                 <div class="rating-scroll ps ps--active-y Activity-scroll">
                                     <div class="pl-3 pr-3 py-3">
                                         <div class="media mt-0">
                                             <div class="d-flex mr-3">
                                                 <a href="#">
-                                                    <img class="recommended-img media-object avatar brround w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                                    <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
                                                 </a>
                                             </div>
                                             <div class="media-body">
                                                 <div class="d-flex">
                                                     <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                                    <!-- <span class="tx-12 ml-auto">
-                                                        Bookmark Icon
-                                                    </span> -->
                                                 </div>
-                                                <div class="d-flex">
-                                                    <p class="tx-12 text-muted mb-0">Malayan Bank Berhad</p>
-                                                    <p class="tx-12 text-muted mb-0">Kuala Lumpur</p>
-                                                    <p class="tx-12 text-muted mb-0">Permanent</p>
-                                                    <p class="tx-12 text-muted mb-0">RM3,500 - RM5,500 / Month</p>
-                                                    <small class="ml-auto text-right">2 Days ago</small>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-6">
+                                                        <div class="d-flex flex-row">
+                                                            <i class="mdi mdi-clock mr-1"></i>
+                                                            <p class=" mb-0">Malayan Bank Berhad</p>
+                                                        </div>
+                                                        <div class="d-flex flex-row p-2">
+                                                            <i class="mdi mdi-clock mr-1"></i>
+                                                            <p class="mb-0">Kuala Lumpur</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class=" d-flex flex-row ">
+                                                            <span class="badge badge-success-gradient ">Permanent</span>
+                                                        </div>
+                                                        <div class="d-flex flex-row p-2 ">
+                                                            <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex mt-6">
+                                                    <div class="progress progress-recommended-job progress-sm mt-2 ">
+                                                        <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-primary wd-70p " role="progressbar "></div>
+                                                    </div>
+                                                    <small class="mb-0 font-italic"><span class="float-right ml-2 ">70% Match</span></small>
+                                                    <small class="ml-auto text-muted text-right ">2 Days ago</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -465,6 +519,56 @@
                             </div>
                         </div>
                         <!-- Second Company -->
+                        <div class="card overflow-hidden mb-6">
+                            <div class="card-body pd-y-7 ml-6">
+                                <div class="rating-scroll ps ps--active-y Activity-scroll">
+                                    <div class="pl-3 pr-3 py-3">
+                                        <div class="media mt-0">
+                                            <div class="d-flex mr-3">
+                                                <a href="#">
+                                                    <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex">
+                                                    <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-6">
+                                                        <div class="d-flex flex-row">
+                                                            <i class="mdi mdi-clock mr-1"></i>
+                                                            <p class=" mb-0">Malayan Bank Berhad</p>
+                                                        </div>
+                                                        <div class="d-flex flex-row p-2">
+                                                            <i class="mdi mdi-clock mr-1"></i>
+                                                            <p class="mb-0">Kuala Lumpur</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class=" d-flex flex-row ">
+                                                            <span class="badge badge-success-gradient ">Permanent</span>
+                                                        </div>
+                                                        <div class="d-flex flex-row p-2 ">
+                                                            <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex mt-6">
+                                                    <div class="progress progress-recommended-job progress-sm mt-2 ">
+                                                        <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-primary wd-70p " role="progressbar "></div>
+                                                    </div>
+                                                    <small class="mb-0 font-italic"><span class="float-right ml-2 ">70% Match</span></small>
+                                                    <small class="ml-auto text-muted text-right ">2 Days ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Third Company -->
                         <div class="card overflow-hidden">
                             <div class="card-body pd-y-7 ml-6">
                                 <div class="rating-scroll ps ps--active-y Activity-scroll">
@@ -472,22 +576,41 @@
                                         <div class="media mt-0">
                                             <div class="d-flex mr-3">
                                                 <a href="#">
-                                                    <img class="recommended-img media-object avatar brround w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                                    <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
                                                 </a>
                                             </div>
                                             <div class="media-body">
                                                 <div class="d-flex">
                                                     <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                                    <!-- <span class="tx-12 ml-auto">
-                                                        Bookmark Icon
-                                                    </span> -->
                                                 </div>
-                                                <div class="d-flex">
-                                                    <p class="tx-12 text-muted mb-0">Malayan Bank Berhad</p>
-                                                    <p class="tx-12 text-muted mb-0">Kuala Lumpur</p>
-                                                    <p class="tx-12 text-muted mb-0">Permanent</p>
-                                                    <p class="tx-12 text-muted mb-0">RM3,500 - RM5,500 / Month</p>
-                                                    <small class="ml-auto text-right">2 Days ago</small>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-6">
+                                                        <div class="d-flex flex-row">
+                                                            <i class="mdi mdi-clock mr-1"></i>
+                                                            <p class=" mb-0">Malayan Bank Berhad</p>
+                                                        </div>
+                                                        <div class="d-flex flex-row p-2">
+                                                            <i class="mdi mdi-clock mr-1"></i>
+                                                            <p class="mb-0">Kuala Lumpur</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class=" d-flex flex-row ">
+                                                            <span class="badge badge-success-gradient ">Permanent</span>
+                                                        </div>
+                                                        <div class="d-flex flex-row p-2 ">
+                                                            <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex mt-6">
+                                                    <div class="progress progress-recommended-job progress-sm mt-2 ">
+                                                        <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-primary wd-70p " role="progressbar "></div>
+                                                    </div>
+                                                    <small class="mb-0 font-italic"><span class="float-right ml-2 ">70% Match</span></small>
+                                                    <small class="ml-auto text-muted text-right ">2 Days ago</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -496,15 +619,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                    <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7 ">
                         <div>
-                            <h4 class="title">Job Status</h4>
-                            <p class="tx-12 text-muted mb-3">Status will be displayed if you are shortlisted</p>
+                            <h4 class="title ">Job Status</h4>
+                            <p class="tx-12 text-muted mb-3 ">Status will be displayed if you are shortlisted</p>
                         </div>
-                        <div class="card overflow-hidden" style="min-height: 325px;">
-                            <div class="card overflow-hidden review-project">
-                                <div class="card-body">
-                                    <div class="table-responsive mb-0">
+                        <div class="card overflow-hidden " style="min-height: 325px; ">
+                            <div class="card overflow-hidden review-project ">
+                                <div class="card-body ">
+                                    <div class="table-responsive mb-0 ">
                                         <table class="table table-hover table-bordered mb-0 text-md-nowrap text-lg-nowrap text-xl-nowrap table-striped ">
                                             <thead>
                                                 <tr>
@@ -519,36 +642,36 @@
                                                 <tr>
                                                     <td>1.</td>
                                                     <td>
-                                                        <div class="project-contain">
-                                                            <h6 class="mb-1 tx-13">Kumpulan Aplikasi Sempurna Sdn Bhd</h6>
+                                                        <div class="project-contain ">
+                                                            <h6 class="mb-1 tx-13 ">Kumpulan Aplikasi Sempurna Sdn Bhd</h6>
                                                         </div>
                                                     </td>
                                                     <td>Shah Alam</td>
                                                     <td>Front End Developer</td>
-                                                    <td><span class="badge badge-primary-gradient">Process</span></td>
+                                                    <td><span class="badge badge-primary-gradient ">Process</span></td>
                                                 </tr>
                                                 <tr>
                                                     <td>2.</td>
                                                     <td>
-                                                        <div class="project-contain">
-                                                            <h6 class="mb-1 tx-13">Malayan Banking Berhad</h6>
+                                                        <div class="project-contain ">
+                                                            <h6 class="mb-1 tx-13 ">Malayan Banking Berhad</h6>
                                                         </div>
                                                     </td>
 
                                                     <td>Kuala Lumpur</td>
                                                     <td>Web Developer</td>
-                                                    <td><span class="badge badge-success-gradient">Hired</span></td>
+                                                    <td><span class="badge badge-success-gradient ">Hired</span></td>
                                                 </tr>
                                                 <tr>
                                                     <td>3.</td>
                                                     <td>
-                                                        <div class="project-contain">
-                                                            <h6 class="mb-1 tx-13">Terato Tech Sdn Bhd</h6>
+                                                        <div class="project-contain ">
+                                                            <h6 class="mb-1 tx-13 ">Terato Tech Sdn Bhd</h6>
                                                         </div>
                                                     </td>
                                                     <td>Bangi</td>
                                                     <td>Front End Developer</td>
-                                                    <td><span class="badge badge-danger-gradient">Rejected</span></td>
+                                                    <td><span class="badge badge-danger-gradient ">Rejected</span></td>
                                                 </tr>
 
                                             </tbody>
@@ -567,9 +690,9 @@
         </div>
         <!-- /main-content -->
         <!-- Footer opened -->
-        <div class="main-footer ht-40">
-            <div class="container-fluid pd-t-0-f ht-100p">
-                <span>Copyright © 2020 <a href="#">Agensi pekerjaan Aplikasi Sdn Bhd</a>. All right Reserved</span>
+        <div class="main-footer ht-40 ">
+            <div class="container-fluid pd-t-0-f ht-100p ">
+                <span>Copyright © 2020 <a href="# ">Agensi pekerjaan Aplikasi Sdn Bhd</a>. All right Reserved</span>
             </div>
         </div>
 
@@ -579,59 +702,59 @@
         <a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
 
         <!--- JQuery min js --->
-        <script src="../assets/plugins/jquery/jquery.min.js"></script>
+        <script src="../assets/plugins/jquery/jquery.min.js "></script>
 
         <!--- Datepicker js --->
-        <script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+        <script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js "></script>
 
         <!--- Bootstrap Bundle js --->
-        <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js "></script>
 
         <!--- Ionicons js --->
-        <script src="../assets/plugins/ionicons/ionicons.js"></script>
+        <script src="../assets/plugins/ionicons/ionicons.js "></script>
 
         <!--- Chart bundle min js --->
-        <script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+        <script src="../assets/plugins/chart.js/Chart.bundle.min.js "></script>
 
         <!--- JQuery sparkline js --->
-        <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js "></script>
 
         <!--- Internal Sampledata js --->
-        <script src="../assets/js/chart.flot.sampledata.js"></script>
+        <script src="../assets/js/chart.flot.sampledata.js "></script>
 
         <!--- Rating js --->
-        <script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
-        <script src="../assets/plugins/rating/jquery.barrating.js"></script>
+        <script src="../assets/plugins/rating/jquery.rating-stars.js "></script>
+        <script src="../assets/plugins/rating/jquery.barrating.js "></script>
 
         <!--- Eva-icons js --->
-        <script src="../assets/js/eva-icons.min.js"></script>
+        <script src="../assets/js/eva-icons.min.js "></script>
 
         <!--- Moment js --->
-        <script src="../assets/plugins/moment/moment.js"></script>
+        <script src="../assets/plugins/moment/moment.js "></script>
 
         <!--- Perfect-scrollbar js --->
-        <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-        <script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+        <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js "></script>
+        <script src="../assets/plugins/perfect-scrollbar/p-scroll.js "></script>
 
         <!--- Sidebar js --->
-        <script src="../assets/plugins/side-menu/sidemenu.js"></script>
+        <script src="../assets/plugins/side-menu/sidemenu.js "></script>
 
         <!-- right-sidebar js -->
-        <script src="../assets/plugins/sidebar/sidebar.js"></script>
-        <script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
+        <script src="../assets/plugins/sidebar/sidebar.js "></script>
+        <script src="../assets/plugins/sidebar/sidebar-custom.js "></script>
 
         <!-- Morris js -->
-        <script src="../assets/plugins/raphael/raphael.min.js"></script>
-        <script src="../assets/plugins/morris.js/morris.min.js"></script>
+        <script src="../assets/plugins/raphael/raphael.min.js "></script>
+        <script src="../assets/plugins/morris.js/morris.min.js "></script>
 
         <!--- Scripts js --->
-        <script src="../assets/js/script.js"></script>
+        <script src="../assets/js/script.js "></script>
 
         <!--- Index js --->
-        <script src="../assets/js/index.js"></script>
+        <script src="../assets/js/index.js "></script>
 
         <!--- Custom js --->
-        <script src="../assets/js/custom.js"></script>
+        <script src="../assets/js/custom.js "></script>
 
 </body>
 

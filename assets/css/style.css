@@ -2824,9 +2824,9 @@ fieldset:disabled a.btn {
 .btn-gradient-tertiary {
     color: #fff !important;
     background: linear-gradient(90deg, #F01071 0%, #FF6506 100%);
-    border-radius: 20px;
+    /* border-radius: 20px;
     font-size: 12px;
-    width: 25%;
+    width: 25%; */
 }
 
 .btn-gradient-tertiary:hover {
@@ -6224,6 +6224,10 @@ a.badge-purple-gradient.focus {
     border-radius: 3px;
 }
 
+.progress-recommended-job {
+    width: 40%;
+}
+
 .progress-bar {
     display: flex;
     flex-direction: column;
@@ -8727,12 +8731,20 @@ a.close.disabled {
     margin-left: 3rem !important;
 }
 
+.mt-6 {
+    margin-top: -5px
+}
+
 .ml-6 {
     margin-left: -15px;
 }
 
 .mb-6 {
     margin-bottom: 10px;
+}
+
+.mt-7 {
+    margin-top: -12px;
 }
 
 .ml-7 {
@@ -17414,8 +17426,8 @@ body {
 }
 
 .media img.recommended-img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 .dashboard-carousel .btn-icons {
@@ -20908,7 +20920,8 @@ input[type=text]::-ms-clear {
     display: none !important;
 }
 
-.main-img-user::after {
+
+/* .main-img-user::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -20920,7 +20933,7 @@ input[type=text]::-ms-clear {
     border-radius: 100%;
     bottom: 3px;
     display: block !important;
-}
+} */
 
 .main-img-user.online::after {
     background-color: #0ba360;
