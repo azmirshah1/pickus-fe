@@ -2818,8 +2818,21 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
 
+.btn-gradient-primary {
+    color: #fff !important;
+    background: linear-gradient(90deg, #A93CAD 15.9%, #F53976 101.72%);
+    /* border-radius: 20px;
+    font-size: 12px;
+    width: 25%; */
+}
 
-/* Btn-gradient-tertiary  start*/
+.btn-gradient-primary:hover {
+    color: #fff !important;
+    background: linear-gradient(90deg, #F53976 15.9%, #F53976 101.72%);
+    /* border-radius: 20px;
+    font-size: 12px;
+    width: 25%; */
+}
 
 .btn-gradient-tertiary {
     color: #fff !important;
@@ -17635,6 +17648,12 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.font-gradient {
+    background: -webkit-linear-gradient(45deg, #A23CB2, #F83974);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .bounceIn {
     -webkit-animation-duration: 0.75s;
     animation-duration: 0.75s;
@@ -32285,7 +32304,7 @@ textarea.parsley-success:focus {
 
 .page-signin-style:before {
     content: '';
-    background: linear-gradient(45deg, rgba(245, 66, 102, 0.9), rgba(56, 88, 249, 0.9));
+    background: linear-gradient(45deg, rgba(169, 60, 173, 0.9), rgba(245, 57, 118, 0.9));
     position: absolute;
     height: 100%;
     width: 100%;
@@ -32327,13 +32346,13 @@ textarea.parsley-success:focus {
 }
 
 .main-signin-footer a {
-    color: #14112d;
-    font-weight: 700;
+    color: #A93CAD;
+    font-weight: 500;
 }
 
 .main-signin-footer a:hover,
 .main-signin-footer a:focus {
-    color: #3858f9;
+    color: #F53976;
 }
 
 
@@ -32541,13 +32560,18 @@ textarea.parsley-success:focus {
 }
 
 .main-signup-footer a {
-    color: #14112d;
-    font-weight: 700;
+    color: #A93CAD;
+    font-weight: 500;
 }
 
 .main-signup-footer a:hover,
 .main-signup-footer a:focus {
-    color: #3858f9;
+    color: #F53976;
+}
+
+.policy-agree {
+    margin-bottom: 20px;
+    font-size: 10px;
 }
 
 
