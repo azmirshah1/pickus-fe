@@ -16712,6 +16712,13 @@ body {
     color: #031b4e;
 }
 
+.header-megamenu-dropdown .nav-item .btn-link:hover {
+    color: #A23CB2;
+    opacity: 90%;
+    background-color: white;
+    animation: ease-out;
+}
+
 .header-megamenu-dropdown .dropdown-menu {
     border-top: 0 !important;
     border-radius: 6px !important;
