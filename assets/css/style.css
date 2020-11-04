@@ -4895,6 +4895,14 @@ input[type="button"].btn-block {
     background-size: 100% 100%;
 }
 
+.company-icon {
+    color: #A43CAF;
+}
+
+.location-icon {
+    color: #F53C5B;
+}
+
 @media (max-width: 575.98px) {
     .navbar-expand-sm>.container,
     .navbar-expand-sm>.container-fluid {
@@ -6241,6 +6249,70 @@ a.badge-purple-gradient.focus {
     width: 40%;
 }
 
+
+/* Part 1 Bookmarks */
+
+.wl-box {
+    position: relative;
+    margin-left: 1px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border-color: red;
+}
+
+.wl-btn {
+    color: red;
+    background: white;
+    float: right;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.wl-btn.pressed {
+    color: white;
+    background: red;
+}
+
+.wl-box:hover .wl-btn {
+    background-color: yellow;
+}
+
+
+/* Part 1 Bookmarks end */
+
+
+/* Part 2 Bookmarks Start */
+
+.bookmarks-section {}
+
+.bookmarks-section>.bookmarks-design {
+    color: #A23CB2;
+    background: none;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #A23CB2 !important;
+    border-radius: 100%;
+    margin-top: -80px;
+}
+
+.bookmarks-section>.bookmarks-design:hover {
+    color: white;
+    background: #A23CB2;
+    border: none;
+}
+
+
+/* Part 2 Bookmarks End */
+
 .progress-bar {
     display: flex;
     flex-direction: column;
@@ -6248,7 +6320,8 @@ a.badge-purple-gradient.focus {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #3858f9;
+    /* background-color: #3858f9; */
+    background: linear-gradient(45deg, #A23CB2 0%, #F83974 100%) !important;
     transition: width 0.6s ease;
 }
 
@@ -11913,6 +11986,11 @@ a.text-dark:focus {
     text-transform: uppercase;
 }
 
+.completed-button {
+    width: 15%;
+    padding-right: 20px;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-image: none;
@@ -14696,11 +14774,25 @@ body {
 }
 
 
+/* Ipad secreen */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .completed-button {
+        width: 45%;
+        padding-right: 20px;
+    }
+}
+
+
 /* ###### 6.4 Header  ###### */
 
 @media (max-width: 830px) {
     #dropdownMenuButton3 {
         display: none;
+    }
+    .completed-button {
+        width: 45%;
+        padding-right: 20px;
     }
 }
 
@@ -14891,6 +14983,10 @@ body {
 @media (min-width: 1200px) {
     .main-menu-sub-mega .container>div {
         padding: 20px 25px;
+    }
+    .completed-button {
+        width: 25%;
+        padding-right: 20px;
     }
 }
 
@@ -17285,7 +17381,7 @@ body {
 }
 
 .progress-sm {
-    height: 4px;
+    height: 6px;
 }
 
 .expansion-value strong:first-child {
@@ -17446,8 +17542,8 @@ body {
 }
 
 .media img.recommended-img {
-    width: 70px;
-    height: 70px;
+    width: auto;
+    height: 100%;
 }
 
 .dashboard-carousel .btn-icons {
@@ -18608,6 +18704,10 @@ body {
 @media (max-width: 576px) {
     .text-sm-nowrap {
         white-space: nowrap !important;
+    }
+    .completed-button {
+        width: 100%;
+        padding-right: 20px;
     }
 }
 
@@ -25408,6 +25508,10 @@ video {
     .horizontalMenu>.horizontalMenu-list>li>a {
         padding: 15px 6px;
     }
+    .completed-button {
+        width: 45%;
+        padding-right: 20px;
+    }
 }
 
 .horizontalMenucontainer .main-header.hor-header {
@@ -26233,6 +26337,13 @@ video {
 @media (min-width: 1300px) {
     .main-home-slider .card-columns {
         right: -5%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .completed-button {
+        width: 15%;
+        padding-right: 20px;
     }
 }
 
@@ -34249,7 +34360,15 @@ button.bg-primary:focus {
     background-color: #0040ff !important;
 }
 
-.bg-secondary {
+.bg-gradient-primary {
+    background: linear-gradient(45deg, #A23CB2 0%, #F83974 100%) !important;
+}
+
+.bg-gradient-secondary {
+    background: linear-gradient(45deg, #8041F6 0%, #3BB4F2 100%) !important;
+}
+
+.bg-gradient- .bg-secondary {
     background-color: #7987a1 !important;
 }
 
@@ -69652,6 +69771,12 @@ button.bg-purple-gradient:focus {
 .wd-100v {
     width: 100vw;
 }
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */
