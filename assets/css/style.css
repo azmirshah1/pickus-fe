@@ -2834,6 +2834,22 @@ fieldset:disabled a.btn {
     width: 25%; */
 }
 
+.btn-gradient-secondary {
+    color: #fff !important;
+    background: linear-gradient(90deg, #8041F6 15.9%, #3BB4F2 101.72%);
+    /* border-radius: 20px;
+    font-size: 12px;
+    width: 25%; */
+}
+
+.btn-gradient-secondary:hover {
+    color: #fff !important;
+    background: linear-gradient(90deg, #3BB4F2 15.9%, #3BB4F2 101.72%);
+    /* border-radius: 20px;
+    font-size: 12px;
+    width: 25%; */
+}
+
 .btn-gradient-tertiary {
     color: #fff !important;
     background: linear-gradient(90deg, #F01071 0%, #FF6506 100%);
@@ -26151,6 +26167,7 @@ video {
     line-height: 1;
     margin-bottom: 10px;
     letter-spacing: .2px;
+    margin-top: 5px;
 }
 
 .main-content-label-sm {
