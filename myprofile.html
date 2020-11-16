@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="pickus, job portal, job seeker, cari kerja">
+    <meta name="author" content="Pickus | Online Job Platform">
+
+    <!-- Title -->
+    <title> My Profile >> Job Portal | Vacancies | Professional Marketplace</title>
+
+    <!--- Favicon --->
+    <link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon" />
+    <!--- Icons css --->
+    <link href="../assets/css/icons.css" rel="stylesheet">
+    <!-- Owl-carousel css-->
+    <link href="../assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <!--- Right-sidemenu css --->
+    <link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <!--- Style css --->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/skin-modes.css" rel="stylesheet">
+    <!--- Sidemenu css --->
+    <link href="../assets/css/sidemenu.css" rel="stylesheet">
+    <!--- Animations css --->
+    <link href="../assets/css/animate.css" rel="stylesheet">
+
+    <!--- Internal Inputtags css --->
+    <link href="../assets/plugins/inputtags/inputtags.css" rel="stylesheet">
+
+    <style>
+        .field-icon {
+            color: #817ba7;
+            margin-left: -20px;
+            /* padding: 15px 9px 19px 0px; */
+            border-radius: 0px 5px 5px 0px;
+            float: right;
+            position: relative;
+            right: 1%;
+            top: -50%;
+            z-index: 5;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+
+<body class="main-body app sidebar-mini">
+    <!-- Loader -->
+    <div id="global-loader">
+        <img src="../assets/img/loaders/loader-4.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- /Loader -->
+
+    <!-- main-sidebar opened -->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="main-sidebar app-sidebar sidebar-scroll">
+        <div class="main-sidebar-header">
+            <a class="desktop-logo logo-light active" href="index.html" class="text-center mx-auto"><img src="../assets/img/brand/logo.png" class="main-logo"></a>
+            <a class="desktop-logo icon-logo active" href="index.html"><img src="../assets/img/brand/favicon.png" class="logo-icon"></a>
+            <a class="desktop-logo logo-dark active" href="index.html"><img src="../assets/img/brand/logo-white.png" class="main-logo dark-theme" alt="logo"></a>
+            <a class="logo-icon mobile-logo icon-dark active" href="index.html"><img src="../assets/img/brand/favicon-white.png" class="logo-icon dark-theme" alt="logo"></a>
+        </div>
+        <!-- /logo -->
+        <div class="main-sidebar-loggedin">
+            <div class="app-sidebar__user">
+                <div class="dropdown user-pro-body text-center">
+                    <div class="user-pic">
+                        <img src="../assets/img/faces/tonystark.png" alt="user-img" class="rounded-circle mCS_img_loaded">
+                    </div>
+                    <div class="user-info">
+                        <h3 class=" mb-0 text-dark">Tony Stark</h3>
+                        <span class="text-muted app-sidebar__user-name text-sm">Front End Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /user -->
+        <div class="sidebar-navs">
+            <ul class="nav  nav-pills-circle">
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings" aria-describedby="tooltip365540">
+                    <a class="nav-link text-center m-2" href="setting.html">
+                        <i class="fe fe-settings"></i>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mail">
+                    <a class="nav-link text-center m-2" href="mail.html">
+                        <i class="fe fe-mail"></i>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Followers">
+                    <a class="nav-link text-center m-2">
+                        <i class="fe fe-user"></i>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Logout">
+                    <a class="nav-link text-center m-2" href="login.html">
+                        <i class="fe fe-power"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-sidebar-body">
+            <ul class="side-menu ">
+                <li class="slide">
+                    <a class="side-menu__item" href="index.html"><i class="side-menu__icon fas fa-desktop"></i><span class="side-menu__label">Dashboard</span></a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" href="#"><i class="side-menu__icon mdi mdi-account"></i><span class="side-menu__label">My Profile</span></a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" href="#"><i class="side-menu__icon fas fa-search"></i><span class="side-menu__label">Explore Jobs</span></a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" href="#"><i class="side-menu__icon mdi mdi-briefcase-check"></i><span class="side-menu__label">Job Applications</span></a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" href="#"><i class="side-menu__icon fas fa-briefcase"></i><span class="side-menu__label">Followed Companies</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- /main-sidebar -->
+
+    <!-- main-content -->
+    <div class="main-content">
+
+        <!-- main-header -->
+        <div class="main-header  side-header">
+            <div class="container-fluid">
+                <div class="main-header-left ">
+                    <div class="app-sidebar__toggle mobile-toggle" data-toggle="sidebar">
+                        <a class="open-toggle" href="#"><i class="header-icons" data-eva="menu-outline"></i></a>
+                        <a class="close-toggle" href="#"><i class="header-icons" data-eva="close-outline"></i></a>
+                    </div>
+                    <div class="responsive-logo">
+                        <a href="index.html"><img src="../assets/img/brand/logo.png" class="logo-11"></a>
+                        <a href="index.html"><img src="../assets/img/brand/favicon.png" class="logo-12"></a>
+                        <!-- Mobile header -->
+                        <a href="index.html"><img src="../assets/img/brand/logo-white.png" class="logo-1"></a>
+                        <a href="index.html"><img src="../assets/img/brand/logo-white.png" class="logo-2"></a>
+                    </div>
+                    <ul class="header-megamenu-dropdown  nav">
+                        <li class="nav-item">
+                            <a href="https://azmirshah.com/" class="btn btn-link" type="button" id="dropdownMenuButton1"><span> Jobs </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://azmirshah.com/" class="btn btn-link" type="button" id="dropdownMenuButton2"><span> Companies </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://azmirshah.com/" class="btn btn-link" type="button" id="dropdownMenuButton3"><span> Blog </span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-header-right">
+                    <div class="nav nav-item nav-link" id="bs-example-navbar-collapse-1">
+                        <form class="navbar-form" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search Jobs by Job title, skills or location">
+                                <span class="input-group-btn">
+										<button type="reset" class="btn btn-default">
+											<i class="fas fa-times"></i>
+										</button>
+										<button type="submit" class="btn btn-default nav-link">
+											<i class="fe fe-search"></i>
+										</button>
+									</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="nav nav-item  navbar-nav-right ml-auto">
+                        <div class="dropdown  nav-item main-header-message ">
+                            <a class="new nav-link" href="#"><i class="fe fe-mail"></i><span class=" pulse"></span></a>
+                            <div class="dropdown-menu">
+                                <div class="menu-header-content bg-primary-gradient text-left d-flex">
+                                    <div class="">
+                                        <h6 class="menu-header-title text-white mb-0">5 new Messages</h6>
+                                    </div>
+                                    <div class="my-auto ml-auto">
+                                        <a class="badge badge-pill badge-warning float-right" href="#">Mark All Read</a>
+                                    </div>
+                                </div>
+                                <div class="main-message-list chat-scroll">
+                                    <a href="#" class="p-3 d-flex border-bottom">
+                                        <div class="  drop-img  cover-image  " data-image-src="../assets/img/faces/3.jpg">
+                                            <span class="avatar-status bg-teal"></span>
+                                        </div>
+
+                                        <div class="wd-90p">
+                                            <div class="d-flex">
+                                                <h5 class="mb-1 name">Pickus</h5>
+                                                <p class="time mb-0 text-right ml-auto float-right">10 min ago</p>
+                                            </div>
+                                            <p class="mb-0 desc">You have applied for Front End Devel...</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="p-3 d-flex border-bottom">
+                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/2.jpg">
+                                            <span class="avatar-status bg-teal"></span>
+                                        </div>
+                                        <div class="wd-90p">
+                                            <div class="d-flex">
+                                                <h5 class="mb-1 name">Nik Khairul Aiman</h5>
+                                                <p class="time mb-0 text-right ml-auto float-right">13 min ago</p>
+                                            </div>
+                                            <p class="mb-0 desc">Assalamualaikum Tony, We are from......</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="p-3 d-flex border-bottom">
+                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/9.jpg">
+                                            <span class="avatar-status bg-teal"></span>
+                                        </div>
+                                        <div class="wd-90p">
+                                            <div class="d-flex">
+                                                <h5 class="mb-1 name">Ali Husni</h5>
+                                                <p class="time mb-0 text-right ml-auto float-right">20 min ago</p>
+                                            </div>
+                                            <p class="mb-0 desc">Hi, we are from...</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="p-3 d-flex border-bottom">
+                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/12.jpg">
+                                            <span class="avatar-status bg-danger"></span>
+                                        </div>
+                                        <div class="wd-90p">
+                                            <div class="d-flex">
+                                                <h5 class="mb-1 name">Shuib Sepahtu</h5>
+                                                <p class="time mb-0 text-right ml-auto float-right">30 min ago</p>
+                                            </div>
+                                            <p class="mb-0 desc">Hello and good morning Tony ...</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="p-3 d-flex border-bottom">
+                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/5.jpg">
+                                            <span class="avatar-status bg-teal"></span>
+                                        </div>
+                                        <div class="wd-90p">
+                                            <div class="d-flex">
+                                                <h5 class="mb-1 name">Pickus</h5>
+                                                <p class="time mb-0 text-right ml-auto float-right">35 min ago</p>
+                                            </div>
+                                            <p class="mb-0 desc">You have applied for Web Devel....</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center dropdown-footer">
+                                    <a href="#">VIEW ALL</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown nav-item main-header-notification">
+                            <a class="new nav-link" href="#"><i class="fe fe-bell"></i><span class=" pulse"></span></a>
+                            <div class="dropdown-menu">
+                                <div class="menu-header-content bg-primary-gradient text-left d-flex">
+                                    <div class="">
+                                        <h6 class="menu-header-title text-white mb-0">7 new Notifications</h6>
+                                    </div>
+                                    <div class="my-auto ml-auto">
+                                        <a class="badge badge-pill badge-warning float-right" href="#">Mark All Read</a>
+                                    </div>
+                                </div>
+                                <div class="main-notification-list Notification-scroll">
+                                    <a class="d-flex p-3 border-bottom" href="#">
+                                        <div class="notifyimg bg-danger-transparent">
+                                            <i class="la la-user-check text-danger"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <h5 class="notification-label mb-1">Pickus</h5>
+                                            <div class="notification-subtext">You have been shortlisted....</div>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <i class="las la-angle-right text-right text-muted"></i>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex p-3 border-bottom" href="#">
+                                        <div class="notifyimg bg-primary-transparent">
+                                            <i class="la la-check-circle text-primary"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <h5 class="notification-label mb-1">Pickus</h5>
+                                            <div class="notification-subtext">You have applied....</div>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <i class="las la-angle-right text-right text-muted"></i>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex p-3 border-bottom" href="#">
+                                        <div class="notifyimg bg-pink-transparent">
+                                            <i class="la la-file-alt text-pink"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <h5 class="notification-label mb-1">Pickus</h5>
+                                            <div class="notification-subtext">Please completed your profile....</div>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <i class="las la-angle-right text-right text-muted"></i>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex p-3 border-bottom" href="#">
+                                        <div class="notifyimg bg-warning-transparent">
+                                            <i class="la la-envelope-open text-warning"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <h5 class="notification-label mb-1">Pickus</h5>
+                                            <div class="notification-subtext">You have received email from....</div>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <i class="las la-angle-right text-right text-muted"></i>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="dropdown-footer">
+                                    <a href="#">VIEW ALL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /main-header -->
+
+        <!-- container -->
+        <div class="container-fluid">
+            <!-- breadcrumb -->
+            <div class="breadcrumb-header justify-content-between">
+                <div>
+                    <h2 class="content-title mb-7">Edit Profile</h2>
+                </div>
+            </div>
+            <!-- /breadcrumb -->
+            <div class="row row-sm main-content-app mb-4">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <nav class="nav main-nav-line card">
+                                <a class="nav-link active" data-toggle="tab" href="">Timeline</a> <a class="nav-link" data-toggle="tab" href="">Gallery</a> <a class="nav-link" data-toggle="tab" href="">Friends</a> <a class="nav-link" data-toggle="tab"
+                                    href="">Following</a> <a class="nav-link" data-toggle="tab" href="">Account Settings</a>
+                            </nav> -->
+                            <div class=" tab-menu-heading">
+                                <div class="tabs-menu1">
+                                    <!-- Tabs -->
+                                    <ul class="nav panel-tabs main-nav-line mt-2 ml-3">
+                                        <li><a href="#profile" class="nav-link active" data-toggle="tab">Profile</a></li>
+                                        <li><a href="#education" class="nav-link" data-toggle="tab">Education</a></li>
+                                        <li><a href="#workExperience" class="nav-link" data-toggle="tab">Work Experience</a></li>
+                                        <li><a href="#skills" class="nav-link" data-toggle="tab">Skills</a></li>
+                                        <li><a href="#projects" class="nav-link" data-toggle="tab">Projects</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body tabs-menu-body main-content-body-right">
+                                <!-- Profile Tab -->
+                                <div class="tab-content">
+                                    <div class="tab-pane mt-3  active" id="profile">
+                                        <div class="mb-4 main-content-label">Profile Information
+                                            <a href="#" class="float-right"> <i class="tx-18 company-icon mdi mdi-pencil mt-1 ml-5" data-placement="top" data-toggle="tooltip" title="Edit Profile"></i></a>
+                                        </div>
+                                        <hr class="mt-7 mb-4">
+                                        <div class="main-contact-info-header pt-1">
+                                            <div class="media">
+                                                <div class="main-img-user">
+                                                    <img alt="avatar" src="../assets/img/faces/tonystark.png">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h3>Tony Stark</h3>
+                                                    <p class="tx-13 mb-3">Front End Developer</p>
+                                                    <p class="tx-13 mt-7 mb-3">
+                                                        <a href="#"> <i class=" mdi mdi-folder-outline mt-1 mr-1" data-placement="top" data-toggle="tooltip" title="Edit Profile"></i>myresume.pdf</a>
+                                                    </p>
+                                                    <p class="tx-13 mb-3 mt-6 text-muted">12-12-2020</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-contact-info-body p-4 mt-7">
+                                            <div class="media-list pb-0">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <label>About Me</label> <span class="tx-medium">A front end developer based in Kuala Lumpur. Experience in designing & building a website and web system for clients. I enjoy turning complex problems into simple, beautiful, and intuitive designs. Enthusiastic with designing and developing a web-based system makes me good at UI/UX.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <label>First Name</label> <span class="tx-medium">Tony Stark</span>
+                                                        </div>
+                                                        <div>
+                                                            <label>Last Name</label> <span class="tx-medium">Albert</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <label>Gender</label> <span class="tx-medium">Male</span>
+                                                        </div>
+                                                        <div>
+                                                            <label>Marital Status</label> <span class="tx-medium">Single</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <label>Date of Birth</label> <span class="tx-medium">09/07/1991</span>
+                                                        </div>
+                                                        <div>
+                                                            <label>Phone</label> <span class="tx-medium">-</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <label>Address Line 1</label> <span class="tx-medium">310, Lorong Bahagia</span>
+                                                        </div>
+                                                        <div>
+                                                            <label>Address Line 2</label> <span class="tx-medium">Jalan Abdul Rahman</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <label>City/Town</label> <span class="tx-medium">Muar</span>
+                                                        </div>
+                                                        <div>
+                                                            <label>State</label> <span class="tx-medium">Johor</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <label>City/Town</label> <span class="tx-medium">84000</span>
+                                                        </div>
+                                                        <div>
+                                                            <label>State</label> <span class="tx-medium">Malaysia</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Education Tab -->
+                                    <div class="tab-pane mt-3" id="education">
+                                        <div class="mb-4 main-content-label">Education
+                                            <a href="#" class="float-right"> <i class="tx-18 company-icon mdi mdi-plus-circle-outline mt-1 ml-5" data-placement="top" data-toggle="tooltip" title="Add Education"></i></a>
+                                        </div>
+                                        <hr class="mt-7 mb-4">
+                                        <div class="list d-flex align-items-center py-3">
+                                            <div class="d-flex mr-3">
+                                                <a href="#">
+                                                    <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/editProfile/uum.png">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper ml-3">
+                                                <a href="#" class="float-right"> <i class="tx-18 company-icon mdi mdi-pencil mr-1" data-placement="top" data-toggle="tooltip" title="Edit Education"></i></a>
+                                                <div class="d-flex">
+                                                    <h6 class="mt-0 mb-0 recommended-title">Universiti utara Malaysia</h6>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-6">
+                                                        <div class="d-flex flex-row">
+                                                            <p class=" mb-0">Bachelor of science with honors (Information Technology)<span>,</span></p>
+                                                        </div>
+                                                        <div class="d-flex flex-row p-2">
+                                                            <p class="mb-0">Software Engineering</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class="d-flex flex-row pt-2">
+                                                            <p class="mb-0 ">Feb 2016 - Dis 2019</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class="d-flex flex-row pt-2">
+                                                            <p class="mb-0 ">uae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                                                                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
+                                                                ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list d-flex align-items-center py-3">
+                                            <div class="d-flex mr-3">
+                                                <a href="#">
+                                                    <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/editProfile/politeknik.png">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper ml-3">
+                                                <a href="#" class="float-right"> <i class="tx-18 company-icon mdi mdi-pencil mr-1" data-placement="top" data-toggle="tooltip" title="Edit Education"></i></a>
+                                                <div class="d-flex">
+                                                    <h6 class="mt-0 mb-0 recommended-title">Politeknik Muadzam Shah</h6>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-6">
+                                                        <div class="d-flex flex-row">
+                                                            <p class=" mb-0">Diploma in Information Technology<span>,</span></p>
+                                                        </div>
+                                                        <div class="d-flex flex-row p-2">
+                                                            <p class="mb-0">Programming</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class="d-flex flex-row pt-2">
+                                                            <p class="mb-0 ">Dec 2012 - Dis 2015</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class="d-flex flex-row pt-2">
+                                                            <p class="mb-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. a commodo consequat. Duis aute irure dolor
+                                                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Work Experience Tab -->
+                                    <div class="tab-pane mt-3" id="workExperience">
+                                        <div class="mb-4 main-content-label">Work Experience
+                                            <a href="#" class="float-right"> <i class="tx-18 company-icon mdi mdi-plus-circle-outline mt-1 ml-5" data-placement="top" data-toggle="tooltip" title="Add Education"></i></a>
+                                        </div>
+                                        <hr class="mt-7 mb-4">
+                                        <div class="list d-flex align-items-center py-3">
+                                            <div class="d-flex mr-3">
+                                                <a href="#">
+                                                    <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/editProfile/aplikasi.png">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper ml-3">
+                                                <a href="#" class="float-right"> <i class="tx-18 company-icon mdi mdi-pencil mr-1" data-placement="top" data-toggle="tooltip" title="Edit Education"></i></a>
+                                                <div class="d-flex">
+                                                    <h6 class="mt-0 mb-0 recommended-title">Front End Developer</h6>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-6">
+                                                        <div class="d-flex flex-row">
+                                                            <p class=" mb-0">Kumpulan Aplikasi Sempurna Sdn Bhd</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class="d-flex flex-row pt-2">
+                                                            <p class="mb-0 ">Oct 2019 - Present</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class="d-flex flex-row pt-2">
+                                                            <p class="mb-0 ">As a UI/UX Designer, i have a strong background of work closely with Developers and associate with Design Research to enhance design suggestions. Manage design wireframes, mockups and navigation
+                                                                maps. My job was to make sure that my Designs are unique.Develop clean well executed design concepts. Coordinate with team on design and prototype of new interfaces.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list d-flex align-items-center py-3">
+                                            <div class="d-flex mr-3">
+                                                <a href="#">
+                                                    <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/editProfile/terato.png">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper ml-3">
+                                                <a href="#" class="float-right"> <i class="tx-18 company-icon mdi mdi-pencil mr-1" data-placement="top" data-toggle="tooltip" title="Edit Education"></i></a>
+                                                <div class="d-flex">
+                                                    <h6 class="mt-0 mb-0 recommended-title">Front End Developer</h6>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-6">
+                                                        <div class="d-flex flex-row">
+                                                            <p class=" mb-0">Terato Tech Sdn Bhd</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class="d-flex flex-row pt-2">
+                                                            <p class="mb-0 ">Feb 2017 - Sept 2019</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                                        <div class="d-flex flex-row pt-2">
+                                                            <p class="mb-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. a commodo consequat. Duis aute irure dolor
+                                                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4 main-content-label">Career Information
+                                            <a href="#" class="float-right"> <i class="tx-18 company-icon mdi mdi-pencil mt-1 ml-5" data-placement="top" data-toggle="tooltip" title="Edit Profile"></i></a>
+                                        </div>
+                                        <hr class="mt-7 mb-4">
+                                        <div class="main-contact-info-body mt-8 ml-6">
+                                            <div class="media-list pb-0">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <label>Job Experience</label> <span class="tx-medium">1 - 3 Years </span>
+                                                        </div>
+                                                        <div>
+                                                            <label>Functional Area</label> <span class="tx-medium">Software and Web Development</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <label>Career Level</label> <span class="tx-medium">Junior Level</span>
+                                                        </div>
+                                                        <div>
+                                                            <label>Select Industry</label> <span class="tx-medium">Information Technology</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div>
+                                                            <label>Current Salary</label> <span class="tx-medium">4,500</span>
+                                                        </div>
+                                                        <div>
+                                                            <label>Expected Salary</label> <span class="tx-medium">5,000</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Skills tab -->
+                                    <div class="tab-pane mt-3" id="skills">
+                                        <div class="mb-4 main-content-label">Skills
+                                        </div>
+                                        <hr class="mt-7">
+                                        <p class="mt-6 text-muted tx-13">Helps us in finding you for relevant jobs by demonstrate your professional skills, hard skills or soft skills.</p>
+                                        <div class="">
+                                            <select multiple data-role="tagsinput" class="form-control" placeholder="Please enter your skills">
+                                                <option value="jQuery">jQuery</option>
+                                                <option value="Angular">Angular</option>
+                                                <option value="React">React</option>
+                                                <option value="Vue">Vue</option>
+                                            </select>
+                                        </div>
+                                        <div class=" mt-5 mb-4 main-content-label">Language
+                                        </div>
+                                        <hr class="mt-7">
+                                        <p class="mt-6 text-muted tx-13">Add the languages you know.</p>
+                                        <div>
+                                            <select multiple data-role="tagsinput" class="form-control" placeholder="Enter your languages">
+                                                <option value="Bahasa Melayu">Bahasa Melayu</option>
+                                                <option value="Mandarin">Mandarin</option>
+                                                <option value="English">English</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Projects Tab -->
+                                    <div class="tab-pane mt-3" id="projects">
+                                        <div class="mb-4 main-content-label">Work Experience
+                                            <a href="#" class="float-right"> <i class="tx-18 company-icon mdi mdi-plus-circle-outline mt-1 ml-5" data-placement="top" data-toggle="tooltip" title="Add Projects"></i></a>
+                                        </div>
+                                        <hr class="mt-7 mb-4">
+
+                                        <!-- row opened -->
+                                        <div class="row row-sm">
+                                            <div class="col-xl-2 col-lg-2 col-md-12">
+                                                <div class="text-center">
+                                                    <img class="card-img-top w-100 ht-140 mg-l-10 rounded-10" src="../assets/img/editProfile/mymajikan.png" alt="">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">MyMajikan</h4>
+                                                        <p class="card-tex mt-7">Payroll Management System</p>
+                                                        <p class="tx-13 mt-7 text-muted">Oct 2018 - Feb 2019</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-2 col-md-12">
+                                                <div class="text-center">
+                                                    <img class="card-img-top w-100 ht-140 mg-l-10 bd rounded-10" src="../assets/img/editProfile/aids.png" alt="">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Aids Campaign</h4>
+                                                        <p class="card-text mt-7">Non Profit Website</p>
+                                                        <p class="tx-13 mt-7 text-muted">Mac 2019 - Nov 2020</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-2 col-md-12">
+                                                <div class="text-center">
+                                                    <img class="card-img-top w-100 ht-140 mg-l-10 bd rounded-10" src="../assets/img/editProfile/patch.png" alt="">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Patch Perfect</h4>
+                                                        <p class="card-text mt-7">e-commerce</p>
+                                                        <p class="tx-13 mt-7 text-muted">Ogos 2020 - Present</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- row closed -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Col -->
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /main-content -->
+    <!-- Footer opened -->
+    <div class="main-footer ht-40 ">
+        <div class="container-fluid pd-t-0-f ht-100p ">
+            <span>Copyright © 2020 <a href="# ">Agensi pekerjaan Aplikasi Sdn Bhd</a>. All right Reserved</span>
+        </div>
+    </div>
+
+    <!-- Footer closed -->
+
+    <!--- Back-to-top --->
+    <a href="#top " id="back-to-top "><i class="las la-angle-double-up "></i></a>
+
+    <!--- JQuery min js --->
+    <script src="../assets/plugins/jquery/jquery.min.js "></script>
+
+    <!--- Datepicker js --->
+    <script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js "></script>
+
+    <!--- Bootstrap Bundle js --->
+    <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!--- Ionicons js --->
+    <script src="../assets/plugins/ionicons/ionicons.js "></script>
+
+    <!--- Chart bundle min js --->
+    <script src="../assets/plugins/chart.js/Chart.bundle.min.js "></script>
+
+    <!--- JQuery sparkline js --->
+    <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js "></script>
+
+    <!--- Internal Sampledata js --->
+    <script src="../assets/js/chart.flot.sampledata.js "></script>
+
+    <!--- Rating js --->
+    <script src="../assets/plugins/rating/jquery.rating-stars.js "></script>
+    <script src="../assets/plugins/rating/jquery.barrating.js "></script>
+
+    <!--- Eva-icons js --->
+    <script src="../assets/js/eva-icons.min.js "></script>
+
+    <!--- Moment js --->
+    <script src="../assets/plugins/moment/moment.js "></script>
+
+    <!--- Perfect-scrollbar js --->
+    <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js "></script>
+    <script src="../assets/plugins/perfect-scrollbar/p-scroll.js "></script>
+
+    <!--- Sidebar js --->
+    <script src="../assets/plugins/side-menu/sidemenu.js "></script>
+
+    <!-- right-sidebar js -->
+    <script src="../assets/plugins/sidebar/sidebar.js "></script>
+    <script src="../assets/plugins/sidebar/sidebar-custom.js "></script>
+
+    <!-- Morris js -->
+    <script src="../assets/plugins/raphael/raphael.min.js "></script>
+    <script src="../assets/plugins/morris.js/morris.min.js "></script>
+
+    <!--- Scripts js --->
+    <script src="../assets/js/script.js "></script>
+
+    <!--- Index js --->
+    <script src="../assets/js/index.js "></script>
+
+    <!--- Custom js --->
+    <script src="../assets/js/custom.js "></script>
+
+    <!--- Internal Inputtags js --->
+    <script src="../assets/plugins/inputtags/inputtags.js "></script>
+
+    <script>
+        $(() => {
+            'use strict';
+            $('.bookmarks-design').click(function() {
+                $(this).toggleClass('actived');
+            });
+        });
+
+        $(".toggle-password ").click(function() {
+                $(this).toggleClass("fa-eye fa-eye-slash ");
+                var input = $($(this).attr("toggle "));
+                if (input.attr("type ") == "password ") {
+                    input.attr("type ", "text ");
+                } else {
+                    input.attr("type ", "password ");
+                }
+            }
+
+        );
+    </script>
+
+</body>
+
+</html>

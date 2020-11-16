@@ -8828,6 +8828,14 @@ a.close.disabled {
     margin-bottom: -10px;
 }
 
+.ml-8 {
+    margin-left: -25px;
+}
+
+.mt-8 {
+    margin-top: -25px;
+}
+
 .p-0 {
     padding: 0 !important;
 }
