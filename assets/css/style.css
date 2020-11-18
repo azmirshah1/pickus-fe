@@ -2246,6 +2246,17 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     border-radius: 3px;
 }
 
+
+/* Main custom start */
+
+.card-body .followed-img {
+    width: auto;
+    height: 100px;
+}
+
+
+/* Main custom  end*/
+
 .was-validated .form-control:invalid,
 .form-control.is-invalid,
 input.form-control.parsley-error,
@@ -17744,6 +17755,14 @@ body {
     background: -webkit-linear-gradient(45deg, #A23CB2, #F83974);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.resume-copy {
+    color: red;
+}
+
+.cost-edu {
+    color: #0BA360;
 }
 
 .font-gradient {
