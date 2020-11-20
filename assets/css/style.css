@@ -2255,6 +2255,84 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
 }
 
 
+/* Jobs pages */
+
+.field-icon {
+    color: #817ba7;
+    margin-left: -20px;
+    /* padding: 15px 9px 19px 0px; */
+    border-radius: 0px 5px 5px 0px;
+    float: right;
+    position: relative;
+    right: 1%;
+    top: -50%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    padding: 5px 10px 0px 0px;
+    color: grey;
+    min-width: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.icon2 {
+    /* padding: -12px 10px 0px 0px; */
+    color: grey;
+    right: 0px;
+    top: 5px;
+    min-width: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.input-icons input[type="text"] {
+    box-sizing: border-box;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.filter-icon {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.input-icons .skill {
+    color: #A93CAD;
+}
+
+.input-icons .location {
+    color: #F53C5B;
+}
+
+#divShowHide .select2-container--default .select2-selection--single .select2-selection__rendered {
+    width: 210px;
+}
+
+.pagination-jobs {
+    text-align: center;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* Main custom  end*/
 
 .was-validated .form-control:invalid,
@@ -13162,6 +13240,29 @@ a.text-dark:focus {
     color: #fff;
     background-color: rgba(255, 255, 255, 0.08);
 }
+
+
+/* Pagination white start*/
+
+.pagination-white .page-item.active .page-link {
+    background: linear-gradient(90deg, #A33CB2 0%, #F73975 100%);
+    color: #fff;
+}
+
+.pagination-white .page-link {
+    font-weight: 400;
+    background-color: white;
+    color: black;
+}
+
+.pagination-white .page-link:hover,
+.pagination-white .page-link:focus {
+    color: #fff;
+    background: linear-gradient(90deg, #A33CB2 0%, #F73975 100%);
+}
+
+
+/* Pagination white end */
 
 .pagination-primary .page-item.active .page-link {
     background-color: #3858f9;
@@ -31648,11 +31749,70 @@ textarea.parsley-success:focus {
     margin-left: 15px;
 }
 
+
+/* main-job-header start */
+
+.main-job-header {
+    flex-shrink: 0;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    border-bottom: 1px solid #dedcfb;
+}
+
+.main-job-header .nav {
+    margin-left: auto;
+    align-items: center;
+}
+
+.main-job-header .nav-link {
+    padding: 0;
+    color: #b8c2d8;
+    font-size: 20px;
+    display: none;
+}
+
+.main-job-header .nav-link:first-child {
+    display: block;
+}
+
+.main-job-header .nav-link i {
+    line-height: 0;
+}
+
+.main-job-header .nav-link .typcn {
+    line-height: .9;
+}
+
+.main-job-header .nav-link .typcn::before {
+    width: auto;
+}
+
+.main-job-header .nav-link:hover,
+.main-job-header .nav-link:focus {
+    color: #3858f9;
+}
+
+.main-job-header .nav-link+.nav-link {
+    margin-left: 15px;
+}
+
+
+/* main-job-header end */
+
 @media (min-width: 576px) {
     .main-chat-header .nav-link {
         display: block;
     }
     .main-chat-header .nav-link:first-child {
+        display: none;
+    }
+    .main-job-header .nav-link {
+        display: block;
+    }
+    .main-job-header .nav-link:first-child {
         display: none;
     }
 }
@@ -69786,6 +69946,9 @@ button.bg-purple-gradient:focus {
 .wd-100v {
     width: 100vw;
 }
+
+
+/*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */

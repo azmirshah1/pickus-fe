@@ -11,7 +11,7 @@
     <meta name="author" content="Pickus | Online Job Platform">
 
     <!-- Title -->
-    <title> Followed Companies >> Job Portal | Vacancies | Professional Marketplace</title>
+    <title> Settings >> Job Portal | Vacancies | Professional Marketplace</title>
 
     <!--- Favicon --->
     <link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon" />
@@ -28,10 +28,6 @@
     <link href="../assets/css/sidemenu.css" rel="stylesheet">
     <!--- Animations css --->
     <link href="../assets/css/animate.css" rel="stylesheet">
-
-    <!--- Internal Inputtags css --->
-    <link href="../assets/plugins/inputtags/inputtags.css" rel="stylesheet">
-
     <style>
         .field-icon {
             color: #817ba7;
@@ -147,13 +143,13 @@
                     </div>
                     <ul class="header-megamenu-dropdown  nav">
                         <li class="nav-item">
-                            <a href="https://azmirshah.com/" class="btn btn-link" type="button" id="dropdownMenuButton1"><span> Jobs </span></a>
+                            <a href="jobs.html" class="btn btn-link" type="button" id="dropdownMenuButton1"><span> Jobs </span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://azmirshah.com/" class="btn btn-link" type="button" id="dropdownMenuButton2"><span> Companies </span></a>
+                            <a href="companies.html" class="btn btn-link" type="button" id="dropdownMenuButton2"><span> Companies </span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://azmirshah.com/" class="btn btn-link" type="button" id="dropdownMenuButton3"><span> Blog </span></a>
+                            <a href="blog.html" class="btn btn-link" type="button" id="dropdownMenuButton3"><span> Blog </span></a>
                         </li>
                     </ul>
                 </div>
@@ -518,7 +514,7 @@
     <!-- Footer closed -->
 
     <!--- Back-to-top --->
-    <a href="#top " id="back-to-top "><i class="las la-angle-double-up "></i></a>
+    <a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
 
     <!--- JQuery min js --->
     <script src="../assets/plugins/jquery/jquery.min.js "></script>
@@ -574,10 +570,6 @@
 
     <!--- Custom js --->
     <script src="../assets/js/custom.js "></script>
-
-    <!--- Internal Inputtags js --->
-    <script src="../assets/plugins/inputtags/inputtags.js "></script>
-
     <script>
         $(() => {
             'use strict';
@@ -586,13 +578,13 @@
             });
         });
 
-        $(".toggle-password ").click(function() {
-                $(this).toggleClass("fa-eye fa-eye-slash ");
-                var input = $($(this).attr("toggle "));
-                if (input.attr("type ") == "password ") {
-                    input.attr("type ", "text ");
+        $(".toggle-password").click(function() {
+                $(this).toggleClass("fa-eye fa-eye-slash");
+                var input = $($(this).attr("toggle"));
+                if (input.attr("type") == "password") {
+                    input.attr("type", "text");
                 } else {
-                    input.attr("type ", "password ");
+                    input.attr("type", "password");
                 }
             }
 
