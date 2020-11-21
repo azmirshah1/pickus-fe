@@ -2332,6 +2332,11 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     margin-right: auto;
 }
 
+.job-company-image {
+    height: 200px;
+    width: 100%;
+}
+
 
 /* Main custom  end*/
 
@@ -8923,6 +8928,10 @@ a.close.disabled {
 
 .mt-8 {
     margin-top: -25px;
+}
+
+.mt-9 {
+    margin-top: -35px;
 }
 
 .p-0 {
@@ -31754,7 +31763,8 @@ textarea.parsley-success:focus {
 
 .main-job-header {
     flex-shrink: 0;
-    height: 130px;
+    /* height: 130px; */
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: flex-start;

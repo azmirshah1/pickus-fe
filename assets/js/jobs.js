@@ -13,7 +13,7 @@ $(function() {
         const ChatBody = new PerfectScrollbar('#ChatBody', {
             suppressScrollX: true
         });
-        $('#ChatBody').scrollTop($('#ChatBody').prop('scrollHeight'));
+        // $('#ChatBody').scrollTop($('#ChatBody').prop('scrollHeight'));
     }
     $('.main-chat-list .media').on('click touch', function() {
         $(this).addClass('selected').removeClass('new');
