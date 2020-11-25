@@ -1,1279 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="pickus, job portal, job seeker, cari kerja">
-    <meta name="author" content="Pickus | Online Job Platform">
-
-    <!-- Title -->
-    <title> Jobs >> Job Portal | Vacancies | Professional Marketplace</title>
-
-    <!--- Favicon --->
-    <link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon" />
-    <!--- Icons css --->
-    <link href="../assets/css/icons.css" rel="stylesheet">
-    <!--- Select2 css --->
-    <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet">
-    <!--- Custom Scroll bar --->
-    <link href="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
-    <!-- Owl-carousel css-->
-    <link href="../assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" />
-    <!--- Right-sidemenu css --->
-    <link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
-    <!--- Style css --->
-    <link href="../assets/css/style.css" rel="stylesheet">
-    <link href="../assets/css/skin-modes.css" rel="stylesheet">
-    <!--- Sidemenu css --->
-    <link href="../assets/css/sidemenu.css" rel="stylesheet">
-    <!--- Animations css --->
-    <link href="../assets/css/animate.css" rel="stylesheet">
-    <!--- Internal Inputtags css --->
-    <link href="../assets/plugins/inputtags/inputtags.css" rel="stylesheet">
-
-</head>
-
-<body class="main-body app sidebar-mini">
-    <!-- Loader -->
-    <div id="global-loader">
-        <img src="../assets/img/loaders/loader-4.svg" class="loader-img" alt="Loader">
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Quicksand:300,400|Lato:400,300|Coda|Open+Sans);
+    /* 
+* Art by @jofpin 
+* 2014
+*/
+    
+    body {
+        background: #f8f5f0;
+        font-family: "Open sans", sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #3498db;
+    }
+    
+    .content-profile-page {
+        margin: 1em auto;
+        width: 44.23em;
+    }
+    
+    .card {
+        background: #fff;
+        border-radius: 0.3rem;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        border: .1em solid rgba(0, 0, 0, 0.2);
+        margin-bottom: 1em;
+    }
+    
+    .profile-user-page .img-user-profile {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .profile-user-page .img-user-profile .profile-bgHome {
+        border-bottom: .2em solid #f5f5f5;
+        width: 44.23em;
+        height: 16em;
+    }
+    
+    .profile-user-page .img-user-profile .avatar {
+        margin: 0 auto;
+        background: #fff;
+        width: 7em;
+        height: 7em;
+        padding: 0.25em;
+        border-radius: .4em;
+        margin-top: -10em;
+        box-shadow: 0 0 .1em rgba(0, 0, 0, 0.35);
+    }
+    
+    .profile-user-page button {
+        position: absolute;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 7em;
+        background: #3498db;
+        border: 1px solid #2487c9;
+        color: #fff;
+        outline: none;
+        border-radius: 0 .6em .6em 0;
+        padding: .80em;
+    }
+    
+    .profile-user-page button:hover {
+        background: #51a7e0;
+        transition: background .2s ease-in-out;
+        border: 1px solid #2487c9;
+    }
+    
+    .profile-user-page .user-profile-data,
+    .profile-user-page .description-profile {
+        text-align: center;
+        padding: 0 1.5em;
+    }
+    
+    .profile-user-page .user-profile-data h1 {
+        font-family: "Lato", sans-serif;
+        margin-top: 0.35em;
+        color: #292f33;
+        margin-bottom: 0;
+    }
+    
+    .profile-user-page .user-profile-data p {
+        font-family: "Lato", sans-serif;
+        color: #8899a6;
+        font-size: 1.1em;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+    
+    .profile-user-page .description-profile {
+        color: #75787b;
+        font-size: 0.98em;
+    }
+    
+    .profile-user-page .data-user {
+        font-family: "Quicksand", sans-serif;
+        margin-bottom: 0;
+        cursor: pointer;
+        padding: 0;
+        list-style: none;
+        display: table;
+        width: 100.15%;
+    }
+    
+    .profile-user-page .data-user li {
+        margin: 0;
+        padding: 0;
+        width: 33.33334%;
+        display: table-cell;
+        text-align: center;
+        border-left: 0.1em solid transparent;
+    }
+    
+    .profile-user-page .data-user li:first-child {
+        border-left: 0;
+    }
+    
+    .profile-user-page .data-user li:first-child a {
+        border-bottom-left-radius: 0.3rem;
+    }
+    
+    .profile-user-page .data-user li:last-child a {
+        border-bottom-right-radius: 0.3rem;
+    }
+    
+    .profile-user-page .data-user li a,
+    .profile-user-page .data-user li strong {
+        display: block;
+    }
+    
+    .profile-user-page .data-user li a {
+        background-color: #f7f7f7;
+        border-top: 1px solid rgba(242, 242, 242, 0.5);
+        border-bottom: .2em solid #f7f7f7;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(255, 255, 255, 0.4);
+        padding: .93em 0;
+        color: #46494c;
+    }
+    
+    .profile-user-page .data-user li a strong,
+    .profile-user-page .data-user li a span {
+        font-weight: 600;
+        line-height: 1;
+    }
+    
+    .profile-user-page .data-user li a strong {
+        font-size: 2em;
+    }
+    
+    .profile-user-page .data-user li a span {
+        color: #717a7e;
+    }
+    
+    .profile-user-page .data-user li a:hover {
+        background: rgba(0, 0, 0, 0.05);
+        border-bottom: .2em solid #3498db;
+        color: #3498db;
+    }
+    
+    .profile-user-page .data-user li a:hover span {
+        color: #3498db;
+    }
+    
+    footer h4 {
+        display: block;
+        text-align: center;
+        clear: both;
+        font-family: "Coda", sans-serif;
+        color: #566965;
+        line-height: 6;
+        font-size: 1em;
+    }
+    
+    footer h4 a {
+        text-decoration: none;
+        color: #3498db;
+    }
+</style>
+<div class="content-profile-page">
+    <div class="profile-user-page card">
+        <div class="img-user-profile">
+            <img class="profile-bgHome" src="https://37.media.tumblr.com/88cbce9265c55a70a753beb0d6ecc2cd/tumblr_n8gxzn78qH1st5lhmo1_1280.jpg" />
+            <img class="avatar" src="http://gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=200" alt="jofpin" />
+        </div>
+        <button>Follow</button>
+        <div class="user-profile-data">
+            <h1>Jose Pino</h1>
+            <p>github.com/jofpin</p>
+        </div>
+        <div class="description-profile">Front-end | Security Researcher | CSS Warrior | <a href="https://twitter.com/bullgit" title="bullgit"><strong>@bullgit</strong></a> | I love to create small things for the internet!</div>
+        <ul class="data-user">
+            <li><a><strong>3390</strong><span>Posts</span></a></li>
+            <li><a><strong>718</strong><span>Followers</span></a></li>
+            <li><a><strong>239</strong><span>Following</span></a></li>
+        </ul>
     </div>
-    <!-- /Loader -->
+</div>
 
-    <!-- main-sidebar opened -->
-    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-    <aside class="main-sidebar app-sidebar sidebar-scroll">
-        <div class="main-sidebar-header">
-            <a class="desktop-logo logo-light active" href="index.html" class="text-center mx-auto"><img src="../assets/img/brand/logo.png" class="main-logo"></a>
-            <a class="desktop-logo icon-logo active" href="index.html"><img src="../assets/img/brand/favicon.png" class="logo-icon"></a>
-            <a class="desktop-logo logo-dark active" href="index.html"><img src="../assets/img/brand/logo-white.png" class="main-logo dark-theme" alt="logo"></a>
-            <a class="logo-icon mobile-logo icon-dark active" href="index.html"><img src="../assets/img/brand/favicon-white.png" class="logo-icon dark-theme" alt="logo"></a>
-        </div>
-        <!-- /logo -->
-        <div class="main-sidebar-loggedin">
-            <div class="app-sidebar__user">
-                <div class="dropdown user-pro-body text-center">
-                    <div class="user-pic">
-                        <img src="../assets/img/faces/tonystark.png" alt="user-img" class="rounded-circle mCS_img_loaded">
-                    </div>
-                    <div class="user-info">
-                        <h3 class=" mb-0 text-dark">Tony Stark</h3>
-                        <span class="text-muted app-sidebar__user-name text-sm">Front End Developer</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /user -->
-        <div class="sidebar-navs">
-            <ul class="nav  nav-pills-circle">
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings" aria-describedby="tooltip365540">
-                    <a class="nav-link text-center m-2" href="setting.html">
-                        <i class="fe fe-settings"></i>
-                    </a>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mail">
-                    <a class="nav-link text-center m-2" href="mail.html">
-                        <i class="fe fe-mail"></i>
-                    </a>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Followers">
-                    <a class="nav-link text-center m-2">
-                        <i class="fe fe-user"></i>
-                    </a>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Logout">
-                    <a class="nav-link text-center m-2" href="login.html">
-                        <i class="fe fe-power"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="main-sidebar-body">
-            <ul class="side-menu ">
-                <li class="slide">
-                    <a class="side-menu__item" href="index.html"><i class="side-menu__icon fas fa-desktop"></i><span class="side-menu__label">Dashboard</span></a>
-                </li>
-                <li class="slide">
-                    <a class="side-menu__item" href="myprofile.html"><i class="side-menu__icon mdi mdi-account"></i><span class="side-menu__label">My Profile</span></a>
-                </li>
-                <li class="slide">
-                    <a class="side-menu__item" href="#"><i class="side-menu__icon fas fa-search"></i><span class="side-menu__label">Explore Jobs</span></a>
-                </li>
-                <li class="slide">
-                    <a class="side-menu__item" href="jobapplication.html"><i class="side-menu__icon mdi mdi-briefcase-check"></i><span class="side-menu__label">Job Applications</span></a>
-                </li>
-                <li class="slide">
-                    <a class="side-menu__item" href="followedcompanies.html"><i class="side-menu__icon fas fa-briefcase"></i><span class="side-menu__label">Followed Companies</span></a>
-                </li>
-            </ul>
-        </div>
-    </aside>
-    <!-- /main-sidebar -->
-
-    <!-- main-content -->
-    <div class="main-content">
-
-        <!-- main-header -->
-        <div class="main-header  side-header">
-            <div class="container-fluid">
-                <div class="main-header-left ">
-                    <div class="app-sidebar__toggle mobile-toggle" data-toggle="sidebar">
-                        <a class="open-toggle" href="#"><i class="header-icons" data-eva="menu-outline"></i></a>
-                        <a class="close-toggle" href="#"><i class="header-icons" data-eva="close-outline"></i></a>
-                    </div>
-                    <div class="responsive-logo">
-                        <a href="index.html"><img src="../assets/img/brand/logo.png" class="logo-11"></a>
-                        <a href="index.html"><img src="../assets/img/brand/favicon.png" class="logo-12"></a>
-                        <!-- Mobile header -->
-                        <a href="index.html"><img src="../assets/img/brand/logo-white.png" class="logo-1"></a>
-                        <a href="index.html"><img src="../assets/img/brand/logo-white.png" class="logo-2"></a>
-                    </div>
-                    <ul class="header-megamenu-dropdown  nav">
-                        <li class="nav-item">
-                            <a href="jobs.html" class="btn btn-link" type="button" id="dropdownMenuButton1"><span> Jobs </span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="companies.html" class="btn btn-link" type="button" id="dropdownMenuButton2"><span> Companies </span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="blog.html" class="btn btn-link" type="button" id="dropdownMenuButton3"><span> Blog </span></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="main-header-right">
-                    <div class="nav nav-item nav-link" id="bs-example-navbar-collapse-1">
-                        <form class="navbar-form" role="search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search Jobs by Job title, skills or location">
-                                <span class="input-group-btn">
-										<button type="reset" class="btn btn-default">
-											<i class="fas fa-times"></i>
-										</button>
-										<button type="submit" class="btn btn-default nav-link">
-											<i class="fe fe-search"></i>
-										</button>
-									</span>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="nav nav-item  navbar-nav-right ml-auto">
-                        <div class="dropdown  nav-item main-header-message ">
-                            <a class="new nav-link" href="#"><i class="fe fe-mail"></i><span class=" pulse"></span></a>
-                            <div class="dropdown-menu">
-                                <div class="menu-header-content bg-primary-gradient text-left d-flex">
-                                    <div class="">
-                                        <h6 class="menu-header-title text-white mb-0">5 new Messages</h6>
-                                    </div>
-                                    <div class="my-auto ml-auto">
-                                        <a class="badge badge-pill badge-warning float-right" href="#">Mark All Read</a>
-                                    </div>
-                                </div>
-                                <div class="main-message-list chat-scroll">
-                                    <a href="#" class="p-3 d-flex border-bottom">
-                                        <div class="  drop-img  cover-image  " data-image-src="../assets/img/faces/3.jpg">
-                                            <span class="avatar-status bg-teal"></span>
-                                        </div>
-
-                                        <div class="wd-90p">
-                                            <div class="d-flex">
-                                                <h5 class="mb-1 name">Pickus</h5>
-                                                <p class="time mb-0 text-right ml-auto float-right">10 min ago</p>
-                                            </div>
-                                            <p class="mb-0 desc">You have applied for Front End Devel...</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="p-3 d-flex border-bottom">
-                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/2.jpg">
-                                            <span class="avatar-status bg-teal"></span>
-                                        </div>
-                                        <div class="wd-90p">
-                                            <div class="d-flex">
-                                                <h5 class="mb-1 name">Nik Khairul Aiman</h5>
-                                                <p class="time mb-0 text-right ml-auto float-right">13 min ago</p>
-                                            </div>
-                                            <p class="mb-0 desc">Assalamualaikum Tony, We are from......</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="p-3 d-flex border-bottom">
-                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/9.jpg">
-                                            <span class="avatar-status bg-teal"></span>
-                                        </div>
-                                        <div class="wd-90p">
-                                            <div class="d-flex">
-                                                <h5 class="mb-1 name">Ali Husni</h5>
-                                                <p class="time mb-0 text-right ml-auto float-right">20 min ago</p>
-                                            </div>
-                                            <p class="mb-0 desc">Hi, we are from...</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="p-3 d-flex border-bottom">
-                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/12.jpg">
-                                            <span class="avatar-status bg-danger"></span>
-                                        </div>
-                                        <div class="wd-90p">
-                                            <div class="d-flex">
-                                                <h5 class="mb-1 name">Shuib Sepahtu</h5>
-                                                <p class="time mb-0 text-right ml-auto float-right">30 min ago</p>
-                                            </div>
-                                            <p class="mb-0 desc">Hello and good morning Tony ...</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="p-3 d-flex border-bottom">
-                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/5.jpg">
-                                            <span class="avatar-status bg-teal"></span>
-                                        </div>
-                                        <div class="wd-90p">
-                                            <div class="d-flex">
-                                                <h5 class="mb-1 name">Pickus</h5>
-                                                <p class="time mb-0 text-right ml-auto float-right">35 min ago</p>
-                                            </div>
-                                            <p class="mb-0 desc">You have applied for Web Devel....</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="text-center dropdown-footer">
-                                    <a href="#">VIEW ALL</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dropdown nav-item main-header-notification">
-                            <a class="new nav-link" href="#"><i class="fe fe-bell"></i><span class=" pulse"></span></a>
-                            <div class="dropdown-menu">
-                                <div class="menu-header-content bg-primary-gradient text-left d-flex">
-                                    <div class="">
-                                        <h6 class="menu-header-title text-white mb-0">7 new Notifications</h6>
-                                    </div>
-                                    <div class="my-auto ml-auto">
-                                        <a class="badge badge-pill badge-warning float-right" href="#">Mark All Read</a>
-                                    </div>
-                                </div>
-                                <div class="main-notification-list Notification-scroll">
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-danger-transparent">
-                                            <i class="la la-user-check text-danger"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">You have been shortlisted....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-primary-transparent">
-                                            <i class="la la-check-circle text-primary"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">You have applied....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-pink-transparent">
-                                            <i class="la la-file-alt text-pink"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">Please completed your profile....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-warning-transparent">
-                                            <i class="la la-envelope-open text-warning"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">You have received email from....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-
-                                </div>
-                                <div class="dropdown-footer">
-                                    <a href="#">VIEW ALL</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /main-header -->
-
-        <!-- container -->
-        <div class="container-fluid">
-            <!-- breadcrumb -->
-            <div class="breadcrumb-header justify-content-between">
-                <div>
-                    <h2 class="content-title mb-7">Jobs</h2>
-                </div>
-            </div>
-            <!-- /breadcrumb -->
-            <div class="row row-sm main-content-app">
-                <div class="col-lg-12 col-xl-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-3">
-                                <div class="row row-xs">
-                                    <div class="col-md-5 mg-t-10 mg-md-t-0 input-icons">
-                                        <i class="mdi mdi-crosshairs-gps icon skill"></i>
-                                        <input class="form-control" placeholder=" Enter your skills or job title " type="text">
-                                        <a onclick="runSpeechRecognition()">
-                                            <span id="action"></span>
-                                            <i class="mdi mdi-microphone icon2"></i>
-                                            <div id="output" class="hide"></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-5 mg-t-10 mg-md-t-0 input-icons">
-                                        <i class="mdi mdi-map-marker icon location"></i>
-                                        <input class="form-control" placeholder="Location " type="text">
-                                    </div>
-                                    <div class="col-md mg-t-10 mg-md-t-0 ">
-                                        <button class="btn btn-gradient-primary btn-block ">Find Jobs</button>
-                                    </div>
-                                    <div class="mg-t-10 mg-md-t-0 ">
-                                        <a id="btnShowHide"><svg class="mt-2 filter-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z" fill="currentColor"/></svg></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="divShowHide" style="display: none; width: 100%;">
-                                <div class="row row-xs col-10 ml-1">
-                                    <!-- Date Posted -->
-                                    <div class="col-lg-2">
-                                        <select style="min-width: 300px;" class="form-control select2-no-search date-select">
-											<option placeholder="Date Posted" label="date Posted">
-											</option>
-											<option value="Today">
-												Today
-											</option>
-											<option value="This Week">
-												This Week
-											</option>
-											<option value="Last 2 Weeks">
-												Last 2 Weeks
-											</option>
-											<option value="This Month">
-												This Month
-											</option>
-											<option value="Last 6 Months">
-												Last 6 Months
-											</option>
-										</select>
-                                    </div>
-                                    <!-- Job Types -->
-                                    <div class="col-lg-2 mg-t-20 mg-lg-t-0">
-                                        <select class="form-control select2 job-select">
-											<option label="Job Types">
-                                            </option>
-                                            <option value="All">
-												All
-											</option>
-											<option value="Permenant">
-												Permenant
-											</option>
-											<option value="Part-Time">
-												Part-Time
-											</option>
-											<option value="Contract">
-												Contract
-											</option>
-											<option value="Internship">
-												Internship
-											</option>
-										</select>
-                                    </div>
-                                    <!-- Salary From -->
-                                    <div class="col-lg-2">
-                                        <input class="form-control" placeholder=" Salary From" type="number">
-                                    </div>
-                                    <!-- Salary To -->
-                                    <div class="col-lg-2 mg-t-20 mg-lg-t-0">
-                                        <input class="form-control" placeholder=" Salary To" type="number">
-                                    </div>
-                                    <!-- Experience -->
-                                    <div class="col-lg-2">
-                                        <select class="form-control select2-no-search experience-select">
-											<option label="Experience">
-											</option>
-											<option value="0-1">
-												0-1 year experience
-											</option>
-											<option value="2-4">
-												2-4 years experience
-											</option>
-											<option value="5-7">
-												5-7 years experience
-											</option>
-											<option value="8-10">
-												8-10 years experience
-											</option>
-											<option value="10-above">
-												10 years and above
-											</option>
-										</select>
-                                    </div>
-                                    <!-- Company-->
-                                    <div class="col-lg-2 mg-t-20 mg-lg-t-0">
-                                        <select class="form-control select2 company-select">
-											<option label="Company">
-											</option>
-											<option value="Aplikasi">
-												Aplikasi
-											</option>
-											<option value="Petronas">
-												Petronas
-											</option>
-											<option value="Maybank">
-												Maybank
-											</option>
-											<option value="Terato">
-												Terato Tech
-											</option>
-											<option value="Sime Darby">
-												Sime Darby
-											</option>
-										</select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Col -->
-                <!-- row -->
-                <div class="row row-sm main-content-app mb-4">
-                    <div class="col-xl-5 col-lg-5">
-                        <div class="card">
-                            <div class="main-content-left main-content-left-chat">
-                                <!-- List of jobs start -->
-                                <div class="main-chat-list" id="ChatList" style="min-height: 650px;">
-                                    <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
-                                                    <div class=" d-flex flex-row ">
-                                                        <span class="badge badge-success-gradient ">Permanent</span>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2 ">
-                                                        <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex mt-6">
-                                                <div class="progress progress-recommended-job progress-sm mt-2 ">
-                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
-                                                </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
-                                            </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
-                                                    <div class=" d-flex flex-row ">
-                                                        <span class="badge badge-success-gradient ">Permanent</span>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2 ">
-                                                        <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex mt-6">
-                                                <div class="progress progress-recommended-job progress-sm mt-2 ">
-                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
-                                                </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
-                                            </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
-                                                    <div class=" d-flex flex-row ">
-                                                        <span class="badge badge-success-gradient ">Permanent</span>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2 ">
-                                                        <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex mt-6">
-                                                <div class="progress progress-recommended-job progress-sm mt-2 ">
-                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
-                                                </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
-                                            </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
-                                                    <div class=" d-flex flex-row ">
-                                                        <span class="badge badge-success-gradient ">Permanent</span>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2 ">
-                                                        <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex mt-6">
-                                                <div class="progress progress-recommended-job progress-sm mt-2 ">
-                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
-                                                </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
-                                            </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
-                                                    <div class=" d-flex flex-row ">
-                                                        <span class="badge badge-success-gradient ">Permanent</span>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2 ">
-                                                        <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex mt-6">
-                                                <div class="progress progress-recommended-job progress-sm mt-2 ">
-                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
-                                                </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
-                                            </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
-                                                    <div class=" d-flex flex-row ">
-                                                        <span class="badge badge-success-gradient ">Permanent</span>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2 ">
-                                                        <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex mt-6">
-                                                <div class="progress progress-recommended-job progress-sm mt-2 ">
-                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
-                                                </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
-                                            </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
-                                                    <div class=" d-flex flex-row ">
-                                                        <span class="badge badge-success-gradient ">Permanent</span>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2 ">
-                                                        <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex mt-6">
-                                                <div class="progress progress-recommended-job progress-sm mt-2 ">
-                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
-                                                </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
-                                            </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
-                                                    <div class=" d-flex flex-row ">
-                                                        <span class="badge badge-success-gradient ">Permanent</span>
-                                                    </div>
-                                                    <div class="d-flex flex-row p-2 ">
-                                                        <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex mt-6">
-                                                <div class="progress progress-recommended-job progress-sm mt-2 ">
-                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
-                                                </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
-                                            </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- List of jobs end -->
-                            </div>
-                        </div>
-                        <ul class="pagination pagination-jobs pagination-white">
-                            <li class=" page-item "><a class="page-link " href="# "><i class="mdi mdi-chevron-double-left"></i></a></li>
-                            <li class="page-item active "><a class="page-link " href="# ">1</a></li>
-                            <li class="page-item "><a class="page-link " href="# ">2</a></li>
-                            <li class="page-item "><a class="page-link " href="# ">3</a></li>
-                            <li class="page-item "><a class="page-link " href="# "><i class="mdi mdi-chevron-double-right"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-7 col-lg-7">
-                        <div class="card">
-                            <a class="main-header-arrow" href="" id="ChatBodyHide"><i class="icon ion-md-arrow-back"></i></a>
-                            <div class="main-content-body main-content-body-chat">
-                                <!-- main-chat-header -->
-                                <div class="main-job-header border-bottom-0">
-                                    <div class="d-flex mr-3">
-                                        <a href="#">
-                                            <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
-                                        </a>
-                                    </div>
-                                    <div class="main-chat-msg-name">
-                                        <div class="d-flex">
-                                            <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
-                                        </div>
-                                        <div class="wrapper">
-                                            <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                <div class="d-flex flex-row">
-                                                    <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                    <p class=" mb-0">Malayan Bank Berhad</p>
-                                                </div>
-                                                <div class="d-flex flex-row p-2">
-                                                    <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                    <p class="mb-0">Kuala Lumpur</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper">
-                                            <div class="d-sm-flex justify-content-start align-items-center mt-7">
-                                                <div class=" d-flex flex-row ">
-                                                    <span class="badge badge-success-gradient ">Permanent</span>
-                                                </div>
-                                                <div class="d-flex flex-row p-2 ">
-                                                    <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wrapper">
-                                            <div class="d-sm-flex justify-content-start align-items-center mt-7">
-                                                <div class="d-flex flex-row pt-2">
-                                                    <p class="mb-0 text-muted">Date Posted: 20 Oct 2020</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <nav class="nav">
-                                        <!-- <a class="nav-link" href=""><i class="icon ion-md-more"></i></a> <a class="nav-link" data-toggle="tooltip" href="" title="Call"><i class="icon ion-ios-call"></i></a> <a class="nav-link" data-toggle="tooltip" href=""
-                                            title="Archive"><i class="icon ion-ios-filing"></i></a> <a class="nav-link" data-toggle="tooltip" href="" title="Trash"><i class="icon ion-md-trash"></i></a>
-                                        <a class="nav-link" data-toggle="tooltip" href="" title="View Info"><i class="icon ion-md-information-circle"></i></a> -->
-                                        <a class="btn btn-gradient-primary m-1" data-toggle="tooltip" href="" title="Apply Now!"><i class="fa fa-thumbs-up mr-2"></i>Apply Now!</a>
-                                        <a class="btn btn-gradient-primary m-1" data-toggle="tooltip" href="" title="Apply Now!"><i class="fa fa-bookmark"></i></a>
-                                    </nav>
-                                </div>
-                                <div class="main-content-body-profile border-top-0 ml-6 mt-9">
-                                    <div class="tabs-menu1" id="menu-center">
-                                        <!-- Tabs -->
-                                        <ul class="nav panel-tabs main-nav-line mt-2 ml-3">
-                                            <li><a href="#overview" class="nav-link active" data-toggle="tab">Overview</a></li>
-                                            <li><a href="#jobDescription" class="nav-link" data-toggle="tab">Job Description</a></li>
-                                            <li><a href="#benefit" class="nav-link" data-toggle="tab">Benefits</a></li>
-                                            <li><a href="#skills" class="nav-link" data-toggle="tab">Skills</a></li>
-                                            <li><a href="#company" class="nav-link" data-toggle="tab">Company</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- <nav class="nav main-nav-line">
-                                        <a class="nav-link active" data-toggle="tab" id="s1" href="#overview">Overview</a>
-                                        <a class="nav-link" data-toggle="tab" id="s2" href="#jobDescription">Job Description</a>
-                                        <a class="nav-link" data-toggle="tab" id="s3" href="#benefit">Benefit</a>
-                                        <a class="nav-link" data-toggle="tab" id="s4" href="#skills">Skills</a>
-                                        <a class="nav-link" data-toggle="tab" id="s5" href="#company">Company</a>
-                                    </nav> -->
-                                </div>
-                                <!-- main-chat-header -->
-                                <div class="main-chat-body" id="ChatBody">
-                                    <div class="content-inner">
-                                        <div id="overview">
-                                            <div class="mg-b-20">
-                                                <div class="media">
-                                                    <div class="media-user mr-2">
-                                                        <div class="main-img-user avatar-md"><img alt="" class="rounded-circle" src="../assets/img/faces/6.jpg"></div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h6 class="mb-0 mg-t-9">OVERVIEW - Petey Cruiser Pechon</h6><span class="text-primary">just now</span>
-                                                    </div>
-                                                    <div class="ml-auto">
-                                                        <div class="dropdown show">
-                                                            <a class="new" data-toggle="dropdown" href="JavaScript:void(0);"><i class="fas fa-ellipsis-v"></i></a>
-                                                            <div class="dropdown-menu">
-                                                                <a class="dropdown-item" href="#">Edit Post</a> <a class="dropdown-item" href="#">Delete Post</a> <a class="dropdown-item" href="#">Personal Settings</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p class="mg-t-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                                <div><img alt="img" class="w-100 m-1" src="../assets/img/photos/1.jpg"></div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div id="jobDescription">
-                                            <div class="mg-b-20">
-                                                <div class="media">
-                                                    <div class="media-user mr-2">
-                                                        <div class="main-img-user avatar-md"><img alt="" class="rounded-circle" src="../assets/img/faces/6.jpg"></div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h6 class="mb-0 mg-t-9">JOB DESCRIPTION - Petey Cruiser Pechon</h6><span class="text-primary">just now</span>
-                                                    </div>
-                                                    <div class="ml-auto">
-                                                        <div class="dropdown show">
-                                                            <a class="new" data-toggle="dropdown" href="JavaScript:void(0);"><i class="fas fa-ellipsis-v"></i></a>
-                                                            <div class="dropdown-menu">
-                                                                <a class="dropdown-item" href="#">Edit Post</a> <a class="dropdown-item" href="#">Delete Post</a> <a class="dropdown-item" href="#">Personal Settings</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p class="mg-t-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                                <div><img alt="img" class="w-100 m-1" src="../assets/img/photos/1.jpg"></div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div id="benefit">
-                                            <div class="mg-b-20">
-                                                <div class="media">
-                                                    <div class="media-user mr-2">
-                                                        <div class="main-img-user avatar-md"><img alt="" class="rounded-circle" src="../assets/img/faces/6.jpg"></div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h6 class="mb-0 mg-t-9"> BENEFIT - Petey Cruiser Pechon</h6><span class="text-primary">just now</span>
-                                                    </div>
-                                                    <div class="ml-auto">
-                                                        <div class="dropdown show">
-                                                            <a class="new" data-toggle="dropdown" href="JavaScript:void(0);"><i class="fas fa-ellipsis-v"></i></a>
-                                                            <div class="dropdown-menu">
-                                                                <a class="dropdown-item" href="#">Edit Post</a> <a class="dropdown-item" href="#">Delete Post</a> <a class="dropdown-item" href="#">Personal Settings</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p class="mg-t-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                                <div><img alt="img" class="w-100 m-1" src="../assets/img/photos/1.jpg"></div>
-                                            </div>
-                                        </div>
-                                        <div id="skills"></div>
-                                        <div class="mg-b-20">
-                                            <div class="media">
-                                                <div class="media-user mr-2">
-                                                    <div class="main-img-user avatar-md"><img alt="" class="rounded-circle" src="../assets/img/faces/6.jpg"></div>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h6 class="mb-0 mg-t-9"> SKILLS - Petey Cruiser Pechon</h6><span class="text-primary">just now</span>
-                                                </div>
-                                                <div class="ml-auto">
-                                                    <div class="dropdown show">
-                                                        <a class="new" data-toggle="dropdown" href="JavaScript:void(0);"><i class="fas fa-ellipsis-v"></i></a>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" href="#">Edit Post</a> <a class="dropdown-item" href="#">Delete Post</a> <a class="dropdown-item" href="#">Personal Settings</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="mg-t-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                            <div><img alt="img" class="w-100 m-1" src="../assets/img/photos/1.jpg"></div>
-                                        </div>
-                                        <div id="company">
-                                            <div class="mg-b-20">
-                                                <div class="media">
-                                                    <div class="media-user mr-2">
-                                                        <div class="main-img-user avatar-md"><img alt="" class="rounded-circle" src="../assets/img/faces/6.jpg"></div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h6 class="mb-0 mg-t-9"> COMPANY - Petey Cruiser Pechon</h6><span class="text-primary">just now</span>
-                                                    </div>
-                                                    <div class="ml-auto">
-                                                        <div class="dropdown show">
-                                                            <a class="new" data-toggle="dropdown" href="JavaScript:void(0);"><i class="fas fa-ellipsis-v"></i></a>
-                                                            <div class="dropdown-menu">
-                                                                <a class="dropdown-item" href="#">Edit Post</a> <a class="dropdown-item" href="#">Delete Post</a> <a class="dropdown-item" href="#">Personal Settings</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p class="mg-t-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                                <div><img alt="img" class="w-100 m-1" src="../assets/img/photos/1.jpg"></div>
-                                            </div>
-                                        </div>
-
-
-                                        <!-- <div class="media">
-                                            <div class="main-img-user online"><img alt="" src="../assets/img/faces/6.jpg"></div>
-                                            <div class="media-body">
-                                                <div class="main-msg-wrapper">
-                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                                </div>
-                                                <div>
-                                                    <span>9:32 am</span> <a href=""><i class="icon ion-android-more-horizontal"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="media flex-row-reverse">
-                                            <div class="main-img-user online"><img alt="" src="../assets/img/faces/9.jpg"></div>
-                                            <div class="media-body">
-                                                <div class="main-msg-wrapper">
-                                                    Nullam dictum felis eu pede mollis pretium
-                                                </div>
-                                                <div>
-                                                    <span>11:22 am</span> <a href=""><i class="icon ion-android-more-horizontal"></i></a>
-                                                </div>
-                                            </div>
-                                        </div><label class="main-chat-time"><span>Yesterday</span></label>
-                                        <div class="media">
-                                            <div class="main-img-user online"><img alt="" src="../assets/img/faces/6.jpg"></div>
-                                            <div class="media-body">
-                                                <div class="main-msg-wrapper">
-                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                                </div>
-                                                <div>
-                                                    <span>9:32 am</span> <a href=""><i class="icon ion-android-more-horizontal"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="media flex-row-reverse">
-                                            <div class="main-img-user online"><img alt="" src="../assets/img/faces/9.jpg"></div>
-                                            <div class="media-body">
-                                                <div class="main-msg-wrapper">
-                                                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                                                </div>
-                                                <div class="main-msg-wrapper">
-                                                    Nullam dictum felis eu pede mollis pretium
-                                                </div>
-                                                <div>
-                                                    <span>9:48 am</span> <a href=""><i class="icon ion-android-more-horizontal"></i></a>
-                                                </div>
-                                            </div>
-                                        </div><label class="main-chat-time"><span>Today</span></label>
-                                        <div class="media">
-                                            <div class="main-img-user online"><img alt="" src="../assets/img/faces/6.jpg"></div>
-                                            <div class="media-body">
-                                                <div class="main-msg-wrapper">
-                                                    Maecenas tempus, tellus eget condimentum rhoncus
-                                                </div>
-                                                <div class="main-msg-wrapper">
-                                                    Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-                                                </div>
-                                                <div>
-                                                    <span>10:12 am</span> <a href=""><i class="icon ion-android-more-horizontal"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="media flex-row-reverse">
-                                            <div class="main-img-user online"><img alt="" src="../assets/img/faces/9.jpg"></div>
-                                            <div class="media-body">
-                                                <div class="main-msg-wrapper">
-                                                    Maecenas tempus, tellus eget condimentum rhoncus
-                                                </div>
-                                                <div class="main-msg-wrapper">
-                                                    Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-                                                </div>
-                                                <div>
-                                                    <span>09:40 am</span> <a href=""><i class="icon ion-android-more-horizontal"></i></a>
-                                                </div>
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="main-chat-footer">
-                                <nav class="nav">
-                                    <a class="nav-link" data-toggle="tooltip" href="" title="Add Photo"><i class="fas fa-camera"></i></a> <a class="nav-link" data-toggle="tooltip" href="" title="Attach a File"><i class="fas fa-paperclip"></i></a> <a class="nav-link"
-                                        data-toggle="tooltip" href="" title="Add Emoticons"><i class="far fa-smile"></i></a> <a class="nav-link" href=""><i class="fas fa-ellipsis-v"></i></a>
-                                </nav><input class="form-control" placeholder="Type your message here..." type="text"> <a class="main-msg-send" href=""><i class="far fa-paper-plane"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /container -->
-        </div>
-        <!-- /main-content -->
-        <!-- Footer opened -->
-        <div class="main-footer ht-40">
-            <div class="container-fluid pd-t-0-f ht-100p">
-                <span>Copyright © 2020 <a href="# ">Agensi pekerjaan Aplikasi Sdn Bhd</a>. All right Reserved</span>
-            </div>
-        </div>
-        <!-- Footer closed -->
-
-        <!--- Back-to-top --->
-        <a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
-
-        <!--- JQuery min js --->
-        <script src="../assets/plugins/jquery/jquery.min.js "></script>
-
-        <!--- Datepicker js --->
-        <script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js "></script>
-
-        <!--- Bootstrap Bundle js --->
-        <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js "></script>
-
-        <!--- Ionicons js --->
-        <script src="../assets/plugins/ionicons/ionicons.js "></script>
-
-        <!--- Moment js --->
-        <script src="../assets/plugins/moment/moment.js "></script>
-
-        <!--- JQuery sparkline js --->
-        <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js "></script>
-
-        <!--- Internal jquery.maskedinput js --->
-        <script src="../assets/plugins/jquery.maskedinput/jquery.maskedinput.js "></script>
-
-        <!--- Internal Spectrum-colorpicker js --->
-        <script src="../assets/plugins/spectrum-colorpicker/spectrum.js "></script>
-
-        <!--- Select2.min js --->
-        <script src="../assets/plugins/select2/js/select2.min.js "></script>
-        <!--- Perfect-scrollbar js --->
-        <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js "></script>
-        <script src="../assets/plugins/perfect-scrollbar/p-scroll.js "></script>
-
-        <!--- Internal lightslider js --->
-        <script src="../assets/plugins/lightslider/js/lightslider.min.js "></script>
-
-        <!--- Internal ion.rangeSlider.min js --->
-        <script src="../assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js "></script>
-
-        <!--- Internal jquery-simple-datetimepicker js --->
-        <script src="../assets/plugins/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js "></script>
-
-        <!--- Ionicons js --->
-        <script src="../assets/plugins/jquery-simple-datetimepicker/jquery.simple-dtpicker.js "></script>
-
-        <!--- Internal Pickerjs js --->
-        <script src="../assets/plugins/pickerjs/picker.min.js "></script>
-
-        <!--- Rating js --->
-        <script src="../assets/plugins/rating/jquery.rating-stars.js "></script>
-        <script src="../assets/plugins/rating/jquery.barrating.js "></script>
-
-        <!--- P-scroll js --->
-        <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js "></script>
-        <script src="../assets/plugins/perfect-scrollbar/p-scroll.js "></script>
-
-        <!--- Custom Scroll bar Js --->
-        <script src="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js "></script>
-
-        <!--- Sidebar js --->
-        <script src="../assets/plugins/side-menu/sidemenu.js "></script>
-
-        <!--- Right-sidebar js --->
-        <script src="../assets/plugins/sidebar/sidebar.js "></script>
-        <script src="../assets/plugins/sidebar/sidebar-custom.js "></script>
-
-        <!--- Eva-icons js --->
-        <script src="../assets/js/eva-icons.min.js "></script>
-
-        <!--- Index js --->
-        <script src="../assets/js/script.js "></script>
-
-        <!--- Custom js --->
-        <script src="../assets/js/custom.js "></script>
-        <!--- Internal Chat js --->
-        <script src="../assets/js/chat.js "></script>
-
-        <!-- form-elements js -->
-        <script src="../assets/js/form-elements.js "></script>
-
-        <script>
-            /* JS comes here */
-            function runSpeechRecognition() {
-                // get output div reference
-                var output = document.getElementById("output ");
-                // get action element reference
-                var action = document.getElementById("action ");
-                // new speech recognition object
-                var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-                var recognition = new SpeechRecognition();
-
-                // This runs when the speech recognition service starts
-                recognition.onstart = function() {
-                    action.innerHTML = "<small>listening, please speak...</small>";
-                };
-                recognition.onspeechend = function() {
-                        action.innerHTML = "<small>stopped listening, hope you are done...</small>";
-                        recognition.stop();
-                    } // This runs when the speech recognition
-                service returns result recognition.onresult = function(event) {
-                    var transcript = event.results[0][0].transcript;
-                    var confidence = event.results[0][0].confidence;
-                    output.innerHTML = "<b>Text:</b> " + transcript +
-                        "<br/> <b>Confidence:</b> " + confidence * 100 + "%";
-                    output.classList.remove("hide");
-                }; // start recognition recognition.start(); 
-            }
-        </script>
-        <script>
-            $(document).ready(function() {
-                $("#btnShowHide").click(function() {
-                    $("#divShowHide").toggle();
-                });
-            });
-
-            $(() => {
-                'use strict';
-                $('.bookmarks-design').click(function() {
-                    $(this).toggleClass('actived');
-                });
-            });
-        </script>
-        <script>
-            $(document).ready(function() {
-                $(document).on("scroll", onScroll);
-
-                //smoothscroll
-                $('a[href^="#"]').on('click', function(e) {
-                    e.preventDefault();
-                    $(document).off("scroll");
-
-                    $('a').each(function() {
-                        $(this).removeClass('active');
-                    })
-                    $(this).addClass('active');
-
-                    var target = this.hash,
-                        menu = target;
-                    $target = $(target);
-                    $('html, body').stop().animate({
-                        'scrollTop': $target.offset().top + 2
-                    }, 500, 'swing', function() {
-                        window.location.hash = target;
-                        $(document).on("scroll", onScroll);
-                    });
-                });
-            });
-
-            function onScroll(event) {
-                var scrollPos = $(document).scrollTop();
-                $('#menu-center a').each(function() {
-                    var currLink = $(this);
-                    var refElement = $(currLink.attr("href"));
-                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                        $('#menu-center ul li a').removeClass("active");
-                        currLink.addClass("active");
-                    } else {
-                        currLink.removeClass("active");
-                    }
-                });
-            }
-        </script>
-
-</body>
-
-</html>
+<footer>
+    <h4>Design by <a href="https://twitter.com/jofpin" target="_blank" title="José Pino">@jofpin</a></h4>
+</footer>

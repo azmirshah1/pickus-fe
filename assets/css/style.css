@@ -2279,13 +2279,14 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     margin-bottom: 10px;
 }
 
-.icon {
+
+/* .icon {
     padding: 5px 10px 0px 0px;
     color: grey;
     min-width: 50px;
     text-align: center;
     font-size: 18px;
-}
+} */
 
 .icon2 {
     /* padding: -12px 10px 0px 0px; */
@@ -2335,6 +2336,79 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
 .job-company-image {
     height: 200px;
     width: 100%;
+}
+
+
+/* Public Profile Page */
+
+.content-profile-page {
+    margin: 1em auto;
+    width: 100%;
+}
+
+.profile-user-page .img-user-profile {
+    /* margin: 0 auto; */
+    margin-top: -14px;
+    text-align: center;
+}
+
+.profile-user-page .img-user-profile .profile-bgHome {
+    border-bottom: .2em solid #f5f5f5;
+    border-radius: 6px 6px 0px 0px;
+    width: 100%;
+    height: 300px;
+}
+
+.profile-user-page .img-user-profile .avatar {
+    /* margin: 0 auto; */
+    float: left;
+    margin: -100px 10px 10px 40px;
+    background: #fff;
+    width: 180px;
+    height: 180px;
+    padding: 0.25em;
+    border-radius: .4em;
+    /* margin-top: -10em; */
+    box-shadow: 0 0 .1em rgba(0, 0, 0, 0.35);
+}
+
+.profile-user-page .user-profile-data,
+.profile-user-page .description-profile {
+    /* text-align: left; */
+    padding: 0 1.5em;
+}
+
+.profile-user-page .user-profile-data h1 {
+    position: absolute;
+    margin: -80px 10px 10px 210px;
+    /* margin-top: -30px; */
+    color: white;
+    margin-bottom: 0;
+}
+
+.profile-user-page .user-profile-data p {
+    position: absolute;
+    margin: -40px 10px 10px 210px;
+    color: white;
+    font-size: 1.1em;
+    /* margin-top: 0; */
+    margin-bottom: 0.5em;
+}
+
+.profile-user-page .description-profile {
+    color: #75787b;
+    font-size: 0.98em;
+}
+
+
+/* Information in public profile */
+
+.title-header {
+    background: linear-gradient(90deg, #AE3CAB 0%, #F1397A 100%);
+    color: white;
+    padding: 10px 0px 0px 5px;
+    text-align: center;
+    border-radius: 6px 6px 0px 0px;
 }
 
 
@@ -69956,6 +70030,15 @@ button.bg-purple-gradient:focus {
 .wd-100v {
     width: 100vw;
 }
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */
