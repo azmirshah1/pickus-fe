@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="pickus, job portal, job seeker, cari kerja">
+    <meta name="author" content="Pickus | Online Job Platform">
+
+    <!-- Title -->
+    <title> List of companies >> Job Portal | Vacancies | Professional Marketplace</title>
+
+    <!--- Favicon --->
+    <link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon" />
+    <!--- Icons css --->
+    <link href="../assets/css/icons.css" rel="stylesheet">
+    <!--- Select2 css --->
+    <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet">
+    <!--- Custom Scroll bar --->
+    <link href="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <!-- Owl-carousel css-->
+    <link href="../assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <!--- Right-sidemenu css --->
+    <link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <!--- Style css --->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/skin-modes.css" rel="stylesheet">
+    <!--- Sidemenu css --->
+    <link href="../assets/css/sidemenu.css" rel="stylesheet">
+    <!--- Animations css --->
+    <link href="../assets/css/animate.css" rel="stylesheet">
+    <!--- Internal Inputtags css --->
+    <link href="../assets/plugins/inputtags/inputtags.css" rel="stylesheet">
+
+
+</head>
+
+<body class="main-body app sidebar-mini">
+    <!-- Loader -->
+    <div id="global-loader">
+        <img src="../assets/img/loaders/loader-4.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- /Loader -->
+
+    <!-- main-sidebar opened -->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="main-sidebar app-sidebar sidebar-scroll">
+        <div class="main-sidebar-header">
+            <a class="desktop-logo logo-light active" href="index.html" class="text-center mx-auto"><img src="../assets/img/brand/logo.png" class="main-logo"></a>
+            <a class="desktop-logo icon-logo active" href="index.html"><img src="../assets/img/brand/favicon.png" class="logo-icon"></a>
+            <a class="desktop-logo logo-dark active" href="index.html"><img src="../assets/img/brand/logo-white.png" class="main-logo dark-theme" alt="logo"></a>
+            <a class="logo-icon mobile-logo icon-dark active" href="index.html"><img src="../assets/img/brand/favicon-white.png" class="logo-icon dark-theme" alt="logo"></a>
+        </div>
+        <!-- /logo -->
+        <div class="main-sidebar-loggedin">
+            <div class="app-sidebar__user">
+                <div class="dropdown user-pro-body text-center">
+                    <div class="user-pic">
+                        <img src="../assets/img/faces/tonystark.png" alt="user-img" class="rounded-circle mCS_img_loaded">
+                    </div>
+                    <div class="user-info">
+                        <h3 class=" mb-0 text-dark">Tony Stark</h3>
+                        <span class="text-muted app-sidebar__user-name text-sm">Front End Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /user -->
+        <div class="sidebar-navs">
+            <ul class="nav  nav-pills-circle">
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings" aria-describedby="tooltip365540">
+                    <a class="nav-link text-center m-2" href="setting.html">
+                        <i class="fe fe-settings"></i>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mail">
+                    <a class="nav-link text-center m-2" href="mail.html">
+                        <i class="fe fe-mail"></i>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Public Profile">
+                    <a class="nav-link text-center m-2" href="publicprofile.html">
+                        <i class="fe fe-user"></i>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Logout">
+                    <a class="nav-link text-center m-2" href="login.html">
+                        <i class="fe fe-power"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-sidebar-body">
+            <ul class="side-menu ">
+                <li class="slide">
+                    <a class="side-menu__item" href="index.html"><i class="side-menu__icon fas fa-desktop"></i><span class="side-menu__label">Dashboard</span></a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" href="myprofile.html"><i class="side-menu__icon mdi mdi-account"></i><span class="side-menu__label">My Profile</span></a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" href="jobs.html"><i class="side-menu__icon fas fa-search"></i><span class="side-menu__label">Explore Jobs</span></a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" href="jobapplication.html"><i class="side-menu__icon mdi mdi-briefcase-check"></i><span class="side-menu__label">Job Applications</span></a>
+                </li>
+                <li class="slide">
+                    <a class="side-menu__item" href="followedcompanies.html"><i class="side-menu__icon fas fa-briefcase"></i><span class="side-menu__label">Followed Companies</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- /main-sidebar -->
+
+    <!-- main-content -->
+    <div class="main-content">
+
+        <!-- main-header -->
+        <div class="main-header  side-header">
+            <div class="container-fluid">
+                <div class="main-header-left ">
+                    <div class="app-sidebar__toggle mobile-toggle" data-toggle="sidebar">
+                        <a class="open-toggle" href="#"><i class="header-icons" data-eva="menu-outline"></i></a>
+                        <a class="close-toggle" href="#"><i class="header-icons" data-eva="close-outline"></i></a>
+                    </div>
+                    <div class="responsive-logo">
+                        <a href="index.html"><img src="../assets/img/brand/logo.png" class="logo-11"></a>
+                        <a href="index.html"><img src="../assets/img/brand/favicon.png" class="logo-12"></a>
+                        <!-- Mobile header -->
+                        <a href="index.html"><img src="../assets/img/brand/logo-white.png" class="logo-1"></a>
+                        <a href="index.html"><img src="../assets/img/brand/logo-white.png" class="logo-2"></a>
+                    </div>
+                    <ul class="header-megamenu-dropdown  nav">
+                        <li class="nav-item">
+                            <a href="jobs.html" class="btn btn-link" type="button" id="dropdownMenuButton1"><span> Jobs </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="companies.html" class="btn btn-link" type="button" id="dropdownMenuButton2"><span> Companies </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="btn btn-link" type="button" id="dropdownMenuButton3"><span> Blog </span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-header-right">
+                    <div class="nav nav-item nav-link" id="bs-example-navbar-collapse-1">
+                        <form class="navbar-form" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search Jobs by Job title, skills or location">
+                                <span class="input-group-btn">
+										<button type="reset" class="btn btn-default">
+											<i class="fas fa-times"></i>
+										</button>
+										<button type="submit" class="btn btn-default nav-link">
+											<i class="fe fe-search"></i>
+										</button>
+									</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="nav nav-item  navbar-nav-right ml-auto">
+                        <div class="dropdown  nav-item main-header-message ">
+                            <a class="new nav-link" href="#"><i class="fe fe-mail"></i><span class=" pulse"></span></a>
+                            <div class="dropdown-menu">
+                                <div class="menu-header-content bg-primary-gradient text-left d-flex">
+                                    <div class="">
+                                        <h6 class="menu-header-title text-white mb-0">5 new Messages</h6>
+                                    </div>
+                                    <div class="my-auto ml-auto">
+                                        <a class="badge badge-pill badge-warning float-right" href="#">Mark All Read</a>
+                                    </div>
+                                </div>
+                                <div class="main-message-list chat-scroll">
+                                    <a href="#" class="p-3 d-flex border-bottom">
+                                        <div class="  drop-img  cover-image  " data-image-src="../assets/img/faces/3.jpg">
+                                            <span class="avatar-status bg-teal"></span>
+                                        </div>
+
+                                        <div class="wd-90p">
+                                            <div class="d-flex">
+                                                <h5 class="mb-1 name">Pickus</h5>
+                                                <p class="time mb-0 text-right ml-auto float-right">10 min ago</p>
+                                            </div>
+                                            <p class="mb-0 desc">You have applied for Front End Devel...</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="p-3 d-flex border-bottom">
+                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/2.jpg">
+                                            <span class="avatar-status bg-teal"></span>
+                                        </div>
+                                        <div class="wd-90p">
+                                            <div class="d-flex">
+                                                <h5 class="mb-1 name">Nik Khairul Aiman</h5>
+                                                <p class="time mb-0 text-right ml-auto float-right">13 min ago</p>
+                                            </div>
+                                            <p class="mb-0 desc">Assalamualaikum Tony, We are from......</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="p-3 d-flex border-bottom">
+                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/9.jpg">
+                                            <span class="avatar-status bg-teal"></span>
+                                        </div>
+                                        <div class="wd-90p">
+                                            <div class="d-flex">
+                                                <h5 class="mb-1 name">Ali Husni</h5>
+                                                <p class="time mb-0 text-right ml-auto float-right">20 min ago</p>
+                                            </div>
+                                            <p class="mb-0 desc">Hi, we are from...</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="p-3 d-flex border-bottom">
+                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/12.jpg">
+                                            <span class="avatar-status bg-danger"></span>
+                                        </div>
+                                        <div class="wd-90p">
+                                            <div class="d-flex">
+                                                <h5 class="mb-1 name">Shuib Sepahtu</h5>
+                                                <p class="time mb-0 text-right ml-auto float-right">30 min ago</p>
+                                            </div>
+                                            <p class="mb-0 desc">Hello and good morning Tony ...</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="p-3 d-flex border-bottom">
+                                        <div class="drop-img cover-image" data-image-src="../assets/img/faces/5.jpg">
+                                            <span class="avatar-status bg-teal"></span>
+                                        </div>
+                                        <div class="wd-90p">
+                                            <div class="d-flex">
+                                                <h5 class="mb-1 name">Pickus</h5>
+                                                <p class="time mb-0 text-right ml-auto float-right">35 min ago</p>
+                                            </div>
+                                            <p class="mb-0 desc">You have applied for Web Devel....</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-center dropdown-footer">
+                                    <a href="#">VIEW ALL</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown nav-item main-header-notification">
+                            <a class="new nav-link" href="#"><i class="fe fe-bell"></i><span class=" pulse"></span></a>
+                            <div class="dropdown-menu">
+                                <div class="menu-header-content bg-primary-gradient text-left d-flex">
+                                    <div class="">
+                                        <h6 class="menu-header-title text-white mb-0">7 new Notifications</h6>
+                                    </div>
+                                    <div class="my-auto ml-auto">
+                                        <a class="badge badge-pill badge-warning float-right" href="#">Mark All Read</a>
+                                    </div>
+                                </div>
+                                <div class="main-notification-list Notification-scroll">
+                                    <a class="d-flex p-3 border-bottom" href="#">
+                                        <div class="notifyimg bg-danger-transparent">
+                                            <i class="la la-user-check text-danger"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <h5 class="notification-label mb-1">Pickus</h5>
+                                            <div class="notification-subtext">You have been shortlisted....</div>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <i class="las la-angle-right text-right text-muted"></i>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex p-3 border-bottom" href="#">
+                                        <div class="notifyimg bg-primary-transparent">
+                                            <i class="la la-check-circle text-primary"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <h5 class="notification-label mb-1">Pickus</h5>
+                                            <div class="notification-subtext">You have applied....</div>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <i class="las la-angle-right text-right text-muted"></i>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex p-3 border-bottom" href="#">
+                                        <div class="notifyimg bg-pink-transparent">
+                                            <i class="la la-file-alt text-pink"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <h5 class="notification-label mb-1">Pickus</h5>
+                                            <div class="notification-subtext">Please completed your profile....</div>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <i class="las la-angle-right text-right text-muted"></i>
+                                        </div>
+                                    </a>
+                                    <a class="d-flex p-3 border-bottom" href="#">
+                                        <div class="notifyimg bg-warning-transparent">
+                                            <i class="la la-envelope-open text-warning"></i>
+                                        </div>
+                                        <div class="ml-3">
+                                            <h5 class="notification-label mb-1">Pickus</h5>
+                                            <div class="notification-subtext">You have received email from....</div>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <i class="las la-angle-right text-right text-muted"></i>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="dropdown-footer">
+                                    <a href="#">VIEW ALL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /main-header -->
+
+        <!-- container -->
+        <div class="container-fluid">
+            <!-- breadcrumb -->
+            <div class="breadcrumb-header justify-content-between">
+                <div>
+                    <h2 class="content-title mb-7">Companies</h2>
+                </div>
+            </div>
+            <!-- /breadcrumb -->
+            <div class="row row-sm main-content-app">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="p-3">
+                                <div class="row row-xs">
+                                    <div class="col-md-5 mg-t-10 mg-md-t-0 input-icons">
+                                        <i class="mdi mdi-domain icon skill"></i>
+                                        <input class="form-control" placeholder=" Search Companies" type="text">
+                                        <a onclick="runSpeechRecognition()">
+                                            <span id="action"></span>
+                                            <i class="mdi mdi-microphone icon2"></i>
+                                            <div id="output" class="hide"></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-5 mg-t-10 mg-md-t-0 input-icons">
+                                        <i class="mdi mdi-map-marker icon location"></i>
+                                        <input class="form-control" placeholder="Location " type="text">
+                                        <!-- <select class="col-12 col-sm-5 col-md-6 col-lg-12 form-control select2 state-select">
+                                                <option label="State">
+                                                </option>
+                                                <option value="Perlis">
+                                                    Perlis
+                                                </option>
+                                                <option value="Kedah">
+                                                   Kedah
+                                                </option>
+                                                <option value="Perak">
+                                                    Perak
+                                                </option>
+                                                <option value="Selangor">
+                                                    Selangor
+                                                </option>
+                                                <option value="Kuala Lumpur">
+                                                    Kuala Lumpur
+                                                </option>
+                                                <option value="Melaka">
+                                                    Melaka
+                                                </option>
+                                                <option value="Negeri Sembilan">
+                                                    Negeri Sembilan
+                                                </option>
+                                                <option value="Sime Darby">
+                                                    Johor
+                                                </option>
+                                                <option value="Penang">
+                                                    Pahang
+                                                </option>
+                                                <option value="Kelantan">
+                                                    Kelantan
+                                                </option>
+                                                <option value="Terengganu">
+                                                    Terengganu
+                                                </option>
+                                                <option value="Sabah">
+                                                    Sabah
+                                                </option>
+                                                <option value="Sarawak">
+                                                    Sarawak
+                                                </option>
+                                            </select> -->
+                                    </div>
+                                    <div class="col-md mg-t-10 mg-md-t-0 ">
+                                        <button class="btn btn-gradient-primary btn-block ">Search Company</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Col -->
+                <!-- /Col -->
+                <div class="panel-body tabs-menu-body main-content-body-right mt-7 col-lg-12">
+                    <!-- Profile Tab -->
+                    <div class="tab-content">
+                        <div class="tab-pane mt-3 active">
+                            <!-- Row -->
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <div>
+                                                <div class="dropdown text-right">
+                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        <i class="fe fe-more-vertical text-dark fs-16"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right shadow">
+                                                        <a class="dropdown-item" href="#"><i class="fe fe-message-square mr-2"></i> Message</a>
+                                                        <a class="dropdown-item" href="#"><i class="fe fe-trash-2 mr-2"></i> Unfollow</a>
+                                                    </div>
+                                                </div>
+                                                <img class="followed-img mb-3" src="../assets/img/company/followedcompanies/aplikasi.png">
+                                                <h6 class="card-title mb-1">Agensi Pekerjaan Aplikasi Sdn Bhd</h6>
+                                                <p class="text-muted card-sub-title">Shah Alam, Selangor</p>
+                                                <button class="btn btn-rounded btn-gradient-primary">View Company</button>
+                                                <p class="pt-3">Job Vacancies: <strong>0</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <div>
+                                                <div class="dropdown text-right">
+                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        <i class="fe fe-more-vertical text-dark fs-16"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right shadow">
+                                                        <a class="dropdown-item" href="#"><i class="fe fe-message-square mr-2"></i> Message</a>
+                                                        <a class="dropdown-item" href="#"><i class="fe fe-trash-2 mr-2"></i> Unfollow</a>
+                                                    </div>
+                                                </div>
+                                                <img class="followed-img mb-3" src="../assets/img/company/followedcompanies/petronas.png">
+                                                <h6 class="card-title mb-1">Petroliam Nasional Berhad</h6>
+                                                <p class="text-muted card-sub-title">Ampang Jaya, Selangor</p>
+                                                <button class="btn btn-rounded btn-gradient-primary">View Company</button>
+                                                <p class="pt-3">Job Vacancies: <strong>0</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <div>
+                                                <div class="dropdown text-right">
+                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        <i class="fe fe-more-vertical text-dark fs-16"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right shadow">
+                                                        <a class="dropdown-item" href="#"><i class="fe fe-message-square mr-2"></i> Message</a>
+                                                        <a class="dropdown-item" href="#"><i class="fe fe-trash-2 mr-2"></i> Unfollow</a>
+                                                    </div>
+                                                </div>
+                                                <img class="followed-img mb-3" src="../assets/img/company/followedcompanies/leonghap.png">
+                                                <h6 class="card-title mb-1">Leong Hup International</h6>
+                                                <p class="text-muted card-sub-title">Cheras, Kuala Lumpur</p>
+                                                <button class="btn btn-rounded btn-gradient-primary">View Company</button>
+                                                <p class="pt-3">Job Vacancies: <strong>0</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <div>
+                                                <div class="dropdown text-right">
+                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        <i class="fe fe-more-vertical text-dark fs-16"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right shadow">
+                                                        <a class="dropdown-item" href="#"><i class="fe fe-message-square mr-2"></i> Message</a>
+                                                        <a class="dropdown-item" href="#"><i class="fe fe-trash-2 mr-2"></i> Unfollow</a>
+                                                    </div>
+                                                </div>
+                                                <img class="followed-img mb-3" src="../assets/img/company/followedcompanies/aplikasi.png">
+                                                <h6 class="card-title mb-1">Agensi Pekerjaan Aplikasi Sdn Bhd</h6>
+                                                <p class="text-muted card-sub-title">Shah Alam, Selangor</p>
+                                                <button class="btn btn-rounded btn-gradient-primary">View Company</button>
+                                                <p class="pt-3">Job Vacancies: <strong>0</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row closed -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /main-content -->
+    <!-- Footer opened -->
+    <div class="main-footer ht-40 ">
+        <div class="container-fluid pd-t-0-f ht-100p ">
+            <span>Copyright © 2020 <a href="# ">Agensi pekerjaan Aplikasi Sdn Bhd</a>. All right Reserved</span>
+        </div>
+    </div>
+
+    <!-- Footer closed -->
+
+
+    <!--- Back-to-top --->
+    <a href="#top " id="back-to-top "><i class="las la-angle-double-up "></i></a>
+
+    <!--- JQuery min js --->
+    <script src="../assets/plugins/jquery/jquery.min.js "></script>
+
+    <!--- Datepicker js --->
+    <script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js "></script>
+
+    <!--- Bootstrap Bundle js --->
+    <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!--- Ionicons js --->
+    <script src="../assets/plugins/ionicons/ionicons.js "></script>
+
+    <!--- Moment js --->
+    <script src="../assets/plugins/moment/moment.js "></script>
+
+    <!--- JQuery sparkline js --->
+    <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js "></script>
+
+    <!--- Internal jquery.maskedinput js --->
+    <script src="../assets/plugins/jquery.maskedinput/jquery.maskedinput.js "></script>
+
+    <!--- Internal Spectrum-colorpicker js --->
+    <script src="../assets/plugins/spectrum-colorpicker/spectrum.js "></script>
+
+    <!--- Select2.min js --->
+    <script src="../assets/plugins/select2/js/select2.min.js "></script>
+    <!--- Perfect-scrollbar js --->
+    <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js "></script>
+    <script src="../assets/plugins/perfect-scrollbar/p-scroll.js "></script>
+
+    <!--- Internal lightslider js --->
+    <script src="../assets/plugins/lightslider/js/lightslider.min.js "></script>
+
+    <!--- Internal ion.rangeSlider.min js --->
+    <script src="../assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js "></script>
+
+    <!--- Internal jquery-simple-datetimepicker js --->
+    <script src="../assets/plugins/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js "></script>
+
+    <!--- Ionicons js --->
+    <script src="../assets/plugins/jquery-simple-datetimepicker/jquery.simple-dtpicker.js "></script>
+
+    <!--- Internal Pickerjs js --->
+    <script src="../assets/plugins/pickerjs/picker.min.js "></script>
+
+    <!--- Rating js --->
+    <script src="../assets/plugins/rating/jquery.rating-stars.js "></script>
+    <script src="../assets/plugins/rating/jquery.barrating.js "></script>
+
+    <!--- P-scroll js --->
+    <script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js "></script>
+    <script src="../assets/plugins/perfect-scrollbar/p-scroll.js "></script>
+
+    <!--- Custom Scroll bar Js --->
+    <script src="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js "></script>
+
+    <!--- Sidebar js --->
+    <script src="../assets/plugins/side-menu/sidemenu.js "></script>
+
+    <!--- Right-sidebar js --->
+    <script src="../assets/plugins/sidebar/sidebar.js "></script>
+    <script src="../assets/plugins/sidebar/sidebar-custom.js "></script>
+
+    <!--- Eva-icons js --->
+    <script src="../assets/js/eva-icons.min.js "></script>
+
+    <!--- Index js --->
+    <script src="../assets/js/script.js "></script>
+
+    <!--- Custom js --->
+    <script src="../assets/js/custom.js "></script>
+    <!--- Internal Jobs js --->
+    <script src="../assets/js/jobs.js "></script>
+
+    <!-- form-elements js -->
+    <script src="../assets/js/form-elements.js "></script>
+
+    <script>
+        /* JS comes here */
+        function runSpeechRecognition() {
+            // get output div reference
+            var output = document.getElementById("output ");
+            // get action element reference
+            var action = document.getElementById("action ");
+            // new speech recognition object
+            var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+            var recognition = new SpeechRecognition();
+
+            // This runs when the speech recognition service starts
+            recognition.onstart = function() {
+                action.innerHTML = "<small>listening, please speak...</small>";
+            };
+            recognition.onspeechend = function() {
+                    action.innerHTML = "<small>stopped listening, hope you are done...</small>";
+                    recognition.stop();
+                } // This runs when the speech recognition service returns result recognition.onresult = function(event) { var transcript = event.results[0][0].transcript; var confidence = event.results[0][0].confidence; output.innerHTML
+                = "<b>Text:</b> " + transcript + " <
+            br / > < b > Confidence: < /b> " + confidence * 100 + "%"; output.classList.remove("hide"); }; / / start recognition recognition.start();
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#btnShowHide").click(function() {
+                $("#divShowHide").toggle();
+            });
+        });
+
+        $(() => {
+            'use strict';
+            $('.bookmarks-design').click(function() {
+                $(this).toggleClass('actived');
+            });
+        });
+    </script>
+    <script>
+        // Scroll function 
+        $(document).ready(function() {
+            $(document).on("scroll", onScroll);
+
+            //smoothscroll
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                $(document).off("scroll");
+
+                $('a').each(function() {
+                    $(this).removeClass('active');
+                })
+                $(this).addClass('active');
+
+                var target = this.hash,
+                    menu = target;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top + 2
+                }, 500, 'swing', function() {
+                    window.location.hash = target;
+                    $(document).on("scroll", onScroll);
+                });
+            });
+        });
+
+        function onScroll(event) {
+            var scrollPos = $(document).scrollTop();
+            $('#menu-center a').each(function() {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                    $('#menu-center ul li a').removeClass("active");
+                    currLink.addClass("active");
+                } else {
+                    currLink.removeClass("active");
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

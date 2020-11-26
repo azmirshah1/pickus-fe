@@ -90,5 +90,10 @@ $(function() {
             searchInputPlaceholder: 'Search'
         });
 
+        $('.state-select').select2({
+            placeholder: 'State',
+            searchInputPlaceholder: 'Search'
+        });
+
     });
 });

@@ -2279,14 +2279,13 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     margin-bottom: 10px;
 }
 
-
-/* .icon {
+.icon {
     padding: 5px 10px 0px 0px;
     color: grey;
     min-width: 50px;
     text-align: center;
     font-size: 18px;
-} */
+}
 
 .icon2 {
     /* padding: -12px 10px 0px 0px; */
