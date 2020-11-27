@@ -2249,6 +2249,94 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
 
 /* Main custom start */
 
+
+/* Login Page */
+
+.relative {
+    position: relative;
+}
+
+.relative i.fa {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    /* width: 30px; */
+    color: #9b9aa3;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.15s ease-in-out;
+}
+
+.login-text {
+    position: absolute;
+    top: -11px;
+    text-align: center;
+    width: 40%;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #a5a0b1;
+}
+
+.line-login {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-top: 1px solid #a5a0b1;
+}
+
+.movebtn {
+    background-color: transparent;
+    display: inline-block;
+    width: 100%;
+    background-image: none;
+    padding: 8px 10px;
+    border-radius: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.5, 1.65, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.5, 1.65, 0.37, 0.66);
+    margin-bottom: 15px;
+}
+
+.linkedin,
+.facebook {
+    width: 50%;
+    float: left;
+}
+
+.linkedin {
+    border: 2px solid #0e76a8;
+    color: #ffffff;
+    background-color: #0e76a8;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.facebook {
+    border: 2px solid #2e4da7;
+    color: #ffffff;
+    background-color: #2e4da7;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.linkedin:focus,
+.linkedin:hover,
+.linkedin:active {
+    background-color: #0789C7;
+    color: #FFF;
+    border-color: #0789C7;
+    box-shadow: none;
+}
+
+.facebook:focus,
+.facebook:hover,
+.facebook:active {
+    background-color: #4974F0;
+    color: #FFF;
+    border-color: #4974F0;
+    box-shadow: none;
+}
+
 .card-body .followed-img {
     width: auto;
     height: 100px;
@@ -2995,7 +3083,7 @@ fieldset:disabled a.btn {
 
 .btn-gradient-primary:hover {
     color: #fff !important;
-    background: linear-gradient(90deg, #F53976 15.9%, #F53976 101.72%);
+    background: linear-gradient(90deg, #F53976 15.9%, #A93CAD 101.72%);
     /* border-radius: 20px;
     font-size: 12px;
     width: 25%; */
@@ -70029,6 +70117,9 @@ button.bg-purple-gradient:focus {
 .wd-100v {
     width: 100vw;
 }
+
+
+/*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */
