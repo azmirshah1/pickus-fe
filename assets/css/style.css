@@ -2343,6 +2343,64 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
 }
 
 
+/* Dashboard */
+
+.noti-amount {
+    font-size: 20px;
+}
+
+.noti-amount.applied-amount {
+    background: linear-gradient(to right, #0E2844 0%, #507391 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.noti-amount.bookmarks-amount {
+    background: linear-gradient(to right, #BA3BA1 0%, #E53A82 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.noti-amount.profile-amount {
+    background: linear-gradient(to right, #6F60F5 0%, #4A9DF3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.noti-amount.messages-amount {
+    background: linear-gradient(to right, #F2205D 0%, #FB541D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dashboard-profile h3 {
+    background: linear-gradient(to right, #BA3BA1 0%, #E53A82 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-img-dashboard {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: auto;
+    /* border-radius: 100%; */
+    text-align: center;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.main-img-dashboard img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    /* border-radius: 100%; */
+    border-radius: 6px 6px 6px 6px;
+    border: 2px solid white;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 5px 5px 0px rgba(44, 44, 44, 0.2);
+}
+
+
 /* Jobs pages */
 
 .field-icon {
@@ -5172,6 +5230,26 @@ input[type="button"].btn-block {
 
 .location-icon {
     color: #F53C5B;
+}
+
+.loc-icon {
+    color: #F53C5B;
+    font-size: 20px;
+}
+
+.phone-icon {
+    color: #FF6704;
+    font-size: 19px;
+}
+
+.email-icon {
+    color: #3BB4F2;
+    font-size: 20px;
+}
+
+.usd-icon {
+    color: #0BA360;
+    font-size: 20px;
 }
 
 @media (max-width: 575.98px) {
@@ -14896,11 +14974,12 @@ a.text-dark:focus {
 
 .main-toggle {
     width: 60px;
-    height: 25px;
+    height: 23px;
     background-color: #b4bdce;
     padding: 2px;
     position: relative;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .main-toggle span {
@@ -14913,6 +14992,7 @@ a.text-dark:focus {
     background-color: #fff;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    border-radius: 20px;
 }
 
 .main-toggle span::before,
@@ -14956,7 +15036,7 @@ a.text-dark:focus {
 }
 
 .main-toggle-success.on {
-    background-color: #0ba360;
+    background: linear-gradient(90deg, #A23CB2 0%, #F83974 100%);
 }
 
 .main-toggle-dark.on {
@@ -70117,6 +70197,12 @@ button.bg-purple-gradient:focus {
 .wd-100v {
     width: 100vw;
 }
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */
