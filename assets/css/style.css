@@ -2387,6 +2387,8 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     /* border-radius: 100%; */
     text-align: center;
     border-radius: 6px 6px 6px 6px;
+    margin-left: 30%;
+    margin-right: auto;
 }
 
 .main-img-dashboard img {
