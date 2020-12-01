@@ -1213,6 +1213,11 @@
     .sidenav-toggled .desktop-logo {
         display: none;
     }
+    .sidenav-toggled .wideget,
+    .sidenav-toggled .side-btn,
+    .sidenav-toggled .special-logo {
+        display: none;
+    }
     .sidenav-toggled .side-header {
         width: 70px;
     }
