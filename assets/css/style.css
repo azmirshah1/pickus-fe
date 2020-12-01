@@ -2393,7 +2393,7 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
 .main-img-dashboard {
     display: inline-block;
     position: relative;
-    width: 100px;
+    width: 110px;
     height: auto;
     /* border-radius: 100%; */
     text-align: center;
@@ -17959,6 +17959,7 @@ body {
 .media img.recommended-img {
     width: auto;
     height: 100%;
+    border-radius: 20%;
 }
 
 .dashboard-carousel .btn-icons {
