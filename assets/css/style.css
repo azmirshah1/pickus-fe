@@ -2565,7 +2565,7 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
 .profile-user-page .img-user-profile .avatar {
     /* margin: 0 auto; */
     float: left;
-    margin: -100px 10px 10px 40px;
+    margin: -130px 10px 10px 40px;
     background: #fff;
     width: 180px;
     height: 180px;
@@ -2604,7 +2604,7 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
 }
 
 
-/* Information in public profile */
+/* public profile */
 
 .title-header {
     background: linear-gradient(90deg, #AE3CAB 0%, #F1397A 100%);
@@ -2612,6 +2612,22 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     padding: 10px 0px 0px 5px;
     text-align: center;
     border-radius: 6px 6px 0px 0px;
+}
+
+.membership-date {
+    margin-top: -29px;
+    padding-right: 23px;
+}
+
+.date-since {
+    color: #8041F6;
+}
+
+.public-profile {
+    width: 300px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -34454,7 +34470,7 @@ textarea.parsley-success:focus {
 }
 
 .main-profile-bio {
-    font-size: 13px;
+    font-size: 0.875rem;
     margin-bottom: 20px;
 }
 
