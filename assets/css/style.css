@@ -2648,6 +2648,7 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     -webkit-text-fill-color: transparent;
 }
 
+
 /* Project */
 
 img.project-img {
@@ -13353,7 +13354,6 @@ a.text-dark:focus {
 
 .main-nav-line .nav-link {
     padding: 0;
-    color: #817ba7;
     position: relative;
     padding: 7px 10px 5px 10px;
     color: #37326d;
@@ -13365,9 +13365,18 @@ a.text-dark:focus {
     color: #5e597d;
 }
 
+
+/* Active tab */
+
 .main-nav-line .nav-link.active {
-    color: #5e597d;
+    background: -webkit-linear-gradient(45deg, #A23CB2, #F83974);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
+
+
+/* Underline Tab */
 
 .main-nav-line .nav-link.active::before {
     content: '';
@@ -13376,7 +13385,7 @@ a.text-dark:focus {
     bottom: 0;
     left: -20px;
     width: 2px;
-    background-color: #5e597d;
+    background: linear-gradient(90deg, #A23CB2 0%, #F83974 100%);
 }
 
 .main-nav-line.main-nav-dark .nav-link {
