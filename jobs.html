@@ -58,39 +58,24 @@
             <div class="app-sidebar__user">
                 <div class="dropdown user-pro-body text-center">
                     <div class="user-pic">
-                        <img src="../assets/img/faces/tonystark.png" alt="user-img" class="rounded-circle mCS_img_loaded">
+                        <a href="publicprofile.html"><img src="../assets/img/faces/azmir.jpg" alt="user-img" style="width: 120px; height: auto;" class="rounded-circle mCS_img_loaded"></a>
+                        <a href="publicprofile.html" data-placement="top" data-toggle="tooltip" title="View your public profile" class="special-logo public-profile-icon active"><i class="fe fe-user"></i></a>
                     </div>
-                    <div class="user-info">
+
+                    <!-- <div class="user-info">
                         <h3 class=" mb-0 text-dark">Tony Stark</h3>
                         <span class="text-muted app-sidebar__user-name text-sm">Front End Developer</span>
+                    </div> -->
+                    <div class="user-info">
+                        <h3 class=" mb-0 text-dark">Immediate Available <i class="fa fa-info-circle" data-placement="top" data-toggle="tooltip" title="You will be listed in candidate list"></i></h3>
+                        <div class="main-toggle-group-demo mg-t-10 justify-content-center">
+                            <div class="main-toggle main-toggle-success on mb-3">
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /user -->
-        <div class="sidebar-navs">
-            <ul class="nav  nav-pills-circle">
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings" aria-describedby="tooltip365540">
-                    <a class="nav-link text-center m-2" href="setting.html">
-                        <i class="fe fe-settings"></i>
-                    </a>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mail">
-                    <a class="nav-link text-center m-2" href="mail.html">
-                        <i class="fe fe-mail"></i>
-                    </a>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Public Profile">
-                    <a class="nav-link text-center m-2" href="publicprofile.html">
-                        <i class="fe fe-user"></i>
-                    </a>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Logout">
-                    <a class="nav-link text-center m-2" href="login.html">
-                        <i class="fe fe-power"></i>
-                    </a>
-                </li>
-            </ul>
         </div>
         <div class="main-sidebar-body">
             <ul class="side-menu ">
@@ -240,72 +225,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown nav-item main-header-notification">
-                            <a class="new nav-link" href="#"><i class="fe fe-bell"></i><span class=" pulse"></span></a>
-                            <div class="dropdown-menu">
-                                <div class="menu-header-content bg-primary-gradient text-left d-flex">
-                                    <div class="">
-                                        <h6 class="menu-header-title text-white mb-0">7 new Notifications</h6>
-                                    </div>
-                                    <div class="my-auto ml-auto">
-                                        <a class="badge badge-pill badge-warning float-right" href="#">Mark All Read</a>
-                                    </div>
-                                </div>
-                                <div class="main-notification-list Notification-scroll">
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-danger-transparent">
-                                            <i class="la la-user-check text-danger"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">You have been shortlisted....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-primary-transparent">
-                                            <i class="la la-check-circle text-primary"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">You have applied....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-pink-transparent">
-                                            <i class="la la-file-alt text-pink"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">Please completed your profile....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-warning-transparent">
-                                            <i class="la la-envelope-open text-warning"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">You have received email from....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-
-                                </div>
-                                <div class="dropdown-footer">
-                                    <a href="#">VIEW ALL</a>
-                                </div>
-                            </div>
+                        <div class="dropdown main-header-message right-toggle">
+                            <a class="nav-link pr-0" data-toggle="sidebar-right" data-target=".sidebar-right">
+                                <i class="ion ion-md-keypad tx-20 bg-transparent"></i><span class=" pulse"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -459,356 +382,363 @@
                         <div class="card">
                             <div class="main-content-left main-content-left-chat">
                                 <!-- List of jobs start -->
-                                <div class="main-chat-list" id="ChatList" style="min-height: 750px;">
+                                <div class="main-chat-list mr-2" id="ChatList" style="min-height: 700px;">
                                     <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                        <div class="d-flex">
+                                            <a href="# ">
+                                                <img class="recommended-img w-7 h-7 " alt="64x64 " src="../assets/img/company/Maybank.png ">
                                             </a>
                                         </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
+                                        <div class="media-body ">
+                                            <div class="d-flex ">
+                                                <h6 class="mt-0 mb-0 recommended-title ">Front End Developer</h6>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
+                                            <div class="wrapper ">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-6 ">
+                                                    <div class="d-flex flex-row recommended-company">
+                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1 "></i>
+                                                        <p class=" mb-0 ">Malayan Bank Berhad</p>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
+                                                    <div class="d-flex flex-row p-2 recommended-location">
+                                                        <i class="location-icon mdi mdi-map-marker mr-1 "></i>
+                                                        <p class="mb-0 ">Kuala Lumpur</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                            <div class="wrapper p-section">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-7 ">
                                                     <div class=" d-flex flex-row ">
                                                         <span class="badge badge-success-gradient ">Permanent</span>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2 ">
+                                                    <div class="d-flex flex-row p-2 recommended-rate">
                                                         <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex mt-6">
+                                            <div class="d-flex mt-7">
                                                 <div class="progress progress-recommended-job progress-sm mt-2 ">
                                                     <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
                                                 </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
+                                                <small class="mb-0 font-italic "><span class="float-right ml-2 mt-1 ">70% Match</span></small>
+                                                <small class="ml-auto text-muted text-right mt-1 date-posted">2 Days ago</small>
                                             </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
+                                            <div class="d-flex mt-6 float-right bookmarks-section ">
+                                                <a href="# " class="bookmarks-design "><i class="fa fa-bookmark "></i></a>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Second -->
                                     <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                        <div class="d-flex">
+                                            <a href="# ">
+                                                <img class="recommended-img w-7 h-7 " alt="64x64 " src="../assets/img/company/boost.png ">
                                             </a>
                                         </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
+                                        <div class="media-body ">
+                                            <div class="d-flex ">
+                                                <h6 class="mt-0 mb-0 recommended-title ">UI/UX Designer</h6>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
+                                            <div class="wrapper ">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-6 ">
+                                                    <div class="d-flex flex-row recommended-company">
+                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1 "></i>
+                                                        <p class=" mb-0 ">Axiata Digital Sdn Bhd</p>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
+                                                    <div class="d-flex flex-row p-2 recommended-location">
+                                                        <i class="location-icon mdi mdi-map-marker mr-1 "></i>
+                                                        <p class="mb-0 ">Kuala Lumpur</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                            <div class="wrapper p-section">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-7 ">
                                                     <div class=" d-flex flex-row ">
-                                                        <span class="badge badge-success-gradient ">Permanent</span>
+                                                        <span class="badge badge-info-gradient ">Contract</span>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2 ">
-                                                        <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
+                                                    <div class="d-flex flex-row p-2 recommended-rate">
+                                                        <p class="mb-0 ">RM2,500 - RM4,500 / Month</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex mt-6">
+                                            <div class="d-flex mt-7">
                                                 <div class="progress progress-recommended-job progress-sm mt-2 ">
-                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
+                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="90 " class="progress-bar bg-gradient-secondary wd-90p " role="progressbar "></div>
                                                 </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
+                                                <small class="mb-0 font-italic "><span class="float-right ml-2 mt-1 ">90% Match</span></small>
+                                                <small class="ml-auto text-muted text-right mt-1 date-posted">3 Days ago</small>
                                             </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
+                                            <div class="d-flex mt-6 float-right bookmarks-section ">
+                                                <a href="# " class="bookmarks-design "><i class="fa fa-bookmark "></i></a>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Third -->
                                     <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                        <div class="d-flex">
+                                            <a href="# ">
+                                                <img class="recommended-img w-7 h-7 " alt="64x64 " src="../assets/img/company/digi.png ">
                                             </a>
                                         </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
+                                        <div class="media-body ">
+                                            <div class="d-flex ">
+                                                <h6 class="mt-0 mb-0 recommended-title ">Full Stack Developer</h6>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
+                                            <div class="wrapper ">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-6 ">
+                                                    <div class="d-flex flex-row recommended-company">
+                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1 "></i>
+                                                        <p class=" mb-0 ">Digi Telecomunications</p>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
+                                                    <div class="d-flex flex-row p-2 recommended-location">
+                                                        <i class="location-icon mdi mdi-map-marker mr-1 "></i>
+                                                        <p class="mb-0 ">Petaling Jaya</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                            <div class="wrapper p-section">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-7 ">
                                                     <div class=" d-flex flex-row ">
                                                         <span class="badge badge-success-gradient ">Permanent</span>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2 ">
-                                                        <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
+                                                    <div class="d-flex flex-row p-2 recommended-rate">
+                                                        <p class="mb-0 ">RM4,500 - RM7,500 / Month</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex mt-6">
+                                            <div class="d-flex mt-7">
                                                 <div class="progress progress-recommended-job progress-sm mt-2 ">
-                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
+                                                    <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="50 " class="progress-bar bg-gradient-secondary wd-50p " role="progressbar "></div>
                                                 </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
+                                                <small class="mb-0 font-italic "><span class="float-right ml-2 mt-1 ">50% Match</span></small>
+                                                <small class="ml-auto text-muted text-right mt-1 date-posted">5 Days ago</small>
                                             </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
+                                            <div class="d-flex mt-6 float-right bookmarks-section ">
+                                                <a href="# " class="bookmarks-design "><i class="fa fa-bookmark "></i></a>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Forth -->
                                     <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                        <div class="d-flex">
+                                            <a href="# ">
+                                                <img class="recommended-img w-7 h-7 " alt="64x64 " src="../assets/img/company/Maybank.png ">
                                             </a>
                                         </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
+                                        <div class="media-body ">
+                                            <div class="d-flex ">
+                                                <h6 class="mt-0 mb-0 recommended-title ">Front End Developer</h6>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
+                                            <div class="wrapper ">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-6 ">
+                                                    <div class="d-flex flex-row recommended-company">
+                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1 "></i>
+                                                        <p class=" mb-0 ">Malayan Bank Berhad</p>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
+                                                    <div class="d-flex flex-row p-2 recommended-location">
+                                                        <i class="location-icon mdi mdi-map-marker mr-1 "></i>
+                                                        <p class="mb-0 ">Kuala Lumpur</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                            <div class="wrapper p-section">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-7 ">
                                                     <div class=" d-flex flex-row ">
                                                         <span class="badge badge-success-gradient ">Permanent</span>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2 ">
+                                                    <div class="d-flex flex-row p-2 recommended-rate">
                                                         <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex mt-6">
+                                            <div class="d-flex mt-7">
                                                 <div class="progress progress-recommended-job progress-sm mt-2 ">
                                                     <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
                                                 </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
+                                                <small class="mb-0 font-italic "><span class="float-right ml-2 mt-1 ">70% Match</span></small>
+                                                <small class="ml-auto text-muted text-right mt-1 date-posted">2 Days ago</small>
                                             </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
+                                            <div class="d-flex mt-6 float-right bookmarks-section ">
+                                                <a href="# " class="bookmarks-design "><i class="fa fa-bookmark "></i></a>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- fifth -->
                                     <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                        <div class="d-flex">
+                                            <a href="# ">
+                                                <img class="recommended-img w-7 h-7 " alt="64x64 " src="../assets/img/company/Maybank.png ">
                                             </a>
                                         </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
+                                        <div class="media-body ">
+                                            <div class="d-flex ">
+                                                <h6 class="mt-0 mb-0 recommended-title ">Front End Developer</h6>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
+                                            <div class="wrapper ">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-6 ">
+                                                    <div class="d-flex flex-row recommended-company">
+                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1 "></i>
+                                                        <p class=" mb-0 ">Malayan Bank Berhad</p>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
+                                                    <div class="d-flex flex-row p-2 recommended-location">
+                                                        <i class="location-icon mdi mdi-map-marker mr-1 "></i>
+                                                        <p class="mb-0 ">Kuala Lumpur</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                            <div class="wrapper p-section">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-7 ">
                                                     <div class=" d-flex flex-row ">
                                                         <span class="badge badge-success-gradient ">Permanent</span>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2 ">
+                                                    <div class="d-flex flex-row p-2 recommended-rate">
                                                         <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex mt-6">
+                                            <div class="d-flex mt-7">
                                                 <div class="progress progress-recommended-job progress-sm mt-2 ">
                                                     <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
                                                 </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
+                                                <small class="mb-0 font-italic "><span class="float-right ml-2 mt-1 ">70% Match</span></small>
+                                                <small class="ml-auto text-muted text-right mt-1 date-posted">2 Days ago</small>
                                             </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
+                                            <div class="d-flex mt-6 float-right bookmarks-section ">
+                                                <a href="# " class="bookmarks-design "><i class="fa fa-bookmark "></i></a>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Sixth -->
                                     <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                        <div class="d-flex">
+                                            <a href="# ">
+                                                <img class="recommended-img w-7 h-7 " alt="64x64 " src="../assets/img/company/Maybank.png ">
                                             </a>
                                         </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
+                                        <div class="media-body ">
+                                            <div class="d-flex ">
+                                                <h6 class="mt-0 mb-0 recommended-title ">Front End Developer</h6>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
+                                            <div class="wrapper ">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-6 ">
+                                                    <div class="d-flex flex-row recommended-company">
+                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1 "></i>
+                                                        <p class=" mb-0 ">Malayan Bank Berhad</p>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
+                                                    <div class="d-flex flex-row p-2 recommended-location">
+                                                        <i class="location-icon mdi mdi-map-marker mr-1 "></i>
+                                                        <p class="mb-0 ">Kuala Lumpur</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                            <div class="wrapper p-section">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-7 ">
                                                     <div class=" d-flex flex-row ">
                                                         <span class="badge badge-success-gradient ">Permanent</span>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2 ">
+                                                    <div class="d-flex flex-row p-2 recommended-rate">
                                                         <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex mt-6">
+                                            <div class="d-flex mt-7">
                                                 <div class="progress progress-recommended-job progress-sm mt-2 ">
                                                     <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
                                                 </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
+                                                <small class="mb-0 font-italic "><span class="float-right ml-2 mt-1 ">70% Match</span></small>
+                                                <small class="ml-auto text-muted text-right mt-1 date-posted">2 Days ago</small>
                                             </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
+                                            <div class="d-flex mt-6 float-right bookmarks-section ">
+                                                <a href="# " class="bookmarks-design "><i class="fa fa-bookmark "></i></a>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Seventh -->
                                     <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                        <div class="d-flex">
+                                            <a href="# ">
+                                                <img class="recommended-img w-7 h-7 " alt="64x64 " src="../assets/img/company/Maybank.png ">
                                             </a>
                                         </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
+                                        <div class="media-body ">
+                                            <div class="d-flex ">
+                                                <h6 class="mt-0 mb-0 recommended-title ">Front End Developer</h6>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
+                                            <div class="wrapper ">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-6 ">
+                                                    <div class="d-flex flex-row recommended-company">
+                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1 "></i>
+                                                        <p class=" mb-0 ">Malayan Bank Berhad</p>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
+                                                    <div class="d-flex flex-row p-2 recommended-location">
+                                                        <i class="location-icon mdi mdi-map-marker mr-1 "></i>
+                                                        <p class="mb-0 ">Kuala Lumpur</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                            <div class="wrapper p-section">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-7 ">
                                                     <div class=" d-flex flex-row ">
                                                         <span class="badge badge-success-gradient ">Permanent</span>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2 ">
+                                                    <div class="d-flex flex-row p-2 recommended-rate">
                                                         <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex mt-6">
+                                            <div class="d-flex mt-7">
                                                 <div class="progress progress-recommended-job progress-sm mt-2 ">
                                                     <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
                                                 </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
+                                                <small class="mb-0 font-italic "><span class="float-right ml-2 mt-1 ">70% Match</span></small>
+                                                <small class="ml-auto text-muted text-right mt-1 date-posted">2 Days ago</small>
                                             </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
+                                            <div class="d-flex mt-6 float-right bookmarks-section ">
+                                                <a href="# " class="bookmarks-design "><i class="fa fa-bookmark "></i></a>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Eighth -->
                                     <div class="media mt-0">
-                                        <div class="d-flex mr-3">
-                                            <a href="#">
-                                                <img class="recommended-img w-7 h-7" alt="64x64" src="../assets/img/company/Maybank.png">
+                                        <div class="d-flex">
+                                            <a href="# ">
+                                                <img class="recommended-img w-7 h-7 " alt="64x64 " src="../assets/img/company/Maybank.png ">
                                             </a>
                                         </div>
-                                        <div class="media-body">
-                                            <div class="d-flex">
-                                                <h6 class="mt-0 mb-0 recommended-title">Back End Developer</h6>
+                                        <div class="media-body ">
+                                            <div class="d-flex ">
+                                                <h6 class="mt-0 mb-0 recommended-title ">Front End Developer</h6>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-6">
-                                                    <div class="d-flex flex-row">
-                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1"></i>
-                                                        <p class=" mb-0">Malayan Bank Berhad</p>
+                                            <div class="wrapper ">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-6 ">
+                                                    <div class="d-flex flex-row recommended-company">
+                                                        <i class="company-icon fa fa-briefcase mt-1 mr-1 "></i>
+                                                        <p class=" mb-0 ">Malayan Bank Berhad</p>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2">
-                                                        <i class="location-icon mdi mdi-map-marker mr-1"></i>
-                                                        <p class="mb-0">Kuala Lumpur</p>
+                                                    <div class="d-flex flex-row p-2 recommended-location">
+                                                        <i class="location-icon mdi mdi-map-marker mr-1 "></i>
+                                                        <p class="mb-0 ">Kuala Lumpur</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="wrapper">
-                                                <div class="d-sm-flex justify-content-start align-items-center mt-7">
+                                            <div class="wrapper p-section">
+                                                <div class="d-sm-flex justify-content-start align-items-center mt-7 ">
                                                     <div class=" d-flex flex-row ">
                                                         <span class="badge badge-success-gradient ">Permanent</span>
                                                     </div>
-                                                    <div class="d-flex flex-row p-2 ">
+                                                    <div class="d-flex flex-row p-2 recommended-rate">
                                                         <p class="mb-0 ">RM3,500 - RM5,500 / Month</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex mt-6">
+                                            <div class="d-flex mt-7">
                                                 <div class="progress progress-recommended-job progress-sm mt-2 ">
                                                     <div aria-valuemax="100 " aria-valuemin="0 " aria-valuenow="70 " class="progress-bar bg-gradient-secondary wd-70p " role="progressbar "></div>
                                                 </div>
-                                                <small class="mb-0 font-italic"><span class="float-right ml-2 mt-1">70% Match</span></small>
-                                                <small class="ml-auto text-muted text-right mt-1">2 Days ago</small>
+                                                <small class="mb-0 font-italic "><span class="float-right ml-2 mt-1 ">70% Match</span></small>
+                                                <small class="ml-auto text-muted text-right mt-1 date-posted">2 Days ago</small>
                                             </div>
-                                            <div class="d-flex mt-6 float-right bookmarks-section">
-                                                <a href="#" class="bookmarks-design"><i class="fa fa-bookmark"></i></a>
+                                            <div class="d-flex mt-6 float-right bookmarks-section ">
+                                                <a href="# " class="bookmarks-design "><i class="fa fa-bookmark "></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -1043,7 +973,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="main-chat-footer">
+                            <!-- <div class="main-chat-footer">
                                 <nav class="nav float-right">
                                     <a class="nav-link float-right data-toggle=" tooltip " href=" " title="Share ">
                                         <i class="fa fa-share-alt "></i> Share
@@ -1055,12 +985,143 @@
                                         <i class="fas fa-flag "></i>
                                     </a> 
                                 </nav>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /container -->
+            <!--Sidebar-right-->
+            <div class="sidebar sidebar-right sidebar-animate ">
+                <div class="panel panel-primary card mb-0 ">
+                    <div class="panel-body tabs-menu-body p-0 border-0 ">
+                        <ul class="Date-time ">
+                            <li class="time ">
+                                <h1 class="animated ">21:00</h1>
+                                <p class="animated ">Sat,October 1st 2029</p>
+                            </li>
+                        </ul>
+                        <div class="menu-header-notification bg-gradient-primary text-left d-flex ">
+                            <div class=" ">
+                                <h6 class="menu-header-title text-white mb-0 ">7 new Notifications</h6>
+                            </div>
+                            <div class="my-auto ml-auto ">
+                                <a class="badge badge-pill badge-warning float-right " href="# ">Mark All Read</a>
+                            </div>
+                        </div>
+                        <div class="card-body latest-tasks ">
+                            <div class="main-message-list ">
+                                <a href="# " class="p-3 d-flex border-bottom ">
+                                    <div class="notifyimg ">
+                                        <i class="la la-user-check text-danger "></i>
+                                    </div>
+                                    <div class="wd-90p ">
+                                        <div class="d-flex ">
+                                            <h5 class="mb-1 name ">Pickus</h5>
+                                            <p class="time mb-0 text-right ml-auto float-right ">10 min ago</p>
+                                        </div>
+                                        <p class="mb-0 desc ">You have been shortlisted....</p>
+                                    </div>
+                                </a>
+                                <a href="# " class="p-3 d-flex border-bottom ">
+                                    <div class="notifyimg ">
+                                        <i class="la la-check-circle text-primary "></i>
+                                    </div>
+                                    <div class="wd-90p ">
+                                        <div class="d-flex ">
+                                            <h5 class="mb-1 name ">Pickus</h5>
+                                            <p class="time mb-0 text-right ml-auto float-right ">10 min ago</p>
+                                        </div>
+                                        <p class="mb-0 desc ">You have applied for Front End Devel...</p>
+                                    </div>
+                                </a>
+                                <a href="# " class="p-3 d-flex border-bottom ">
+                                    <div class="notifyimg ">
+                                        <i class="la la-file-alt text-pink "></i>
+                                    </div>
+                                    <div class="wd-90p ">
+                                        <div class="d-flex ">
+                                            <h5 class="mb-1 name ">Pickus</h5>
+                                            <p class="time mb-0 text-right ml-auto float-right ">10 min ago</p>
+                                        </div>
+                                        <p class="mb-0 desc ">Please completed your profile...</p>
+                                    </div>
+                                </a>
+                                <a href="# " class="p-3 d-flex border-bottom ">
+                                    <div class="notifyimg ">
+                                        <i class="la la-envelope-open text-warning "></i>
+                                    </div>
+                                    <div class="wd-90p ">
+                                        <div class="d-flex ">
+                                            <h5 class="mb-1 name ">Pickus</h5>
+                                            <p class="time mb-0 text-right ml-auto float-right ">10 min ago</p>
+                                        </div>
+                                        <p class="mb-0 desc ">You have received email from....</p>
+                                    </div>
+                                </a>
+                                <a href="# " class="p-3 d-flex border-bottom ">
+                                    <div class="notifyimg ">
+                                        <i class="la la-check-circle text-primary "></i>
+                                    </div>
+                                    <div class="wd-90p ">
+                                        <div class="d-flex ">
+                                            <h5 class="mb-1 name ">Pickus</h5>
+                                            <p class="time mb-0 text-right ml-auto float-right ">10 min ago</p>
+                                        </div>
+                                        <p class="mb-0 desc ">You have applied for Front End Devel...</p>
+                                    </div>
+                                </a>
+                                <a href="# " class="p-3 d-flex border-bottom ">
+                                    <div class="notifyimg ">
+                                        <i class="la la-check-circle text-primary "></i>
+                                    </div>
+                                    <div class="wd-90p ">
+                                        <div class="d-flex ">
+                                            <h5 class="mb-1 name ">Pickus</h5>
+                                            <p class="time mb-0 text-right ml-auto float-right ">10 min ago</p>
+                                        </div>
+                                        <p class="mb-0 desc ">You have applied for Front End Devel...</p>
+                                    </div>
+                                </a>
+                                <a href="# " class="p-3 d-flex border-bottom ">
+                                    <div class="notifyimg ">
+                                        <i class="la la-check-circle text-primary "></i>
+                                    </div>
+                                    <div class="wd-90p ">
+                                        <div class="d-flex ">
+                                            <h5 class="mb-1 name ">Pickus</h5>
+                                            <p class="time mb-0 text-right ml-auto float-right ">10 min ago</p>
+                                        </div>
+                                        <p class="mb-0 desc ">You have applied for Front End Devel...</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="d-flex pagination wd-100p ">
+                                <a href="# ">Previous</a>
+                                <a href="# " class="ml-auto ">Next</a>
+                            </div>
+                        </div>
+                        <div class="card-body border-top border-bottom ">
+                            <div class="row ">
+                                <div class="col-4 text-center ">
+                                    <a class="icon-primary-color " href="# "><i class="dropdown-icon mdi mdi-headset fs-20 m-0 leading-tight "></i><div>Contact Us</div></a>
+
+                                </div>
+                                <div class="col-4 text-center ">
+                                    <a class="icon-primary-color " href="setting.html "><i class="dropdown-icon mdi mdi-settings fs-20 m-0 leading-tight "></i><div>Settings</div></a>
+
+                                </div>
+                                <div class="col-4 text-center ">
+                                    <a class="icon-primary-color " href="login.html "><i class="dropdown-icon mdi mdi-power fs-20 m-0 leading-tight "></i><div>Sign out</div></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Sidebar-right-->
         </div>
         <!-- /main-content -->
         <!-- Footer opened -->
@@ -1146,6 +1207,7 @@
 
         <!--- Custom js --->
         <script src="../assets/js/custom.js "></script>
+
         <!--- Internal Jobs js --->
         <script src="../assets/js/jobs.js "></script>
 
@@ -1165,66 +1227,71 @@
 
                 // This runs when the speech recognition service starts
                 recognition.onstart = function() {
-                    action.innerHTML = "<small>listening, please speak...</small>"; }; recognition.onspeechend = function() { action.innerHTML = "<small>stopped listening, hope you are done...</small>"; recognition.stop();
-                                    } // This runs when the speech recognition service returns result recognition.onresult = function(event) { var transcript = event.results[0][0].transcript; var confidence = event.results[0][0].confidence; output.innerHTML
-                                    = "<b>Text:</b> " + transcript + "
-                                    <br/> <b>Confidence:</b> " + confidence * 100 + "%"; output.classList.remove("hide"); }; // start recognition recognition.start(); }
-                                    </script>
-                                    <script>
-                                        $(document).ready(function() {
-                                            $("#btnShowHide").click(function() {
-                                                $("#divShowHide").toggle();
-                                            });
-                                        });
+                    action.innerHTML = "<small>listening, please speak...</small>";
+                };
+                recognition.onspeechend = function() {
+                        action.innerHTML = "<small>stopped listening, hope you are done...</small>";
+                        recognition.stop();
+                    } // This runs when the speech recognition service returns result recognition.onresult = function(event) { var transcript = event.results[0][0].transcript; var confidence = event.results[0][0].confidence; output.innerHTML
+                    = "<b>Text:</b> " + transcript + " <
+                br / > < b > Confidence: < /b> " + confidence * 100 + "%"; output.classList.remove("hide"); }; / / start recognition recognition.start();
+            }
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#btnShowHide").click(function() {
+                    $("#divShowHide").toggle();
+                });
+            });
 
-                                        $(() => {
-                                            'use strict';
-                                            $('.bookmarks-design').click(function() {
-                                                $(this).toggleClass('actived');
-                                            });
-                                        });
-                                    </script>
-                                    <script>
-                                        // Scroll function 
-                                        $(document).ready(function() {
-                                            $(document).on("scroll", onScroll);
+            $(() => {
+                'use strict';
+                $('.bookmarks-design').click(function() {
+                    $(this).toggleClass('actived');
+                });
+            });
+        </script>
+        <script>
+            // Scroll function 
+            $(document).ready(function() {
+                $(document).on("scroll", onScroll);
 
-                                            //smoothscroll
-                                            $('a[href^="#"]').on('click', function(e) {
-                                                e.preventDefault();
-                                                $(document).off("scroll");
+                //smoothscroll
+                $('a[href^="#"]').on('click', function(e) {
+                    e.preventDefault();
+                    $(document).off("scroll");
 
-                                                $('a').each(function() {
-                                                    $(this).removeClass('active');
-                                                })
-                                                $(this).addClass('active');
+                    $('a').each(function() {
+                        $(this).removeClass('active');
+                    })
+                    $(this).addClass('active');
 
-                                                var target = this.hash,
-                                                    menu = target;
-                                                $target = $(target);
-                                                $('html, body').stop().animate({
-                                                    'scrollTop': $target.offset().top + 2
-                                                }, 500, 'swing', function() {
-                                                    window.location.hash = target;
-                                                    $(document).on("scroll", onScroll);
-                                                });
-                                            });
-                                        });
+                    var target = this.hash,
+                        menu = target;
+                    $target = $(target);
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top + 2
+                    }, 500, 'swing', function() {
+                        window.location.hash = target;
+                        $(document).on("scroll", onScroll);
+                    });
+                });
+            });
 
-                                        function onScroll(event) {
-                                            var scrollPos = $(document).scrollTop();
-                                            $('#menu-center a').each(function() {
-                                                var currLink = $(this);
-                                                var refElement = $(currLink.attr("href"));
-                                                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                                                    $('#menu-center ul li a').removeClass("active");
-                                                    currLink.addClass("active");
-                                                } else {
-                                                    currLink.removeClass("active");
-                                                }
-                                            });
-                                        }
-                                    </script>
+            function onScroll(event) {
+                var scrollPos = $(document).scrollTop();
+                $('#menu-center a').each(function() {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('#menu-center ul li a').removeClass("active");
+                        currLink.addClass("active");
+                    } else {
+                        currLink.removeClass("active");
+                    }
+                });
+            }
+        </script>
 
 </body>
 
