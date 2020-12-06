@@ -2648,6 +2648,12 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     -webkit-text-fill-color: transparent;
 }
 
+/* Project */
+
+img.project-img {
+    padding-right: 20px;
+}
+
 
 /* Main custom  end*/
 
@@ -14641,6 +14647,18 @@ a.text-dark:focus {
     .tabs-style-2 .main-nav-line .nav-link {
         margin: 0 !important;
     }
+    .profile-user-page .img-user-profile .avatar {
+        margin: -90px 10px 10px 30% !important;
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .profile-user-page .user-profile-data h1 {
+        font-size: 25px;
+        margin: 0px -20px 10px 7% !important;
+    }
+    .profile-user-page .user-profile-data p {
+        margin: 30px 10px 10px 18% !important;
+    }
 }
 
 
@@ -16393,6 +16411,12 @@ body {
 @media (min-width: 768px) {
     .card-dashboard-three .card-header>small {
         display: block;
+    }
+}
+
+@media(min-width: 371px) and (max-width: 375px) {
+    .profile-user-page .user-profile-data h1 {
+        margin: 0px -20px 10px 2% !important;
     }
 }
 
@@ -21058,6 +21082,12 @@ table.dataTable thead .sorting_desc_disabled:before {
     }
 }
 
+@media (max-width: 360px) {
+    .profile-user-page .user-profile-data h1 {
+        margin: 0px -20px 10px 0px !important;
+    }
+}
+
 @media (max-width: 320px) {
     .breadcrumb-header .justify-content-center.mr-5 {
         margin-right: 1rem !important;
@@ -21177,17 +21207,17 @@ table.dataTable thead .sorting_desc_disabled:before {
         height: 130px;
     }
     .profile-user-page .img-user-profile .avatar {
-        margin: -90px 10px 10px 90px;
+        margin: -90px 10px 10px 30%;
         width: 140px;
         height: 140px;
     }
     .profile-user-page .user-profile-data p {
-        margin: 40px 10px 10px 70px;
+        margin: 40px 10px 10px 25%;
         color: black;
         text-align: center;
     }
     .profile-user-page .user-profile-data h1 {
-        margin: 0px 10px 10px -2px;
+        margin: 0px -20px 10px 8%;
         color: black;
     }
     .profile-user-page .user-profile-data button {
@@ -21196,6 +21226,7 @@ table.dataTable thead .sorting_desc_disabled:before {
     }
     .profile-information {
         margin-bottom: 45px;
+        text-align: center;
     }
     .membership-date {
         padding-right: 20%;
