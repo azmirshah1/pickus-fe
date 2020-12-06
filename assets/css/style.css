@@ -21289,12 +21289,12 @@ table.dataTable thead .sorting_desc_disabled:before {
     }
     /* Work Experience */
     .work-experience-logo {
-        width: 1000px;
+        width: 1000px !important;
         margin-right: -20px;
     }
     /* Education Experience */
     .education-experience-logo {
-        width: 1200px;
+        width: 1200px !important;
         margin-right: -30px;
     }
     /* Project */
