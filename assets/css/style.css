@@ -13388,6 +13388,17 @@ a.text-dark:focus {
     background: linear-gradient(90deg, #A23CB2 0%, #F83974 100%);
 }
 
+
+/* .main-nav-line .nav-link.active::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    bottom: 0px;
+    left: 0px;
+    width: 100px;
+    background: linear-gradient(90deg, #A23CB2 0%, #F83974 100%);
+} */
+
 .main-nav-line.main-nav-dark .nav-link {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -21275,8 +21286,14 @@ table.dataTable thead .sorting_desc_disabled:before {
 }
 
 @media (max-width: 575px) {
-    .main-content-body-profile .main-nav-line .nav-link.active::before {
+    .main-nav-line .nav-link.active::before {
+        content: '';
+        position: absolute;
+        top: 26px;
+        bottom: 0px;
         left: 0px;
+        width: 100%;
+        background: linear-gradient(90deg, #A23CB2 0%, #F83974 100%);
     }
 }
 
