@@ -21203,13 +21203,11 @@ table.dataTable thead .sorting_desc_disabled:before {
 /* Mobile */
 
 @media (max-width: 414px) {
-
-.latest-post .avatar-lg {
-    width: 450px !important;
-    height: auto !important;
-    border-radius: 6px;
-}
-
+    .latest-post .avatar-lg {
+        width: 450px !important;
+        height: auto !important;
+        border-radius: 6px;
+    }
     div.dataTables_wrapper div.dataTables_filter input {
         margin-left: -12px;
     }
