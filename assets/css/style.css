@@ -2655,6 +2655,35 @@ img.project-img {
     padding-right: 20px;
 }
 
+.blog-title {
+    /* color: red; */
+    font-size: 20px !important;
+    text-transform: initial !important;
+    background: -webkit-linear-gradient(45deg, #A23CB2, #F83974);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.category-section {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+}
+
+.blog-category {
+    font-size: 12px;
+    border: 2px solid #A93CAD;
+    color: #A93CAD !important;
+    padding: 5px 20px;
+    border-radius: 0px;
+}
+
+.latest-post-title {
+    text-transform: initial !important;
+    background: -webkit-linear-gradient(45deg, #A23CB2, #F83974);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /* Main custom  end*/
 
@@ -21174,6 +21203,13 @@ table.dataTable thead .sorting_desc_disabled:before {
 /* Mobile */
 
 @media (max-width: 414px) {
+
+.latest-post .avatar-lg {
+    width: 450px !important;
+    height: auto !important;
+    border-radius: 6px;
+}
+
     div.dataTables_wrapper div.dataTables_filter input {
         margin-left: -12px;
     }
@@ -21309,6 +21345,9 @@ table.dataTable thead .sorting_desc_disabled:before {
     .editProfile-details {
         text-align: center;
         margin: 10px 40px 0px 0px;
+    }
+    .pagination-jobs {
+        margin-left: 20%;
     }
 }
 
@@ -70543,6 +70582,9 @@ button.bg-purple-gradient:focus {
 .wd-100v {
     width: 100vw;
 }
+
+
+/*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */
