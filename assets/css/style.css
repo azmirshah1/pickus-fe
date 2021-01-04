@@ -3842,6 +3842,11 @@ fieldset:disabled a.btn {
     text-decoration: none;
 }
 
+.btn-link.active {
+    background: white;
+    color: purple !important;
+}
+
 .btn-link:focus,
 .btn-link.focus {
     text-decoration: none;
