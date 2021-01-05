@@ -2541,6 +2541,28 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     width: 100%;
 }
 
+.company-job-section {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.location-job-section {
+    padding-top: 10px;
+}
+
+.status-job-section {
+    padding-top: 5px;
+}
+
+.salary-job-section {
+    padding-top: 5px;
+}
+
+.date-job-section {
+    padding-top: 5px;
+    font-style: italic;
+}
+
 
 /* Public Profile Page */
 
@@ -21226,6 +21248,31 @@ table.dataTable thead .sorting_desc_disabled:before {
 /* Mobile */
 
 @media (max-width: 414px) {
+    .job-card-details {
+        margin-left: 1px;
+        margin-top: 3rem;
+    }
+    .company-job-section {
+        padding-top: 2px;
+    }
+    .location-job-section {
+        padding-top: 2px;
+    }
+    .status-job-section {
+        padding-top: 5px;
+    }
+    .salary-job-section {
+        padding-top: 7px;
+    }
+    .date-job-section {
+        padding-top: 5px;
+        font-style: italic;
+    }
+    .job-card-tab {
+        padding-bottom: 20px;
+        margin-left: 0px;
+        border-bottom: 1px solid #dedcfb;
+    }
     .latest-post .avatar-lg {
         width: 450px !important;
         height: auto !important;
@@ -26803,6 +26850,9 @@ video {
     }
 }
 
+
+/* Testing testing */
+
 @media (max-width: 991.98px) {
     .main-content-body-show .main-header .main-header-menu-icon {
         display: none;
@@ -26818,6 +26868,9 @@ video {
     }
     .main-content-body-show .main-content-body {
         display: block;
+    }
+    .nav.job-nav {
+        display: none;
     }
 }
 
@@ -70661,5 +70714,7 @@ button.bg-purple-gradient:focus {
 
 /*# sourceMappingURL=style.css.map */
 
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
