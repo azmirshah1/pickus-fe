@@ -2305,6 +2305,12 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     float: left;
 }
 
+.job-apply-now,
+.job-bookmarks {
+    width: 50%;
+    float: left;
+}
+
 .linkedin {
     border: 2px solid #0e76a8;
     color: #ffffff;
@@ -2334,6 +2340,39 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     background-color: #4974F0;
     color: #FFF;
     border-color: #4974F0;
+    box-shadow: none;
+}
+
+.job-bookmarks {
+    border: 2px solid white;
+    color: #ffffff;
+    background: linear-gradient(90deg, #A93CAD 15.9%, #F53976 101.72%);
+    border-radius: 0px 3px 3px 0px;
+}
+
+.job-apply-now {
+    border: 2px solid white;
+    color: #ffffff;
+    background: linear-gradient(90deg, #A93CAD 15.9%, #F53976 101.72%);
+    border-radius: 3px 0px 0px 3px;
+}
+
+.job-bookmarks:focus,
+.job-bookmarks:hover,
+.job-bookmarks:active {
+    background: linear-gradient(90deg, #F53976 15.9%, #A93CAD 101.72%);
+    color: #FFF;
+    border-color: white;
+    box-shadow: none;
+}
+
+.job-apply-now:focus,
+.job-apply-now:hover,
+.job-apply-now:active {
+    background: linear-gradient(90deg, #F53976 15.9%, #A93CAD 101.72%);
+    ;
+    color: #FFF;
+    border-color: white;
     box-shadow: none;
 }
 
@@ -2534,11 +2573,6 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.job-company-image {
-    height: 400px;
-    width: 100%;
 }
 
 .company-job-section {
@@ -20903,6 +20937,11 @@ pre {
     .main-header-right .nav-link.btn-default.btn {
         margin-top: 7px;
     }
+    .job-company-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 *::-ms-backdrop,
@@ -21307,6 +21346,12 @@ table.dataTable thead .sorting_desc_disabled:before {
         text-align: center;
         color: red !important;
     }
+    .job-card-info {
+        text-align: center;
+    }
+    .job-card-info-details {
+        text-align: center;
+    }
     /* .dashboard-details .d-flex {
         display: inline-block !important;
         padding-bottom: 20px;
@@ -21325,6 +21370,12 @@ table.dataTable thead .sorting_desc_disabled:before {
         background: beige;
         margin-top: -10px;
         /* border: 1px groove #BA3BA1; */
+    }
+    .job-card-info .wrapper {
+        padding: 30px 0px 20px 20px;
+        /* background: beige; */
+        margin-top: -10px;
+        border: 1px solid #BA3BA1;
     }
     .bookmarks-section>.bookmarks-design {
         width: 40px;
@@ -21714,6 +21765,16 @@ input[type=text]::-ms-clear {
     }
     .app.sidebar-mini.dark-theme .responsive-logo .logo-11 {
         display: none;
+    }
+}
+
+@media (max-width: 420px) and (min-width: 400px) {
+    .bookmarks-section>.bookmarks-design {
+        width: 60px !important;
+        height: 60px !important;
+        padding: 15px;
+        margin-top: -100px !important;
+        margin-right: -5px !important;
     }
 }
 
