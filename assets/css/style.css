@@ -2563,6 +2563,13 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     font-style: italic;
 }
 
+.job-card-tab {
+    padding-bottom: 25px;
+    padding-top: 10px;
+    margin-left: 0px;
+    border-bottom: 1px solid #dedcfb;
+}
+
 
 /* Public Profile Page */
 
@@ -21269,9 +21276,12 @@ table.dataTable thead .sorting_desc_disabled:before {
         font-style: italic;
     }
     .job-card-tab {
-        padding-bottom: 20px;
+        padding-bottom: 0px;
+        padding-top: 10px;
+        margin-top: 40px;
         margin-left: 0px;
         border-bottom: 1px solid #dedcfb;
+        border-top: 1px solid #dedcfb;
     }
     .latest-post .avatar-lg {
         width: 450px !important;
@@ -27881,7 +27891,7 @@ video {
     .main-content-body-show .main-header-red {
         display: block !important;
         padding: 10px 20px;
-        background: #3858f9;
+        background: linear-gradient(90deg, #8041F6 15.9%, #3BB4F2 101.72%);
         color: #fff;
     }
 }
@@ -70716,5 +70726,6 @@ button.bg-purple-gradient:focus {
 
 
 /*# sourceMappingURL=style.css.map */
+
 
 /*# sourceMappingURL=style.css.map */
