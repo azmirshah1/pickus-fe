@@ -2604,6 +2604,10 @@ textarea.custom-file-input.parsley-success:focus~.custom-file-label {
     border-bottom: 1px solid #dedcfb;
 }
 
+.mobile-show {
+    display: none;
+}
+
 
 /* Public Profile Page */
 
@@ -20941,6 +20945,12 @@ pre {
         height: 200px;
         width: 100%;
         object-fit: cover;
+    }
+    .mobile-hide {
+        display: none;
+    }
+    .mobile-show {
+        display: block;
     }
 }
 
