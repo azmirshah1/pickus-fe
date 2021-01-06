@@ -6167,6 +6167,12 @@ a.badge:focus {
     box-shadow: 0 7px 30px rgba(128, 116, 252, 0.5);
 }
 
+.badge-gradient-primary {
+    color: #fff;
+    background: linear-gradient(45deg, #3858f9, #8e79fd);
+    box-shadow: 0 7px 30px rgba(128, 116, 252, 0.5);
+}
+
 a.badge-primary:hover {
     color: #fff;
     background-color: #0040ff;
@@ -13470,10 +13476,11 @@ a.text-dark:focus {
 /* Active tab */
 
 .main-nav-line .nav-link.active {
-    background: -webkit-linear-gradient(45deg, #A23CB2, #F83974);
+    /* background: -webkit-linear-gradient(45deg, #A23CB2, #F83974);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     font-weight: bold;
+    color: #A23CB2;
 }
 
 
@@ -13488,7 +13495,7 @@ a.text-dark:focus {
     height: 3px;
     left: -20px;
     width: 2px;
-    background: linear-gradient(90deg, #A23CB2 0%, #F83974 100%);
+    background-color: #A23CB2;
 }
 
 
