@@ -20921,8 +20921,8 @@ pre {
     .main-content-body-show .main-header-arrow {
         display: block;
         padding: 10px 20px;
-        background: #285cf7;
-        color: #fff;
+        background: linear-gradient(90deg, #8041F6 15.9%, #3BB4F2 101.72%);
+        color: white;
     }
     .main-content-body-show .main-header-red {
         display: block;
@@ -27956,8 +27956,8 @@ video {
     .main-content-body-show .main-header-arrow {
         display: block !important;
         padding: 10px 20px;
-        background: #3858f9;
-        color: #fff;
+        background: linear-gradient(90deg, #8041F6 15.9%, #3BB4F2 101.72%);
+        color: white;
     }
     .main-content-body-show .main-header-red {
         display: block !important;

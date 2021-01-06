@@ -54,39 +54,24 @@
             <div class="app-sidebar__user">
                 <div class="dropdown user-pro-body text-center">
                     <div class="user-pic">
-                        <img src="../assets/img/faces/tonystark.png" alt="user-img" class="rounded-circle mCS_img_loaded">
+                        <a href="publicprofile.html"><img src="../assets/img/faces/azmir.jpg" alt="user-img" style="width: 120px; height: auto;" class="rounded-circle mCS_img_loaded"></a>
+                        <a href="publicprofile.html" data-placement="top" data-toggle="tooltip" title="View your public profile" class="special-logo public-profile-icon active"><i class="fe fe-user"></i></a>
                     </div>
-                    <div class="user-info">
+
+                    <!-- <div class="user-info">
                         <h3 class=" mb-0 text-dark">Tony Stark</h3>
                         <span class="text-muted app-sidebar__user-name text-sm">Front End Developer</span>
+                    </div> -->
+                    <div class="user-info">
+                        <h3 class=" mb-0 text-dark">Immediate Available <i class="fa fa-info-circle" data-placement="top" data-toggle="tooltip" title="You will be listed in candidate list"></i></h3>
+                        <div class="main-toggle-group-demo mg-t-10 justify-content-center">
+                            <div class="main-toggle main-toggle-success on mb-3">
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /user -->
-        <div class="sidebar-navs">
-            <ul class="nav  nav-pills-circle">
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings" aria-describedby="tooltip365540">
-                    <a class="nav-link text-center m-2" href="setting.html">
-                        <i class="fe fe-settings"></i>
-                    </a>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mail">
-                    <a class="nav-link text-center m-2" href="mail.html">
-                        <i class="fe fe-mail"></i>
-                    </a>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Public Profile">
-                    <a class="nav-link text-center m-2" href="publicprofile.html">
-                        <i class="fe fe-user"></i>
-                    </a>
-                </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Logout">
-                    <a class="nav-link text-center m-2" href="login.html">
-                        <i class="fe fe-power"></i>
-                    </a>
-                </li>
-            </ul>
         </div>
         <div class="main-sidebar-body">
             <ul class="side-menu ">
@@ -160,7 +145,7 @@
                         <div class="dropdown  nav-item main-header-message ">
                             <a class="new nav-link" href="#"><i class="fe fe-mail"></i><span class=" pulse"></span></a>
                             <div class="dropdown-menu">
-                                <div class="menu-header-content bg-primary-gradient text-left d-flex">
+                                <div class="menu-header-content bg-gradient-primary text-left d-flex">
                                     <div class="">
                                         <h6 class="menu-header-title text-white mb-0">5 new Messages</h6>
                                     </div>
@@ -236,72 +221,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown nav-item main-header-notification">
-                            <a class="new nav-link" href="#"><i class="fe fe-bell"></i><span class=" pulse"></span></a>
-                            <div class="dropdown-menu">
-                                <div class="menu-header-content bg-primary-gradient text-left d-flex">
-                                    <div class="">
-                                        <h6 class="menu-header-title text-white mb-0">7 new Notifications</h6>
-                                    </div>
-                                    <div class="my-auto ml-auto">
-                                        <a class="badge badge-pill badge-warning float-right" href="#">Mark All Read</a>
-                                    </div>
-                                </div>
-                                <div class="main-notification-list Notification-scroll">
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-danger-transparent">
-                                            <i class="la la-user-check text-danger"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">You have been shortlisted....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-primary-transparent">
-                                            <i class="la la-check-circle text-primary"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">You have applied....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-pink-transparent">
-                                            <i class="la la-file-alt text-pink"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">Please completed your profile....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-                                    <a class="d-flex p-3 border-bottom" href="#">
-                                        <div class="notifyimg bg-warning-transparent">
-                                            <i class="la la-envelope-open text-warning"></i>
-                                        </div>
-                                        <div class="ml-3">
-                                            <h5 class="notification-label mb-1">Pickus</h5>
-                                            <div class="notification-subtext">You have received email from....</div>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <i class="las la-angle-right text-right text-muted"></i>
-                                        </div>
-                                    </a>
-
-                                </div>
-                                <div class="dropdown-footer">
-                                    <a href="#">VIEW ALL</a>
-                                </div>
-                            </div>
+                        <div class="dropdown main-header-message right-toggle">
+                            <a class="nav-link pr-0" data-toggle="sidebar-right" data-target=".sidebar-right">
+                                <i class="ion ion-md-keypad tx-20 bg-transparent"></i><span class=" pulse"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -330,36 +253,36 @@
                             <div class="main-chat-list" id="ChatList" style="min-height: 599px;">
                                 <div class="media new">
                                     <div class="main-img-user online">
-                                        <img alt="" src="../assets/img/company/mudah.png"> <span>2</span>
+                                        <img alt="" src="../assets/img/company/aplikasi.png"> <span>1</span>
                                     </div>
                                     <div class="media-body">
                                         <div class="media-contact-name">
                                             <span>Kumpulan Aplikasi Sempurna Sdn Bhd</span> <span>2 hours</span>
                                         </div>
                                         <p class="msg-position">Front End Developer</p>
-                                        <p>Good Morning. Hello Mr Tony. I am Azmir Shah from...</p>
+                                        <p>Good Morning. Hello Mr Azmir Shah. I am Nik Khairul Aiman from...</p>
                                     </div>
                                 </div>
                                 <div class="media new">
                                     <div class="main-img-user">
-                                        <img alt="" src="../assets/img/company/mudah.png"> <span>1</span>
+                                        <img alt="" src="../assets/img/company/digi.png"> <span>2</span>
                                     </div>
                                     <div class="media-body">
                                         <div class="media-contact-name">
-                                            <span>Kumpulan Aplikasi Sempurna Sdn Bhd</span> <span>2 hours</span>
+                                            <span>Digi Comunication Sdn Bhd</span> <span>3 hours</span>
                                         </div>
-                                        <p class="msg-position">Front End Developer</p>
-                                        <p>Good Morning. Hello Mr Tony. I am Azmir Shah from...</p>
+                                        <p class="msg-position">Full Stack Developer</p>
+                                        <p>Good Morning. Hello Mr Azmir Shah. I am Tony Stark from...</p>
                                     </div>
                                 </div>
                                 <div class="media selected">
-                                    <div class="main-img-user online"><img alt="" src="../assets/img/company/mudah.png"></div>
+                                    <div class="main-img-user online"><img alt="" src="../assets/img/company/gsc.png"></div>
                                     <div class="media-body">
                                         <div class="media-contact-name">
-                                            <span>Kumpulan Aplikasi Sempurna Sdn Bhd</span> <span>2 hours</span>
+                                            <span>GSC Movies Sdn Bhd</span> <span>5 hours</span>
                                         </div>
-                                        <p class="msg-position">Front End Developer</p>
-                                        <p>Good Morning. Hello Mr Tony. I am Azmir Shah from...</p>
+                                        <p class="msg-position">Web Developer</p>
+                                        <p>Good Morning. Hello Mr Azmir Shah. I am Krisnan from...</p>
                                     </div>
                                 </div>
 
@@ -370,10 +293,10 @@
                 </div>
                 <div class="col-xl-8 col-lg-7">
                     <div class="card">
-                        <a class="main-header-arrow" href="" id="ChatBodyHide"><i class="icon ion-md-arrow-back"></i></a>
+                        <a class="main-header-arrow" href="" id="ChatBodyHide"><i class="icon ion-md-arrow-back icon-white"></i></a>
                         <div class="main-content-body main-content-body-chat">
                             <div class="main-chat-header">
-                                <div class="main-img-user"><img alt="" src="../assets/img/company/mudah.png"></div>
+                                <div class="main-img-user"><img alt="" src="../assets/img/company/aplikasi.png"></div>
                                 <div class="main-chat-msg-name">
                                     <h6>Kumpulan Aplikasi Sempurna Sdn Bhd</h6><small>Last Message:</small><small class="ml-1">02/10/2020</small><small class="ml-1"> 08:35AM</small>
                                 </div>
@@ -397,12 +320,12 @@
                                 <div class="content-inner">
                                     <label class="main-chat-time"><span>3 days ago</span></label>
                                     <div class="media">
-                                        <div class="main-img-user online"><img alt="" src="../assets/img/company/mudah.png"></div>
+                                        <div class="main-img-user online"><img alt="" src="../assets/img/company/aplikasi.png"></div>
                                         <div class="media-body">
                                             <div class="main-msg-wrapper">
                                                 Good Morning.
-                                                <br>Hello Mr Tony, I am Azmir Shah from Kumpulan Aplikasi Sempurna Sdn Bhd. We saw your profile on Pickus and after make a consideration, <br> we put you as one of our shortlisted candidate. If you do not
-                                                mind, can you send us your resume in jpg format.
+                                                <br>Hello Mr Azmir Shah, I am Nik Khairul Aiman from Kumpulan Aplikasi Sempurna Sdn Bhd. We saw your profile on Pickus and after make a consideration, <br> we put you as one of our shortlisted candidate.
+                                                If you do not mind, can you send us your resume in jpg format.
                                             </div>
                                             <div>
                                                 <span>9:32 am</span> <a href=""><i class="icon ion-android-more-horizontal"></i></a>
@@ -410,11 +333,11 @@
                                         </div>
                                     </div>
                                     <div class="media flex-row-reverse">
-                                        <div class="main-img-user online"><img alt="" src="../assets/img/faces/tonystark.png"></div>
+                                        <div class="main-img-user online"><img alt="" src="../assets/img/faces/azmir.jpg"></div>
                                         <div class="media-body">
                                             <div class="main-msg-wrapper">
                                                 Good Morning.
-                                                <br>Hello Mr. Azmir Shah. Thank you for your responsive. I am so greatful being one of the shortlisted candidate. Sure.
+                                                <br>Hello Mr. Nik Khairul. Thank you for your responsive. I am so greatful being one of the shortlisted candidate. Sure.
                                             </div>
                                             <div class="main-msg-wrapper">
                                                 I attached my resume as your reference.
@@ -426,7 +349,7 @@
                                         </div>
                                     </div>
                                     <div class="media">
-                                        <div class="main-img-user online"><img alt="" src="../assets/img/company/mudah.png"></div>
+                                        <div class="main-img-user online"><img alt="" src="../assets/img/company/aplikasi.png"></div>
                                         <div class="media-body">
                                             <div class="main-msg-wrapper">
                                                 Thank you. We already receive your resume. It is ok if we set the interview meeting on this Thursday, around 10:00am?
@@ -437,7 +360,7 @@
                                         </div>
                                     </div>
                                     <div class="media flex-row-reverse">
-                                        <div class="main-img-user online"><img alt="" src="../assets/img/faces/tonystark.png"></div>
+                                        <div class="main-img-user online"><img alt="" src="../assets/img/faces/azmir.jpg"></div>
                                         <div class="media-body">
                                             <div class="main-msg-wrapper">
                                                 Sure. Via skype of Zoom?
@@ -448,7 +371,7 @@
                                         </div>
                                     </div><label class="main-chat-time"><span>Yesterday</span></label>
                                     <div class="media">
-                                        <div class="main-img-user online"><img alt="" src="../assets/img/company/mudah.png"></div>
+                                        <div class="main-img-user online"><img alt="" src="../assets/img/company/aplikasi.png"></div>
                                         <div class="media-body">
                                             <div class="main-msg-wrapper">
                                                 Actually we will using Zoho meeting. We will send to you the invitation link via email.
@@ -459,7 +382,7 @@
                                         </div>
                                     </div>
                                     <div class="media flex-row-reverse">
-                                        <div class="main-img-user online"><img alt="" src="../assets/img/faces/tonystark.png"></div>
+                                        <div class="main-img-user online"><img alt="" src="../assets/img/faces/azmir.jpg"></div>
                                         <div class="media-body">
                                             <div class="main-msg-wrapper">
                                                 Sound great.
@@ -473,7 +396,7 @@
                                         </div>
                                     </div><label class="main-chat-time"><span>Today</span></label>
                                     <div class="media">
-                                        <div class="main-img-user online"><img alt="" src="../assets/img/company/mudah.png"></div>
+                                        <div class="main-img-user online"><img alt="" src="../assets/img/company/aplikasi.png"></div>
                                         <div class="media-body">
                                             <div class="main-msg-wrapper">
                                                 You are welcome.
@@ -485,13 +408,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="main-chat-footer">
+                                <nav class="nav">
+                                    <a class="nav-link" data-toggle="tooltip" href="" title="Add Photo"><i class="fas fa-camera"></i></a> <a class="nav-link" data-toggle="tooltip" href="" title="Attach a File"><i class="fas fa-paperclip"></i></a> <a class="nav-link"
+                                        data-toggle="tooltip" href="" title="Add Emoticons"><i class="far fa-smile"></i></a> <a class="nav-link" href=""><i class="fas fa-ellipsis-v"></i></a>
+                                </nav><input class="form-control" placeholder="Type your message here..." type="text"> <a class="main-msg-send" href=""><i class="far fa-paper-plane"></i></a>
+                            </div>
                         </div>
-                        <div class="main-chat-footer">
-                            <nav class="nav">
-                                <a class="nav-link" data-toggle="tooltip" href="" title="Add Photo"><i class="fas fa-camera"></i></a> <a class="nav-link" data-toggle="tooltip" href="" title="Attach a File"><i class="fas fa-paperclip"></i></a> <a class="nav-link"
-                                    data-toggle="tooltip" href="" title="Add Emoticons"><i class="far fa-smile"></i></a> <a class="nav-link" href=""><i class="fas fa-ellipsis-v"></i></a>
-                            </nav><input class="form-control" placeholder="Type your message here..." type="text"> <a class="main-msg-send" href=""><i class="far fa-paper-plane"></i></a>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -499,19 +423,147 @@
 
         </div>
         <!-- /container -->
+        <!--Sidebar-right-->
+        <div class="sidebar sidebar-right sidebar-animate">
+            <div class="panel panel-primary card mb-0">
+                <div class="panel-body tabs-menu-body p-0 border-0">
+                    <ul class="Date-time">
+                        <li class="time">
+                            <h1 class="animated ">21:00</h1>
+                            <p class="animated ">Sat,October 1st 2029</p>
+                        </li>
+                    </ul>
+                    <div class="menu-header-notification bg-gradient-primary text-left d-flex">
+                        <div class="">
+                            <h6 class="menu-header-title text-white mb-0">7 new Notifications</h6>
+                        </div>
+                        <div class="my-auto ml-auto">
+                            <a class="badge badge-pill badge-warning float-right" href="#">Mark All Read</a>
+                        </div>
+                    </div>
+                    <div class="card-body latest-tasks">
+                        <div class="main-message-list">
+                            <a href="#" class="p-3 d-flex border-bottom">
+                                <div class="notifyimg">
+                                    <i class="la la-user-check text-danger"></i>
+                                </div>
+                                <div class="wd-90p">
+                                    <div class="d-flex">
+                                        <h5 class="mb-1 name">Pickus</h5>
+                                        <p class="time mb-0 text-right ml-auto float-right">10 min ago</p>
+                                    </div>
+                                    <p class="mb-0 desc">You have been shortlisted....</p>
+                                </div>
+                            </a>
+                            <a href="#" class="p-3 d-flex border-bottom">
+                                <div class="notifyimg">
+                                    <i class="la la-check-circle text-primary"></i>
+                                </div>
+                                <div class="wd-90p">
+                                    <div class="d-flex">
+                                        <h5 class="mb-1 name">Pickus</h5>
+                                        <p class="time mb-0 text-right ml-auto float-right">10 min ago</p>
+                                    </div>
+                                    <p class="mb-0 desc">You have applied for Front End Devel...</p>
+                                </div>
+                            </a>
+                            <a href="#" class="p-3 d-flex border-bottom">
+                                <div class="notifyimg">
+                                    <i class="la la-file-alt text-pink"></i>
+                                </div>
+                                <div class="wd-90p">
+                                    <div class="d-flex">
+                                        <h5 class="mb-1 name">Pickus</h5>
+                                        <p class="time mb-0 text-right ml-auto float-right">10 min ago</p>
+                                    </div>
+                                    <p class="mb-0 desc">Please completed your profile...</p>
+                                </div>
+                            </a>
+                            <a href="#" class="p-3 d-flex border-bottom">
+                                <div class="notifyimg">
+                                    <i class="la la-envelope-open text-warning"></i>
+                                </div>
+                                <div class="wd-90p">
+                                    <div class="d-flex">
+                                        <h5 class="mb-1 name">Pickus</h5>
+                                        <p class="time mb-0 text-right ml-auto float-right">10 min ago</p>
+                                    </div>
+                                    <p class="mb-0 desc">You have received email from....</p>
+                                </div>
+                            </a>
+                            <a href="#" class="p-3 d-flex border-bottom">
+                                <div class="notifyimg">
+                                    <i class="la la-check-circle text-primary"></i>
+                                </div>
+                                <div class="wd-90p">
+                                    <div class="d-flex">
+                                        <h5 class="mb-1 name">Pickus</h5>
+                                        <p class="time mb-0 text-right ml-auto float-right">10 min ago</p>
+                                    </div>
+                                    <p class="mb-0 desc">You have applied for Front End Devel...</p>
+                                </div>
+                            </a>
+                            <a href="#" class="p-3 d-flex border-bottom">
+                                <div class="notifyimg">
+                                    <i class="la la-check-circle text-primary"></i>
+                                </div>
+                                <div class="wd-90p">
+                                    <div class="d-flex">
+                                        <h5 class="mb-1 name">Pickus</h5>
+                                        <p class="time mb-0 text-right ml-auto float-right">10 min ago</p>
+                                    </div>
+                                    <p class="mb-0 desc">You have applied for Front End Devel...</p>
+                                </div>
+                            </a>
+                            <a href="#" class="p-3 d-flex border-bottom">
+                                <div class="notifyimg">
+                                    <i class="la la-check-circle text-primary"></i>
+                                </div>
+                                <div class="wd-90p">
+                                    <div class="d-flex">
+                                        <h5 class="mb-1 name">Pickus</h5>
+                                        <p class="time mb-0 text-right ml-auto float-right">10 min ago</p>
+                                    </div>
+                                    <p class="mb-0 desc">You have applied for Front End Devel...</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="d-flex pagination wd-100p">
+                            <a href="#">Previous</a>
+                            <a href="#" class="ml-auto">Next</a>
+                        </div>
+                    </div>
+                    <div class="card-body border-top border-bottom">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <a class="icon-primary-color" href="#"><i class="dropdown-icon mdi mdi-headset fs-20 m-0 leading-tight"></i><div>Contact Us</div></a>
+
+                            </div>
+                            <div class="col-4 text-center">
+                                <a class="icon-primary-color" href="setting.html"><i class="dropdown-icon mdi mdi-settings fs-20 m-0 leading-tight"></i><div>Settings</div></a>
+
+                            </div>
+                            <div class="col-4 text-center">
+                                <a class="icon-primary-color" href="login.html"><i class="dropdown-icon mdi mdi-power fs-20 m-0 leading-tight"></i><div>Sign out</div></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Sidebar-right-->
     </div>
     <!-- /main-content -->
     <!-- Footer opened -->
     <div class="main-footer ht-40 ">
         <div class="container-fluid pd-t-0-f ht-100p ">
-            <span>Copyright © 2020 <a href="# ">Agensi pekerjaan Aplikasi Sdn Bhd</a>. All right Reserved</span>
+            <span>Copyright © 2020 <a href="# ">Pickus</a>. All right Reserved</span>
         </div>
     </div>
 
     <!-- Footer closed -->
-
-    <!--- Back-to-top --->
-    <a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
 
     <!--- JQuery min js --->
     <script src="../assets/plugins/jquery/jquery.min.js"></script>
