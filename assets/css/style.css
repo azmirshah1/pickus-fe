@@ -13482,8 +13482,10 @@ a.text-dark:focus {
 .main-nav-line .nav-link.active::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 1;
     bottom: 0;
+    margin-top: 3px;
+    height: 3px;
     left: -20px;
     width: 2px;
     background: linear-gradient(90deg, #A23CB2 0%, #F83974 100%);
@@ -21497,6 +21499,8 @@ table.dataTable thead .sorting_desc_disabled:before {
         top: 26px;
         bottom: 0px;
         left: 0px;
+        margin-top: 10px;
+        height: 2px;
         width: 100%;
         background: linear-gradient(90deg, #A23CB2 0%, #F83974 100%);
     }
@@ -28138,21 +28142,6 @@ video {
 .main-header-menu>.nav {
     flex-direction: column;
     padding: 20px;
-}
-
-.main-header-menu .nav-item::before {
-    content: '';
-    position: absolute;
-    top: 67px;
-    margin-left: 25px;
-    width: 15px;
-    height: 15px;
-    border-top: 2px solid rgba(28, 39, 60, 0.12);
-    border-left: 2px solid rgba(28, 39, 60, 0.12);
-    background-color: #fff;
-    transform: rotate(45deg);
-    z-index: 100;
-    display: none;
 }
 
 .main-header-menu .nav-item+.nav-item {
