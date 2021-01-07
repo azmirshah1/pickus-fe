@@ -2806,6 +2806,14 @@ img.project-img {
     margin-top: -70px !important;
 }
 
+.desktop-hide {
+    display: none;
+}
+
+.job-card-details {
+    text-align: center;
+}
+
 
 /* Main custom  end*/
 
@@ -21011,10 +21019,13 @@ pre {
         object-fit: cover;
     }
     .mobile-hide {
-        display: none;
+        display: none !important;
     }
     .mobile-show {
         display: block;
+    }
+    .desktop-hide {
+        display: inline-flex;
     }
 }
 
@@ -21368,9 +21379,43 @@ table.dataTable thead .sorting_desc_disabled:before {
 /* Mobile */
 
 @media (max-width: 414px) {
+    .job-location {
+        margin-left: -12px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+    .job-status {
+        margin-top: -20px;
+    }
+    .job-salary {
+        margin-left: -10px;
+        margin-top: -5px;
+    }
+    .job-applied {
+        color: orange !important;
+        border-radius: 0px;
+        border: none;
+        padding: 3px 20px;
+    }
+    .mtb {
+        margin-top: -15px;
+        margin-bottom: 2px;
+    }
+    .job-review {
+        color: green !important;
+        border-radius: 0px;
+        border: none;
+        padding: 3px 20px;
+    }
+    .job-rejected {
+        color: red !important;
+        border-radius: 0px;
+        border: none;
+        padding: 3px 20px;
+    }
     .job-card-details {
         margin-left: 1px;
-        margin-top: 3rem;
+        margin-top: -20px;
     }
     .company-job-section {
         padding-top: 2px;
