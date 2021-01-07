@@ -2752,6 +2752,26 @@ img.project-img {
 }
 
 
+/* Job Applications Page */
+
+.job-status-update {
+    margin-top: -55px;
+}
+
+.job-status-update a {
+    /* color: #3858f9;
+    border-color: #3858f9;
+    padding: 0.4rem 1rem;
+    line-height: 1.657;
+    border-width: 1px;
+    background-color: transparent; */
+    color: orange !important;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 3px 20px;
+}
+
+
 /* Main custom  end*/
 
 .was-validated .form-control:invalid,
