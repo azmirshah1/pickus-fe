@@ -2770,22 +2770,40 @@ img.project-img {
 .job-applied {
     color: orange !important;
     border: 1px solid orange;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 3px 20px;
 }
 
 .job-review {
     color: green !important;
     border: 1px solid green;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 3px 20px;
 }
 
 .job-rejected {
     color: red !important;
     border: 1px solid red;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 3px 20px;
+}
+
+.job-card-details {
+    color: black;
+    background: transparent;
+}
+
+.job-card-details:hover {
+    color: white;
+    background: linear-gradient(90deg, #A93CAD 15.9%, #F53976 101.72%);
+}
+
+.job-card-bookmarks {
+    margin-top: 0px;
+}
+
+.job-card-bookmarks .jcb {
+    margin-top: -70px !important;
 }
 
 
@@ -70785,6 +70803,9 @@ button.bg-purple-gradient:focus {
 .wd-100v {
     width: 100vw;
 }
+
+
+/*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */
