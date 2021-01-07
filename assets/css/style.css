@@ -2788,12 +2788,12 @@ img.project-img {
     padding: 3px 20px;
 }
 
-.job-card-details {
+.job-card-details-1 {
     color: black;
     background: transparent;
 }
 
-.job-card-details:hover {
+.job-card-details-1:hover {
     color: white;
     background: linear-gradient(90deg, #A93CAD 15.9%, #F53976 101.72%);
 }
@@ -2810,7 +2810,7 @@ img.project-img {
     display: none;
 }
 
-.job-card-details {
+.job-card-details-1 {
     text-align: center;
 }
 
